@@ -1178,7 +1178,8 @@ main { overflow-x: clip; }
 .hero2 { padding-bottom: 190px; }
 .finder2 { --lift: 110px; position: relative; z-index: 20; overflow: visible; margin-top: calc(-1 * var(--lift)); padding: 0 0 40px;
   background: linear-gradient(to bottom, transparent calc(var(--lift) - 4px), #f6f9fd calc(var(--lift) - 4px)); }
-.finder2__card { position: relative; max-width: 1240px; margin: 0 auto; border-radius: 22px; background: #f4f8fd;
+.finder2 > .container { max-width: 1360px; }
+.finder2__card { position: relative; max-width: none; margin: 0; border-radius: 22px; background: #f4f8fd;
   border: 1px solid rgba(255,255,255,.9); box-shadow: 0 30px 70px rgba(4,20,48,.28), 0 6px 18px rgba(13,58,115,.1); }
 .finder2__card > .finder2__bg { inset: 0; border-radius: inherit; overflow: hidden; animation: none; background-size: cover; }
 .finder2__inner { padding: 30px 40px 26px; max-width: none; grid-template-columns: minmax(250px, .8fr) minmax(0, 1.9fr) 170px; column-gap: 32px; row-gap: 22px; }
