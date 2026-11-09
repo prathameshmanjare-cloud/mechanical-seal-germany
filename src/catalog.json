@@ -1,0 +1,622 @@
+{
+ "types": {
+  "cartridges": [
+   {
+    "name": "Type MBC+ single metal bellows cartridge, up to 450 °C",
+    "image": "/img/catalog/cartridges-type-mbc-single-metal-bellows-cartridge-.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/2487458/TypMBC.pdf"
+    ]
+   },
+   {
+    "name": "Type DMBC+ double high-temperature metal bellows cartridge, up to 450 °C",
+    "image": "/img/catalog/cartridges-type-dmbc-double-high-temperature-metal-.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/2967164/DMBCPlusProsp.pdf",
+     "https://www.mechanical-seal-germany.com/images/0/2967161/TypDMBC7.19.pdf"
+    ]
+   },
+   {
+    "name": "Type B, API 682 double cartridge up to 60 bar",
+    "image": "/img/catalog/cartridges-type-b-api-682-double-cartridge-up-to-60.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/1776254/TypBAPI682DoubleSeal.cdr.pdf"
+    ]
+   },
+   {
+    "name": "Type A, API 682 single cartridge up to 60 bar",
+    "image": "/img/catalog/cartridges-type-a-api-682-single-cartridge-up-to-60.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/1776251/API682SingleTypA.pdf"
+    ]
+   },
+   {
+    "name": "Type S/QE single cartridge, stationary",
+    "image": "/img/catalog/cartridges-type-s-qe-single-cartridge-stationary.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730250/TypSSQE.pdf"
+    ]
+   },
+   {
+    "name": "Type SWS single cartridge without protective sleeve",
+    "image": "/img/catalog/cartridges-type-sws-single-cartridge-without-protec.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730249/SWS2016.pdf"
+    ]
+   },
+   {
+    "name": "Type DOS double sterile cartridge",
+    "image": "/img/catalog/cartridges-type-dos-double-sterile-cartridge.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1737059/DOSSteril.cdr.pdf"
+    ]
+   },
+   {
+    "name": "Type D \"ATEX\" double cartridge, stationary",
+    "image": "/img/catalog/cartridges-type-d-atex-double-cartridge-stationary.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730246/TypDATEXsteril.pdf"
+    ]
+   },
+   {
+    "name": "Type 85 splitted single cartridge",
+    "image": "/img/catalog/cartridges-type-85-splitted-single-cartridge.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730245/Typ85.pdf"
+    ]
+   },
+   {
+    "name": "Type 65 double cartridge for agitators with strong deflection",
+    "image": "/img/catalog/cartridges-type-65-double-cartridge-for-agitators-w.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730244/Typ65.pdf"
+    ]
+   },
+   {
+    "name": "Type 70 agitator seal with bearing",
+    "image": "/img/catalog/cartridges-type-70-agitator-seal-with-bearing.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/2489493/Typ70RWSteril.pdf"
+    ]
+   },
+   {
+    "name": "Type DB double cartridge, stationary",
+    "image": "/img/catalog/cartridges-type-db-double-cartridge-stationary.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/2597441/CartexDB.pdf"
+    ]
+   }
+  ],
+  "metallfaltenbalg": [
+   {
+    "name": "Type 16HT high-temperature metal bellows seal up to 450 °C",
+    "image": "/img/catalog/metallfalten-type-16ht-high-temperature-metal-bellows.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/3352649/Typ16HT.pdf"
+    ]
+   },
+   {
+    "name": "Type DMBC+ double high-temperature metal bellows cartridge up to 450 °C",
+    "image": "/img/catalog/metallfalten-type-dmbc-double-high-temperature-metal-.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/2487455/TypDMBC.pdf"
+    ]
+   },
+   {
+    "name": "Type MBC+ single metal bellows cartridge up to 450 °C",
+    "image": "/img/catalog/metallfalten-type-mbc-single-metal-bellows-cartridge-.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/2487458/TypMBC.pdf"
+    ]
+   },
+   {
+    "name": "Type 16 Ro rolling bellows seal",
+    "image": "/img/catalog/metallfalten-type-16-ro-rolling-bellows-seal.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/1736600/Typ16RO.cdr.pdf"
+    ]
+   },
+   {
+    "name": "Type 16/65 stationary metal bellows seal",
+    "image": "/img/catalog/metallfalten-type-16-65-stationary-metal-bellows-seal.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/1734553/Typ16-65.cdr.pdf"
+    ]
+   },
+   {
+    "name": "Type 16N metal bellows seal, DIN 24960",
+    "image": "/img/catalog/metallfalten-type-16n-metal-bellows-seal-din-24960.jpg",
+    "datasheets": []
+   }
+  ],
+  "geteilte-gleitringdichtungen": [
+   {
+    "name": "Type 85 patented splitted cartridge",
+    "image": "/img/catalog/geteilte-gle-type-85-patented-splitted-cartridge.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1734151/Typ85.pdf"
+    ]
+   }
+  ],
+  "gummibalg-gleitringdichtungen": [
+   {
+    "name": "Type 11",
+    "image": "/img/catalog/gummibalg-gl-type-11.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730388/WasserpumpendichtungsAlterna....pdf"
+    ]
+   },
+   {
+    "name": "Type SG9",
+    "image": "/img/catalog/gummibalg-gl-type-sg9.jpg",
+    "datasheets": []
+   },
+   {
+    "name": "Type F",
+    "image": "/img/catalog/gummibalg-gl-type-f.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730385/TypF.pdf"
+    ]
+   },
+   {
+    "name": "Type 5020",
+    "image": "/img/catalog/gummibalg-gl-type-5020.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730383/Typ5020.pdf"
+    ]
+   },
+   {
+    "name": "Type 11K, S",
+    "image": "/img/catalog/gummibalg-gl-type-11k-s.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730382/Typ11KS.pdf"
+    ]
+   },
+   {
+    "name": "Type 11-2",
+    "image": "/img/catalog/gummibalg-gl-type-11-2.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/3419729/Typ11-2.pdf"
+    ]
+   },
+   {
+    "name": "Type 9C",
+    "image": "/img/catalog/gummibalg-gl-type-9c.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730377/Typ9C.pdf"
+    ]
+   },
+   {
+    "name": "Type 9",
+    "image": "/img/catalog/gummibalg-gl-type-9.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730375/Typ9..pdf"
+    ]
+   },
+   {
+    "name": "Type SAAE",
+    "image": "/img/catalog/gummibalg-gl-type-saae.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730374/TypSAAE.pdf"
+    ]
+   }
+  ],
+  "hochdruck-gleitringdichtungen": [
+   {
+    "name": "Type 17B1-T high pressure up to 60 bar, as API 610",
+    "image": "/img/catalog/hochdruck-gl-type-17b1-t-high-pressure-up-to-60-bar-a.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1734248/Typ17B1-T.cdr.pdf"
+    ]
+   },
+   {
+    "name": "Type 17B for shafts with a shoulder",
+    "image": "/img/catalog/hochdruck-gl-type-17b-for-shafts-with-a-shoulder.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/1734228/Typ17B1-T.cdr.pdf"
+    ]
+   },
+   {
+    "name": "Type 65 double agitator seal without bearing",
+    "image": "/img/catalog/hochdruck-gl-type-65-double-agitator-seal-without-bea.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1731492/Typ65.pdf"
+    ]
+   },
+   {
+    "name": "Type S/SQE single cartridge, stationary",
+    "image": "/img/catalog/hochdruck-gl-type-s-sqe-single-cartridge-stationary.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1731489/TypSSQE.pdf"
+    ]
+   },
+   {
+    "name": "Type SWS single cartridge stationary seal without shaft sleeve",
+    "image": "/img/catalog/hochdruck-gl-type-sws-single-cartridge-stationary-sea.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1731479/SWS2016.pdf"
+    ]
+   },
+   {
+    "name": "Type D \"ATEX\" double cartridge, stationary",
+    "image": "/img/catalog/hochdruck-gl-type-d-atex-double-cartridge-stationary.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1731460/TypDATEXsteril.pdf"
+    ]
+   },
+   {
+    "name": "Type All to Do stationary high-pressure seal",
+    "image": "/img/catalog/hochdruck-gl-type-all-to-do-stationary-high-pressure-.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1731438/TypAlltoDo.pdf"
+    ]
+   },
+   {
+    "name": "Type 5020 high-pressure elastomer bellows seal",
+    "image": "/img/catalog/hochdruck-gl-type-5020-high-pressure-elastomer-bellow.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730383/Typ5020.pdf"
+    ]
+   },
+   {
+    "name": "Type 18 multi-spring high-pressure seal",
+    "image": "/img/catalog/hochdruck-gl-type-18-multi-spring-high-pressure-seal.jpg",
+    "datasheets": []
+   },
+   {
+    "name": "Type 17B high-pressure seal up to 25 bar",
+    "image": "/img/catalog/hochdruck-gl-type-17b-high-pressure-seal-up-to-25-bar.jpg",
+    "datasheets": []
+   },
+   {
+    "name": "Type 16HT high-temperature metal bellows up to 425 °C",
+    "image": "/img/catalog/hochdruck-gl-type-16ht-high-temperature-metal-bellows.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/3352649/Typ16HT.pdf"
+    ]
+   },
+   {
+    "name": "Type 13HD double mechanical seal up to 25 bar",
+    "image": "/img/catalog/hochdruck-gl-type-13hd-double-mechanical-seal-up-to-2.jpg",
+    "datasheets": []
+   },
+   {
+    "name": "Type 13HN single high-pressure seal",
+    "image": "/img/catalog/hochdruck-gl-type-13hn-single-high-pressure-seal.jpg",
+    "datasheets": []
+   },
+   {
+    "name": "Type 11-2 elastomer bellows high-pressure seal",
+    "image": "/img/catalog/hochdruck-gl-type-11-2-elastomer-bellows-high-pressur.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1731421/Typ11-2.pdf"
+    ]
+   },
+   {
+    "name": "Type B100 very short stationary high-pressure seal",
+    "image": "/img/catalog/hochdruck-gl-type-b100-very-short-stationary-high-pre.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1731419/TypB100.pdf"
+    ]
+   },
+   {
+    "name": "Type 13, 13N from 12 to 100 mm",
+    "image": "/img/catalog/hochdruck-gl-type-13-13n-from-12-to-100-mm.png",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/3279908/Typ13.pdf"
+    ]
+   },
+   {
+    "name": "Type All in One",
+    "image": "/img/catalog/hochdruck-gl-type-all-in-one.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/1731434/TypAllinOne.pdf"
+    ]
+   }
+  ],
+  "stationaere-gleitringdichtungen": [
+   {
+    "name": "Type B100",
+    "image": "/img/catalog/stationaere--type-b100.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/1889393/TypB100.pdf"
+    ]
+   },
+   {
+    "name": "Type All to Do",
+    "image": "/img/catalog/stationaere--type-all-to-do.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/1889396/TypAlltoDoDruck.pdf"
+    ]
+   },
+   {
+    "name": "Type B, API 682 double cartridge up to 60 bar",
+    "image": "/img/catalog/stationaere--type-b-api-682-double-cartridge-up-to-60.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/1776254/TypBAPI682DoubleSeal.cdr.pdf"
+    ]
+   },
+   {
+    "name": "Type DB double cartridge, stationary",
+    "image": "/img/catalog/stationaere--type-db-double-cartridge-stationary.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/2597441/CartexDB.pdf"
+    ]
+   },
+   {
+    "name": "Type SWS single cartridge without shaft sleeve",
+    "image": "/img/catalog/stationaere--type-sws-single-cartridge-without-shaft-.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730249/SWS2016.pdf"
+    ]
+   }
+  ],
+  "sterildichtungen": [
+   {
+    "name": "Type S/QE single cartridge, stationary",
+    "image": "/img/catalog/sterildichtu-type-s-qe-single-cartridge-stationary.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1737061/TypSQESteril.pdf"
+    ]
+   },
+   {
+    "name": "Type DOS double sterile cartridge",
+    "image": "/img/catalog/sterildichtu-type-dos-double-sterile-cartridge.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1737059/DOSSteril.cdr.pdf"
+    ]
+   },
+   {
+    "name": "Type D \"ATEX\" double cartridge, stationary",
+    "image": "/img/catalog/sterildichtu-type-d-atex-double-cartridge-stationary.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1736825/TypDATEXsteril.pdf"
+    ]
+   },
+   {
+    "name": "Type HST sterile mechanical seal",
+    "image": "/img/catalog/sterildichtu-type-hst-sterile-mechanical-seal.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1736822/TypHSTsteril.cdr.pdf"
+    ]
+   },
+   {
+    "name": "Type All-in-One sterile mechanical seal",
+    "image": "/img/catalog/sterildichtu-type-all-in-one-sterile-mechanical-seal.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/3093021/110238_144488221454868517_All_in_One_Sterilausfhrung.pdf"
+    ]
+   },
+   {
+    "name": "Type B100 sterile mechanical seal",
+    "image": "/img/catalog/sterildichtu-type-b100-sterile-mechanical-seal.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/3093024/110238_8103251461218722014_B100_Steril.pdf"
+    ]
+   },
+   {
+    "name": "Type DD38 sterile mechanical seal",
+    "image": "/img/catalog/sterildichtu-type-dd38-sterile-mechanical-seal.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/3093018/110238_14561654442016421283_DD38.pdf"
+    ]
+   }
+  ],
+  "ruehrwerksdichtungen": [
+   {
+    "name": "Type 85 patented cartridge, 2× splitted seal",
+    "image": "/img/catalog/ruehrwerksdi-type-85-patented-cartridge-2-splitted-se.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1734151/Typ85.pdf"
+    ]
+   },
+   {
+    "name": "Type 85 patented splitted cartridge, only 2 parts",
+    "image": "/img/catalog/ruehrwerksdi-type-85-patented-splitted-cartridge-only.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1734151/Typ85.pdf"
+    ]
+   },
+   {
+    "name": "Type 65DE stationary double agitator seal without bearing",
+    "image": "/img/catalog/ruehrwerksdi-type-65de-stationary-double-agitator-sea.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1749154/Typ65.pdf"
+    ]
+   },
+   {
+    "name": "Type 70 mixer seal, double-acting, stationary with integrated bearing",
+    "image": "/img/catalog/ruehrwerksdi-type-70-mixer-seal-double-acting-station.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/2489493/Typ70RWSteril.pdf"
+    ]
+   },
+   {
+    "name": "Type SMIX pressure-balanced dry-running seal, bi-directional",
+    "image": "/img/catalog/ruehrwerksdi-type-smix-pressure-balanced-dry-running-.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1806425/TypSMIX2016.pdf"
+    ]
+   },
+   {
+    "name": "Type SWS single cartridge without shaft sleeve",
+    "image": "/img/catalog/ruehrwerksdi-type-sws-single-cartridge-without-shaft-.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730249/SWS2016.pdf"
+    ]
+   },
+   {
+    "name": "Type DOS double sterile cartridge",
+    "image": "/img/catalog/ruehrwerksdi-type-dos-double-sterile-cartridge.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1737059/DOSSteril.cdr.pdf"
+    ]
+   },
+   {
+    "name": "Type D \"ATEX\" double cartridge, stationary",
+    "image": "/img/catalog/ruehrwerksdi-type-d-atex-double-cartridge-stationary.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/1730246/TypDATEXsteril.pdf"
+    ]
+   },
+   {
+    "name": "Agitator (mixer) seals for biogas applications",
+    "image": "/img/catalog/ruehrwerksdi-agitator-mixer-seals-for-biogas-applicat.png",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/0/3054093/BIOGASRuehrwerksdichtungen.pdf"
+    ]
+   }
+  ],
+  "drehdurchfuehrungen": [
+   {
+    "name": "Type DD rotary union",
+    "image": "/img/catalog/drehdurchfue-type-dd-rotary-union.jpg",
+    "datasheets": [
+     "https://www.mechanical-seal-germany.com/images/document/1782089/Drehdurchfuehrung.web.pdf"
+    ]
+   }
+  ]
+ },
+ "extras": {
+  "custom": [
+   {
+    "label": "Water pump seal",
+    "image": null
+   },
+   {
+    "label": "Type 13, 12 mm",
+    "image": "/img/catalog/sonderdich-02.jpg"
+   },
+   {
+    "label": "Type 11 short",
+    "image": null
+   },
+   {
+    "label": "Dry-running seal",
+    "image": null
+   },
+   {
+    "label": "Seal for Seepex pumps",
+    "image": "/img/catalog/sonderdich-05.jpg"
+   },
+   {
+    "label": "Seal for −55 °C",
+    "image": "/img/catalog/sonderdich-06.jpg"
+   },
+   {
+    "label": "Engineering & manufacturing for SIRO",
+    "image": null
+   },
+   {
+    "label": "Seal for Luwo",
+    "image": "/img/catalog/sonderdich-08.jpg"
+   },
+   {
+    "label": "Seal for Bornemann pumps",
+    "image": "/img/catalog/sonderdich-09.jpg"
+   },
+   {
+    "label": "Seal for Babcock",
+    "image": "/img/catalog/sonderdich-10.jpg"
+   },
+   {
+    "label": "Daurex seal",
+    "image": "/img/catalog/sonderdich-11.jpg"
+   },
+   {
+    "label": "Cartridge without protective sleeve",
+    "image": "/img/catalog/sonderdich-12.jpg"
+   },
+   {
+    "label": "Cartridge, 22 mm",
+    "image": "/img/catalog/sonderdich-13.jpg"
+   },
+   {
+    "label": "Special designs",
+    "image": "/img/catalog/sonderdich-14.jpg"
+   },
+   {
+    "label": "Beninger seal",
+    "image": "/img/catalog/sonderdich-15.jpg"
+   },
+   {
+    "label": "Type B100",
+    "image": "/img/catalog/sonderdich-16.jpg"
+   },
+   {
+    "label": "Henriksen seal",
+    "image": "/img/catalog/sonderdich-17.jpg"
+   },
+   {
+    "label": "Seal for F. Goller textile machines",
+    "image": "/img/catalog/sonderdich-18.jpg"
+   },
+   {
+    "label": "Alternative to Goetze",
+    "image": "/img/catalog/sonderdich-19.jpg"
+   },
+   {
+    "label": "Seal for Allweiler pumps",
+    "image": "/img/catalog/sonderdich-20.jpg"
+   }
+  ],
+  "defense": [
+   {
+    "label": "Defense application",
+    "image": "/img/catalog/wehrtechni-01.jpg"
+   },
+   {
+    "label": "Defense application 1",
+    "image": "/img/catalog/wehrtechni-02.jpg"
+   },
+   {
+    "label": "Defense application 2",
+    "image": "/img/catalog/wehrtechni-03.jpg"
+   }
+  ],
+  "company": [
+   {
+    "label": "Our company",
+    "image": null
+   },
+   {
+    "label": "Workshop",
+    "image": "/img/catalog/unternehme-02.jpg"
+   },
+   {
+    "label": "Seal assembly",
+    "image": "/img/catalog/unternehme-03.jpg"
+   },
+   {
+    "label": "CNC machining",
+    "image": "/img/catalog/unternehme-04.jpg"
+   },
+   {
+    "label": "Machining centre",
+    "image": "/img/catalog/unternehme-05.jpg"
+   },
+   {
+    "label": "8 bar pressure test",
+    "image": "/img/catalog/unternehme-06.jpg"
+   },
+   {
+    "label": "DMG Mori machining",
+    "image": "/img/catalog/unternehme-07.jpg"
+   },
+   {
+    "label": "CNC production",
+    "image": "/img/catalog/unternehme-08.jpg"
+   }
+  ],
+  "radial": [
+   {
+    "label": "Radial shaft seals",
+    "image": "/img/catalog/radialwell-01.jpg"
+   },
+   {
+    "label": "Piston, rod and U-cup seals",
+    "image": null
+   }
+  ]
+ }
+}
