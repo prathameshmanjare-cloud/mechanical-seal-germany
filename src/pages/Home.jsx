@@ -103,8 +103,10 @@ function Finder() {
   useTilt(stage, 8)
   return (
     <section className="finder2" ref={ref} id="finder">
+      <div className="container">
+      <div className="finder2__card">
       <div className="finder2__bg" aria-hidden="true" />
-      <div className="container finder2__inner">
+      <div className="finder2__inner">
         <div className="finder2__intro">
           <span className="finder2__pill" data-reveal><Crosshair size={18} strokeWidth={2} /> Product Finder</span>
           <h2 data-reveal>Find the Right<br /><em>Mechanical Seal</em></h2>
@@ -144,6 +146,8 @@ function Finder() {
             </li>
           ))}
         </ul>
+      </div>
+      </div>
       </div>
     </section>
   )

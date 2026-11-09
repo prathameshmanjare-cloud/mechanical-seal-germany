@@ -1173,3 +1173,50 @@ main { overflow-x: clip; }
 .mega__txt small { overflow-wrap: anywhere; }
 .mega__seal--photo { margin: 22px 0 22px; min-height: 200px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(150,190,240,.25); }
 .mega__seal--photo img { scale: 1; object-position: center; -webkit-mask-image: none; mask-image: none; animation: fadeFrom .45s ease; }
+
+/* ═════════ Home: Product finder, compact floating card ═════════ */
+.hero2 { padding-bottom: 190px; }
+.finder2 { --lift: 110px; position: relative; z-index: 20; overflow: visible; margin-top: calc(-1 * var(--lift)); padding: 0 0 40px;
+  background: linear-gradient(to bottom, transparent calc(var(--lift) - 4px), #f6f9fd calc(var(--lift) - 4px)); }
+.finder2__card { position: relative; max-width: 1240px; margin: 0 auto; border-radius: 22px; background: #f4f8fd;
+  border: 1px solid rgba(255,255,255,.9); box-shadow: 0 30px 70px rgba(4,20,48,.28), 0 6px 18px rgba(13,58,115,.1); }
+.finder2__card > .finder2__bg { inset: 0; border-radius: inherit; overflow: hidden; animation: none; background-size: cover; }
+.finder2__inner { padding: 30px 40px 26px; max-width: none; grid-template-columns: minmax(250px, .8fr) minmax(0, 1.9fr) 170px; column-gap: 32px; row-gap: 22px; }
+.finder2__pill { height: 32px; padding: 0 14px 0 12px; gap: 8px; font-size: 11px; letter-spacing: .2em; }
+.finder2__pill svg { width: 15px; height: 15px; }
+.finder2 h2 { margin-top: 14px; font-size: clamp(22px, 1.9vw, 28px); line-height: 1.15; }
+.finder2__bar { width: 40px; height: 3px; margin: 12px 0 10px; }
+.finder2__intro p { font-size: 14px; line-height: 1.5; max-width: 280px; }
+.finder2 .hsearch { --fh: 62px; }
+.finder2 .hsearch__icon { left: 24px; width: 22px; height: 22px; }
+.finder2 .hsearch input { padding-left: 62px; font-size: 16px; }
+.finder2 .hsearch__kbd { padding: 5px 10px; font-size: 13px; }
+.finder2 .hsearch__go { width: 70px; }
+.finder2 .hsearch__go svg { width: 22px; height: 22px; }
+.finder2 .hsearch__popular { margin: 16px 0 0 18px; gap: 8px; }
+.finder2 .hsearch__popular span { font-size: 14px; margin-right: 4px; }
+.finder2 .hsearch__popular button { height: 34px; padding: 0 14px; font-size: 14px; }
+.finder2__stage { max-width: 170px; }
+.finder2__feats li { gap: 12px; padding: 0 22px; }
+.finder2__icon { width: 42px; height: 42px; border-radius: 10px; }
+.finder2__icon svg { width: 20px; height: 20px; }
+.finder2__feats li > span:last-child { font-size: 14px; }
+@media (max-width: 1280px) {
+  .finder2__inner { grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr); }
+  .finder2__feats li { padding: 0 16px; }
+}
+@media (max-width: 1024px) {
+  .finder2 { --lift: 70px; }
+  .finder2__inner { grid-template-columns: 1fr; padding: 26px 24px; }
+}
+@media (max-width: 720px) {
+  .finder2 { --lift: 56px; padding-bottom: 28px; }
+  .finder2__card { border-radius: 18px; }
+  .finder2__inner { padding: 22px 18px; }
+  .finder2 .hsearch { --fh: 56px; }
+  .finder2 .hsearch input { padding-left: 50px; font-size: 15px; }
+  .finder2 .hsearch__icon { left: 18px; }
+  .finder2 .hsearch__go { width: 56px; }
+  .finder2 .hsearch__popular { margin-left: 0; }
+  .finder2__icon { width: 40px; height: 40px; }
+}
