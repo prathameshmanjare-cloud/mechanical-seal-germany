@@ -1,18 +1,14 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Phone, Mail } from 'lucide-react'
 import { company, products } from '../data'
+import { Logo } from './Header'
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="container footer__grid">
         <div>
-          <Link to="/" className="brand brand--light">
-            <span className="brand__mark">MSG</span>
-            <span className="brand__text">
-              Mechanical Seals<small>Germany</small>
-            </span>
-          </Link>
+          <Logo light />
           <p className="footer__lead">
             Design, development and manufacturing of mechanical seals in Germany. Operated by {company.operator} since {company.since}.
           </p>

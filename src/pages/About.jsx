@@ -1,16 +1,20 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Check } from 'lucide-react'
+import PageHero from '../components/PageHero'
 import { company, companyGallery } from '../data'
 
 export default function About() {
   return (
     <>
-      <section className="section container page">
-        <div className="section__head">
-          <span className="eyebrow">About us</span>
-          <h1 className="h2">Engineering reliability. Preventing failure. Delivering solutions.</h1>
-        </div>
-        <div className="split">
+      <PageHero
+        crumbs={[{ label: 'Company' }, { label: 'About Us' }]}
+        title="About Us"
+        text="Engineering reliability. Preventing failure. Delivering solutions."
+        img="/img/catalog/unternehme-07.jpg"
+        pos="50% 50%"
+      />
+      <section className="sheet">
+        <div className="container split">
           <div className="split__copy prose">
             <p>
               {company.name}, operated by {company.operator} in Leverkusen, stands for advanced sealing
@@ -61,7 +65,7 @@ export default function About() {
             <h2>Let’s solve your sealing challenge.</h2>
             <p>Fast response times and precise implementation, even in critical situations.</p>
           </div>
-          <Link to="/contact" className="btn btn--accent">Contact us <ArrowRight size={14} /></Link>
+          <Link to="/contact" className="btn btn--white">Contact us <ArrowRight size={14} /></Link>
         </div>
       </section>
     </>

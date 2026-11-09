@@ -1,14 +1,12 @@
+import PageHero from '../components/PageHero'
 import { company, legal } from '../data'
 
 export default function Impressum() {
   return (
-    <section className="section container page">
-      <div className="section__head">
-        <span className="eyebrow">Legal notice</span>
-        <h1 className="h2">Impressum</h1>
-        <p>Company information and legal details for {company.name}.</p>
-      </div>
-      <div className="split">
+    <>
+    <PageHero crumbs={[{ label: 'Company' }, { label: 'Imprint' }]} title="Impressum" text={`Company information and legal details for ${company.name}.`} />
+    <section className="sheet">
+      <div className="container split">
         <div className="legal">
           <dl>
             <dt>Company</dt><dd>{company.name}<br />{company.operator}</dd>
@@ -37,5 +35,6 @@ export default function Impressum() {
         </div>
       </div>
     </section>
+    </>
   )
 }

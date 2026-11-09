@@ -279,3 +279,76 @@ export const industries = [
   'Rotating equipment',
   'Defense',
 ]
+
+// Flat, searchable index of every seal type (type number, name, family)
+const typeCode = (name) => {
+  const m = name.match(/^Typ(?:e)?\s+(.+?)(?:[,(]|\s(?=[a-z])|$)/)
+  return m ? m[1].trim() : null
+}
+
+export const searchIndex = products.flatMap((p) => {
+  const rows = p.types.map((t) => ({
+    key: `${p.slug}:${t.name}`,
+    title: t.name.replace(/^Typ(?:e)?\s+\S+\s*,?\s*/i, '').replace(/^./, (c) => c.toUpperCase()) || t.name,
+    code: typeCode(t.name) || p.code,
+    name: t.name,
+    family: p.name,
+    image: t.image || p.image,
+    slug: p.slug,
+  }))
+  rows.push({ key: p.slug, title: p.name, code: p.code.replace(/^Type\s+/, ''), name: p.name, family: p.name, image: p.image, slug: p.slug, isFamily: true })
+  return rows
+})
+
+export function searchSeals(q, limit = 6) {
+  const s = q.trim().toLowerCase()
+  if (!s) return []
+  const scored = []
+  for (const r of searchIndex) {
+    const code = (r.code || '').toLowerCase()
+    let match = null
+    let score = 0
+    if (code === s || code.replace(/\s/g, '') === s.replace(/\s/g, '')) { match = 'Type no. match'; score = 4 }
+    else if (code.includes(s)) { match = 'Type no. match'; score = 3 }
+    else if (r.name.toLowerCase().includes(s)) { match = 'Product name match'; score = 2 }
+    else if (r.family.toLowerCase().includes(s)) { match = 'Seal family match'; score = 1 }
+    if (match) scored.push({ ...r, match, score: score + (r.isFamily ? 0.5 : 0) })
+  }
+  const seen = new Set()
+  return scored
+    .sort((a, b) => b.score - a.score)
+    .filter((r) => {
+      const k = `${r.code}|${r.title.replace(/[^a-z0-9]/gi, '').toLowerCase()}`
+      if (seen.has(k)) return false
+      seen.add(k)
+      return true
+    })
+    .slice(0, limit)
+}
+
+// Photos (Unsplash License, free for commercial use)
+const us = (id, w = 1600) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=75`
+export const photos = {
+  refinery: us('1588011930968-eadac80e6a5a'),
+  cnc: us('1713371398485-7bde1bde9def'),
+  office: us('1787165574896-adae5bec834b'),
+}
+
+export const applications = [
+  { id: 'chemical', label: 'Chemical', text: 'Chemical processing, transfer and mixing systems.', img: us('1704130092069-30ae33e2def0', 900), products: ['cartridge-seals', 'metal-bellows', 'agitator-seals', 'high-pressure'] },
+  { id: 'oil-gas', label: 'Oil & Gas', text: 'Reliable sealing for upstream, midstream and downstream operations.', img: us('1509390288171-ce2088f7d08e', 900), products: ['cartridge-seals', 'high-pressure', 'metal-bellows', 'splitted-seals'] },
+  { id: 'water', label: 'Water & Wastewater', text: 'Durable sealing solutions for water treatment and utilities.', img: us('1644389355109-15b26f71c36b', 900), products: ['wp11-water-pump', 'elastomer-bellows', 'cartridge-seals', 'stationary-seals'] },
+  { id: 'power', label: 'Power', text: 'High-reliability seals for power generation equipment.', img: us('1591200834528-4050ce99fe78', 900), products: ['metal-bellows', 'high-pressure', 'cartridge-seals', 'rotary-unions'] },
+  { id: 'process', label: 'Process Industries', text: 'Engineered for demanding process conditions.', img: us('1794097546231-2011af367c5c', 900), products: ['sterile-seals', 'agitator-seals', 'cartridge-seals', 'splitted-seals', 'stationary-seals'] },
+  { id: 'general', label: 'General Industrial', text: 'Versatile sealing solutions for a wide range of industrial equipment.', img: us('1566221857770-508d35ee6220', 900), products: ['elastomer-bellows', 'externally-mounted', 'radial-shaft-seals', 'custom-seals', 'seal-faces', 'metallic-rings-carbon-segments', 'defense-applications', 'rotary-unions'] },
+]
+
+// Equipment each family is used on (from product descriptions)
+export const equipment = {
+  'cartridge-seals': ['Pumps'], 'metal-bellows': ['Pumps', 'Compressors'], 'splitted-seals': ['Pumps', 'Agitators'],
+  'agitator-seals': ['Agitators'], 'elastomer-bellows': ['Pumps'], 'high-pressure': ['Pumps', 'Compressors'],
+  'stationary-seals': ['Pumps'], 'sterile-seals': ['Pumps', 'Agitators'], 'custom-seals': ['Other'],
+  'externally-mounted': ['Pumps'], 'radial-shaft-seals': ['Other'], 'wp11-water-pump': ['Pumps'],
+  'rotary-unions': ['Other'], 'seal-faces': ['Other'], 'defense-applications': ['Other'], 'metallic-rings-carbon-segments': ['Other'],
+}
+export const faceMaterials = ['Carbon', 'Silicon Carbide', 'Tungsten Carbide', 'Ceramic']

@@ -8,6 +8,8 @@ import ProductDetail from './pages/ProductDetail'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Impressum from './pages/Impressum'
+import Applications from './pages/Applications'
+import Technology from './pages/Technology'
 
 function ScrollTop() {
   const { pathname } = useLocation()
@@ -27,6 +29,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:slug" element={<ProductDetail />} />
+          <Route path="/applications" element={<Applications />} />
+          <Route path="/technology" element={<Technology />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
