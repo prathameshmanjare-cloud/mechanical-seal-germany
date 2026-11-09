@@ -12,7 +12,7 @@ import { CountUp, reducedMotion, spotlight, useReveal, useScrollProgress, useTil
 const typeTotal = Math.floor(searchIndex.filter((r) => !r.isFamily).length / 10) * 10
 
 const range = [
-  { slug: 'cartridge-seals', img: '/img/cut/range-cartridge.webp', title: 'Cartridge Seals', text: 'Pre-assembled, error-free installation.' },
+  { slug: 'cartridge-seals', img: '/img/cut/range-cartridge.webp', title: 'Cartridge Seals', text: 'Pre-assembled, error-free\u00a0installation.' },
   { slug: 'metal-bellows', img: '/img/cut/range-metal.webp', title: 'Metal Bellows Seals', text: 'High temperature, up to 450 °C.' },
   { slug: 'elastomer-bellows', img: '/img/cut/range-elastomer.webp', title: 'Elastomer Bellows', text: 'Flexible and cost-effective.' },
   { slug: 'custom-seals', img: '/img/cut/range-special.webp', title: 'Special Seals', text: 'Custom-engineered to your drawing.' },

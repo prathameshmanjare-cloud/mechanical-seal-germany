@@ -99,7 +99,11 @@ export default function Header() {
   const hoverOpen = (label) => {
     if (!canHover()) return
     clearTimeout(hoverTimer.current)
-    hoverTimer.current = setTimeout(() => setMenu(label), 90)
+    hoverTimer.current = setTimeout(() => {
+      const el = document.activeElement
+      if (el?.classList.contains('dd__btn') && el.textContent.trim() !== label) el.blur()
+      setMenu(label)
+    }, 90)
   }
   const hoverClose = () => {
     if (!canHover()) return
