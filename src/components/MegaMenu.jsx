@@ -19,7 +19,7 @@ const featured = ['cartridge-seals', 'metal-bellows', 'splitted-seals', 'agitato
 const appIcons = { chemical: FlaskConical, 'oil-gas': Flame, water: Droplets, power: Zap, process: Factory, general: Wrench }
 const SEAL = '/img/cut/range-cartridge.webp'
 const chipIcon = (t) => (/°C/.test(t) ? Thermometer : /bar/.test(t) ? Gauge : CheckCircle2)
-const accents = ['#1677ff', '#0ea5e9', '#6366f1', '#14b8a6', '#f59e0b']
+const accents = ['#1677ff']
 const tel = (n) => `tel:${n.replace(/\s/g, '')}`
 
 /* Each menu: side list of groups; hovering a group swaps the card grid. */
@@ -70,9 +70,9 @@ export const megaMenus = {
         id: 'quote', label: 'Request a Quote', to: '/contact', icon: MessageSquareQuote, heading: 'Get a Quote',
         cards: [
           { to: '/contact', title: 'Request a Quote', sub: 'Reply within 24 hours', text: 'Send your seal type, drawing or operating data and get a tailored offer from our engineers.', tag: 'Start request', icon: MessageSquareQuote, bg: '/img/quote-bg.webp' },
-          { href: tel(company.phone), title: 'Call Sales', sub: company.phone, tag: 'Call now', icon: Phone, accent: '#0ea5e9' },
-          { href: `mailto:${company.email}`, title: 'Email Us', sub: company.email, tag: 'Send email', icon: Mail, accent: '#6366f1' },
-          { to: '/products/custom-seals', title: 'Custom Seal Inquiry', sub: 'Built to your drawing', tag: 'Start inquiry', icon: Settings2, accent: '#14b8a6' },
+          { href: tel(company.phone), title: 'Call Sales', sub: company.phone, tag: 'Call now', icon: Phone },
+          { href: `mailto:${company.email}`, title: 'Email Us', sub: company.email, tag: 'Send email', icon: Mail },
+          { to: '/products/custom-seals', title: 'Custom Seal Inquiry', sub: 'Built to your drawing', tag: 'Start inquiry', icon: Settings2 },
         ],
       },
       {
@@ -83,9 +83,9 @@ export const megaMenus = {
         id: 'tech', label: 'Technical Support', to: '/contact', icon: Headphones, heading: 'Technical Support',
         cards: [
           { to: '/contact', title: 'Talk to an Engineer', sub: 'Selection & troubleshooting', text: 'Get help choosing materials, solving leakage problems or replacing a seal from another brand.', tag: 'Contact engineer', icon: Headphones },
-          { to: '/technology', title: 'Technology & Materials', sub: 'Faces, elastomers, design', tag: 'Explore', icon: Cpu, accent: '#0ea5e9' },
-          { to: '/applications', title: 'Application Guide', sub: 'Seals by industry', tag: 'Browse', icon: Factory, accent: '#6366f1' },
-          { href: tel(company.mobile), title: 'Mobile Hotline', sub: company.mobile, tag: 'Call now', icon: Phone, accent: '#14b8a6' },
+          { to: '/technology', title: 'Technology & Materials', sub: 'Faces, elastomers, design', tag: 'Explore', icon: Cpu },
+          { to: '/applications', title: 'Application Guide', sub: 'Seals by industry', tag: 'Browse', icon: Factory },
+          { href: tel(company.mobile), title: 'Mobile Hotline', sub: company.mobile, tag: 'Call now', icon: Phone },
         ],
       },
     ],
@@ -102,27 +102,27 @@ export const megaMenus = {
       {
         id: 'about', label: 'About Us', to: '/about', icon: Info, heading: 'Who We Are',
         cards: [
-          { to: '/about', title: 'About Us', sub: `German specialist since ${company.since}`, text: 'Mechanical seal specialists designing and supplying seals for pumps, agitators and special equipment.', tag: 'Our story', icon: Users },
-          { to: '/technology', title: 'Our Technology', sub: 'Precision design & materials', tag: 'Explore', icon: Cpu, accent: '#0ea5e9' },
-          { to: '/applications', title: 'Industries We Serve', sub: 'From chemical to power', tag: 'Browse', icon: Globe2, accent: '#6366f1' },
-          { to: '/products', title: 'Product Range', sub: 'Full mechanical seal portfolio', tag: 'View range', icon: Boxes, accent: '#14b8a6' },
+          { to: '/about', title: 'About Us', sub: `German specialist since ${company.since}`, text: 'Mechanical seal specialists designing and supplying seals for pumps, agitators and special equipment.', tag: 'Our story', icon: Users, bg: '/img/about-bg.jpg' },
+          { to: '/technology', title: 'Our Technology', sub: 'Precision design & materials', tag: 'Explore', icon: Cpu },
+          { to: '/applications', title: 'Industries We Serve', sub: 'From chemical to power', tag: 'Browse', icon: Globe2 },
+          { to: '/products', title: 'Product Range', sub: 'Full mechanical seal portfolio', tag: 'View range', icon: Boxes },
         ],
       },
       {
         id: 'contact', label: 'Contact', to: '/contact', icon: MapPin, heading: 'Get in Touch',
         cards: [
           { to: '/contact', title: 'Visit Us', sub: `${company.street}, ${company.city}`, text: `${company.operator}, ${company.street}, ${company.city}, ${company.country}.`, tag: 'Get directions', icon: MapPin },
-          { href: tel(company.phone), title: 'Phone', sub: company.phone, tag: 'Call now', icon: Phone, accent: '#0ea5e9' },
-          { href: `mailto:${company.email}`, title: 'Email', sub: company.email, tag: 'Send email', icon: Mail, accent: '#6366f1' },
-          { to: '/contact', title: 'Contact Form', sub: 'Reply within 24 hours', tag: 'Open form', icon: MessageSquareQuote, accent: '#14b8a6' },
+          { href: tel(company.phone), title: 'Phone', sub: company.phone, tag: 'Call now', icon: Phone },
+          { href: `mailto:${company.email}`, title: 'Email', sub: company.email, tag: 'Send email', icon: Mail },
+          { to: '/contact', title: 'Contact Form', sub: 'Reply within 24 hours', tag: 'Open form', icon: MessageSquareQuote },
         ],
       },
       {
         id: 'legal', label: 'Legal', to: '/impressum', icon: Scale, heading: 'Legal Information',
         cards: [
           { to: '/impressum', title: 'Imprint', sub: company.operator, text: `Company details, management and registration of ${company.operator}.`, tag: 'Read imprint', icon: Scale },
-          { to: '/impressum', title: 'Privacy', sub: 'Data protection notice', tag: 'Read', icon: ShieldCheck, accent: '#0ea5e9' },
-          { to: '/impressum', title: 'Company Register', sub: `${legal.register} · VAT ${legal.vat}`, tag: 'Details', icon: FileText, accent: '#6366f1' },
+          { to: '/impressum', title: 'Privacy', sub: 'Data protection notice', tag: 'Read', icon: ShieldCheck },
+          { to: '/impressum', title: 'Company Register', sub: `${legal.register} · VAT ${legal.vat}`, tag: 'Details', icon: FileText },
         ],
       },
     ],

@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  ArrowRight, Settings2, Layers, ShieldCheck, FileText, Send, Wrench, Megaphone,
-  Timer, BarChart3, BadgeCheck, Globe, Crosshair, Zap, Headphones,
+  ArrowRight, Settings2, Layers, ShieldCheck, FileText, Megaphone,
+  Timer, BarChart3, BadgeCheck, Globe, Crosshair, Zap, Headphones, Settings, Truck,
 } from 'lucide-react'
 import HeroSearch from '../components/HeroSearch'
 import { applications, notice, photos, searchIndex } from '../data'
@@ -377,38 +377,40 @@ export default function Home() {
 
       <Precision />
 
-      {/* How to order */}
-      <section className="section section--tint">
-        <div className="container">
-          <div className="section__head">
+      {/* How to order + CTA */}
+      <section className="order">
+        <div className="order__bg" aria-hidden="true" />
+        <div className="container order__inner">
+          <div className="order__head">
             <span className="kicker" data-reveal>How to order</span>
-            <h2 data-reveal>From type number to delivery</h2>
+            <h2 data-reveal>From Type Number to Delivery</h2>
+            <p data-reveal>A simple and fast process to get the right mechanical seal for your application.</p>
           </div>
-          <div className="steps" data-stagger>
+
+          <ol className="order__steps" data-stagger>
             {[
-              [FileText, 'Send your data', 'OEM part number, drawing or operating conditions.'],
-              [Wrench, 'We engineer & match', 'Our team selects or designs the right seal.'],
-              [Send, 'Quote in 24 h', 'Clear offer, then fast delivery across Europe.'],
+              [FileText, 'Send Your Data', 'Share the OEM part number, drawing or operating conditions.'],
+              [Settings, 'We Engineer & Match', 'Our team selects or designs the right seal for your application.'],
+              [Truck, 'Quote in 24 h', 'Get a clear offer with fast and reliable delivery across Europe.'],
             ].map(([Icon, t, d], i) => (
-              <div key={t} className="step" data-reveal>
-                <span className="step__n">0{i + 1}</span>
-                <Icon size={20} />
+              <li key={t} className="ostep" data-reveal>
+                {i > 0 && <span className="ostep__link" aria-hidden="true"><ArrowRight size={16} strokeWidth={2.4} /></span>}
+                <span className="ostep__icon"><Icon size={42} strokeWidth={1.5} /></span>
+                <span className="ostep__n">0{i + 1}</span>
                 <h3>{t}</h3>
                 <p>{d}</p>
-              </div>
+              </li>
             ))}
-          </div>
-        </div>
-      </section>
+          </ol>
 
-      {/* CTA */}
-      <section className="container">
-        <div className="cta" data-reveal>
-          <div>
-            <h2>Need a seal that does not fail?</h2>
-            <p>Send us your requirements. We reply with a quotation within 24 hours.</p>
+          <div className="oband" data-reveal>
+            <span className="oband__icon"><ShieldCheck size={40} strokeWidth={1.6} /></span>
+            <div className="oband__copy">
+              <h2>Need a Seal That Does Not Fail?</h2>
+              <p>Send us your requirements. We reply with a tailored quotation within 24 hours.</p>
+            </div>
+            <Link to="/contact" className="btn btn--white oband__btn">Request a Quote <ArrowRight size={18} /></Link>
           </div>
-          <Link to="/contact" className="btn btn--white">Request a Quote <ArrowRight size={16} /></Link>
         </div>
       </section>
     </div>
