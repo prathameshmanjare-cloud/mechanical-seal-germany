@@ -126,8 +126,8 @@ const api = async (handler, query) => (await handler(new Request(`http://qa/api?
   const files = ['src/components/PageHero.jsx', 'src/components/cms/ListingTemplate.jsx', 'src/pages/ProductPage.jsx', 'src/components/cms/HomeTemplate.jsx', 'src/components/MegaMenu.jsx']
   const missing = files.filter((f) => !/Representative/i.test(fs.readFileSync(path.join(ROOT, f), 'utf8')))
   const imgs = fs.readdirSync(path.join(ROOT, 'public/img'))
-  check(9, 'Category images labelled as representative', missing.length === 0 && imgs.length === 1 && imgs[0] === 'category',
-    `${files.length - missing.length}/${files.length} image-rendering components carry the disclosure${missing.length ? ` (missing: ${missing.join(', ')})` : ''}; public/img holds only the package's category artwork`)
+  check(9, 'Category images labelled as representative', missing.length === 0 && imgs.every((d) => ['category', 'home'].includes(d)),
+    `${files.length - missing.length}/${files.length} image-rendering components carry the disclosure${missing.length ? ` (missing: ${missing.join(', ')})` : ''}; public/img holds only the package's category artwork and the labelled Home hero`)
 }
 
 // 10. Paging and multi-filter queries perform on 38,881 articles.
