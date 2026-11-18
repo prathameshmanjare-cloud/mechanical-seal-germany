@@ -93,7 +93,48 @@ function parsePageText(raw, title) {
     } else cur.blocks.push({ p: b })
   }
   if (cur.h || cur.blocks.length) sections.push(cur)
-  return { seoTitle: meta['SEO-TITEL'], metaDescription: meta['META-BESCHREIBUNG'], sections }
+  return { seoTitle: meta['SEO-TITEL'], metaDescription: meta['META-BESCHREIBUNG'], sections: classify(sections) }
+}
+
+// Word-export casing artefacts in headings.
+const fixCase = (s) => s.replace(/\bSap Parts\b/g, 'SAP Parts').replace(/^Vat\b/, 'VAT')
+
+// Assigns a render "kind" to each section:
+//   intro     — opening paragraph, shown as the page lead
+//   group     — label with no body that introduces the following sections
+//   checklist — "information we need" list, split from a "…: a; b; c." sentence
+//   cta       — closing engineering enquiry call to action
+function classify(sections) {
+  for (const s of sections) if (s.h) s.h = fixCase(s.h)
+
+  // Two bodiless headings in a row: the second is really a value line (e.g. names under "Managing Directors").
+  for (let i = 0; i < sections.length - 1; i++) {
+    const a = sections[i]
+    const b = sections[i + 1]
+    if (!a.blocks.length && !b.blocks.length) {
+      a.blocks.push({ p: b.h })
+      sections.splice(i + 1, 1)
+    }
+  }
+
+  return sections.map((s, i) => {
+    const out = { ...s }
+    if (i === 0 && (!s.h || /^technical introduction$/i.test(s.h))) {
+      out.kind = 'intro'
+      out.h = null
+    } else if (!s.blocks.length) out.kind = 'group'
+    else if (/^engineering enquiry$/i.test(s.h)) out.kind = 'cta'
+    else if (/^technical information we need$/i.test(s.h)) {
+      out.kind = 'checklist'
+      out.blocks = s.blocks.flatMap((b) => {
+        const m = b.p && b.p.match(/^(.*?:)\s*(.+)$/)
+        if (!m || !m[2].includes(';')) return [b]
+        const items = m[2].replace(/\.$/, '').split(/;\s*/).map((x) => x.charAt(0).toUpperCase() + x.slice(1))
+        return [{ p: m[1] }, { ul: items }]
+      })
+    }
+    return out
+  })
 }
 
 // ---------- Material normalisation (per 04_Anleitung) ----------

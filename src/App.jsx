@@ -6,7 +6,6 @@ import Home from './pages/Home'
 import Products from './pages/Products'
 import ProductDetail from './pages/ProductDetail'
 import About from './pages/About'
-import Contact from './pages/Contact'
 import Impressum from './pages/Impressum'
 import Applications from './pages/Applications'
 import Technology from './pages/Technology'
@@ -15,7 +14,7 @@ import NotFound from './pages/NotFound'
 import { pages } from './lib/site'
 
 // Routes still served by the legacy pages until their phase-2 templates exist.
-const LEGACY = new Set(['/', '/contact/'])
+const LEGACY = new Set(['/'])
 const cmsRoutes = pages.filter((p) => !LEGACY.has(p.url))
 
 function ScrollTop() {
@@ -39,7 +38,6 @@ export default function App() {
           <Route path="/applications" element={<Applications />} />
           <Route path="/technology" element={<Technology />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
           {cmsRoutes.map((p) => (
             <Route key={p.id} path={p.url} element={<CmsPage key={p.id} id={p.id} />} />
