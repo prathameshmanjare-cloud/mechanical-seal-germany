@@ -88,10 +88,6 @@ export default function HomeTemplate({ page, content }) {
       )}
 
       <section className="fams" aria-labelledby="fams-title">
-        <svg className="fams__art" viewBox="0 0 400 400" aria-hidden="true">
-          {[180, 150, 120, 90].map((r) => <circle key={r} cx="200" cy="200" r={r} />)}
-          {[170, 140, 110].map((r) => <ellipse key={r} cx="230" cy="200" rx={r * 0.55} ry={r} />)}
-        </svg>
         <div className="container">
           <div className="fams__head">
             <div>

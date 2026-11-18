@@ -404,14 +404,14 @@ h3.rt__h { font-size: 18.5px; }
    placed so the seal (centred at 55.5% of the 3:1 image) lands in the middle column, whose centre sits at
    50vw + (intro - card) / 2. Left and right fills continue the artwork's edge gradients on very wide screens. */
 .home__hero {
-  --hh: 540px; --intro: 540px; --card: 380px; --gap: 40px;
+  --hh: 540px; --intro: 540px; --card: 0px; --gap: 40px;
   position: relative; overflow: hidden; color: var(--text);
   background:
     url('/img/home/hero.webp') calc(50vw + (var(--intro) - var(--card)) / 2 - var(--hh) * 1.665) 0 / auto var(--hh) no-repeat,
     linear-gradient(180deg, #01427f 0%, #0a62af 50%, #53a3e5 100%) right top / 50% 100% no-repeat,
     linear-gradient(180deg, #f8f9fd 0%, #e1effc 50%, #d1e7fd 100%);
 }
-.home__inner { position: relative; display: grid; grid-template-columns: var(--intro) minmax(0, 1fr) var(--card); gap: var(--gap); align-items: center; height: var(--hh); max-width: 1360px; }
+.home__inner { position: relative; display: grid; grid-template-columns: var(--intro) minmax(0, 1fr); gap: var(--gap); align-items: center; height: var(--hh); max-width: 1360px; padding-bottom: 48px; }
 .home__eyebrow { display: flex; align-items: center; gap: 14px; font-size: 14px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--brand); }
 .home__eyebrow::after { content: ''; width: 72px; height: 2px; background: var(--brand); border-radius: 2px; }
 .home__title { margin-top: 18px; font-size: clamp(40px, 4vw, 58px); font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; color: var(--ink); }
@@ -425,18 +425,19 @@ h3.rt__h { font-size: 18.5px; }
 .home__facts svg { flex: none; color: var(--brand); }
 .home__facts span { display: flex; flex-direction: column; font-size: 14.5px; line-height: 1.3; color: #3c4a60; }
 .home__facts strong { font-size: 18px; color: var(--ink); font-variant-numeric: tabular-nums; }
-.home__finders { display: grid; gap: 10px; padding: 24px; background: rgba(240,247,255,.72); border: 1px solid rgba(255,255,255,.7); border-radius: 16px; box-shadow: 0 20px 50px rgba(1,40,90,.22); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
-.home__finders-title { margin-bottom: 6px; font-size: 14px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--navy); }
-.home__finder { display: flex; align-items: center; gap: 14px; padding: 15px 18px; background: rgba(255,255,255,.88); border: 1px solid rgba(255,255,255,.9); border-radius: 10px; font-size: 16px; font-weight: 600; color: var(--ink); transition: background .15s, box-shadow .15s, transform .15s; }
+/* Horizontal finder bar floating over the bottom edge of the hero. */
+.home__finders-wrap { position: relative; z-index: 2; max-width: 1360px; margin-top: -52px; margin-bottom: -52px; }
+.home__finders-wrap + .fams { padding-top: 116px; }
+.home__finders { display: flex; align-items: center; gap: 12px; padding: 18px 20px; background: rgba(240,247,255,.72); border: 1px solid rgba(255,255,255,.7); border-radius: 16px; box-shadow: 0 20px 50px rgba(1,40,90,.22); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.home__finders-title { flex: none; padding: 0 8px 0 4px; font-size: 14px; white-space: nowrap; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--navy); }
+.home__finder { flex: 1 1 0; min-width: 0; display: flex; align-items: center; gap: 14px; padding: 15px 18px; background: rgba(255,255,255,.88); border: 1px solid rgba(255,255,255,.9); border-radius: 10px; font-size: 16px; font-weight: 600; color: var(--ink); transition: background .15s, box-shadow .15s, transform .15s; }
 .home__finder:hover { background: #fff; box-shadow: 0 6px 16px rgba(11,31,58,.12); transform: translateY(-1px); }
 .home__finder span { flex: 1; }
 .home__finder svg:first-child { color: var(--brand); }
 .home__finder svg:last-child { color: var(--navy); }
-.home__hero-note { position: absolute; right: 16px; bottom: 10px; font-size: 11.5px; color: rgba(255,255,255,.85); }
+.home__hero-note { position: absolute; right: 16px; bottom: 60px; font-size: 11.5px; color: rgba(255,255,255,.85); }
 /* Shop by seal family */
-.fams { position: relative; overflow: hidden; padding: 64px 0 56px; background: radial-gradient(900px 420px at 85% 0%, #e3eefc 0%, transparent 70%), linear-gradient(180deg, #f7faff 0%, #f1f6fd 100%); }
-.fams__art { position: absolute; top: -60px; right: 40px; width: 320px; height: 320px; pointer-events: none; }
-.fams__art circle, .fams__art ellipse { fill: none; stroke: #b9d0ee; stroke-width: 1; opacity: .55; }
+.fams { position: relative; overflow: hidden; padding: 64px 0 56px; background: #eef4fd url('/img/home/families-bg.webp') center / cover no-repeat; }
 .fams .container { position: relative; max-width: 1360px; }
 .fams__head { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; margin-bottom: 36px; }
 .fams__eyebrow { display: flex; align-items: center; gap: 14px; font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--navy-2); }
@@ -533,19 +534,19 @@ h3.rt__h { font-size: 18.5px; }
   .mobile-nav > .btn { margin-top: 16px; }
 }
 @media (max-width: 1499px) {
-  .home__hero { --hh: 500px; --intro: 520px; --card: 330px; --gap: 28px; }
+  .home__hero { --hh: 500px; --intro: 520px; --gap: 28px; }
   .home__title { font-size: 48px; }
   .home__lead { font-size: 17px; }
   .home__facts { flex-wrap: nowrap; }
   .home__facts li { gap: 10px; padding: 0 14px; }
   .home__facts span { font-size: 13.5px; white-space: nowrap; }
   .home__facts strong { font-size: 17px; }
-  .home__finders { padding: 20px; }
+  .home__finders { padding: 16px 18px; }
   .home__finder { padding: 13px 16px; font-size: 15px; }
 }
 /* Compact three-column hero for small laptops. */
 @media (max-width: 1359px) {
-  .home__hero { --hh: 450px; --intro: 450px; --card: 300px; --gap: 20px; }
+  .home__hero { --hh: 450px; --intro: 450px; --gap: 20px; }
   .home__eyebrow { font-size: 12.5px; }
   .home__title { margin-top: 12px; font-size: 40px; }
   .home__lead { margin-top: 12px; font-size: 16px; }
@@ -556,7 +557,7 @@ h3.rt__h { font-size: 18.5px; }
   .home__facts svg { width: 22px; height: 22px; }
   .home__facts span { font-size: 12.5px; }
   .home__facts strong { font-size: 15.5px; }
-  .home__finders { gap: 8px; padding: 16px; }
+  .home__finders { gap: 8px; padding: 14px 16px; }
   .home__finders-title { font-size: 12.5px; }
   .home__finder { gap: 10px; padding: 11px 14px; font-size: 14.5px; }
 }
@@ -566,10 +567,12 @@ h3.rt__h { font-size: 18.5px; }
   .home__hero .home__inner { grid-template-columns: minmax(0, 1fr); height: auto; gap: 28px; padding-top: 48px; padding-bottom: calc(var(--banner) + 8px); }
   .home__art { display: none; }
   .home__intro { max-width: 640px; }
-  .home__finders { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 760px; background: rgba(255,255,255,.7); box-shadow: 0 10px 30px rgba(11,31,58,.10); }
-  .home__finders-title { grid-column: 1 / -1; }
+  .home__finders { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .home__finders-title { grid-column: 1 / -1; padding: 0 2px; }
+  .home__hero-note { display: none; }
 }
 @media (max-width: 1080px) {
+  .home__finders { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .split, .cms__grid, .cms__grid:has(.cquote), .pdp__top, .pdp__body { grid-template-columns: 1fr; gap: 32px; }
   .split__aside, .cms__side, .pdp__aside { position: static; }
   .fams__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -605,8 +608,7 @@ h3.rt__h { font-size: 18.5px; }
   .exact { flex-direction: column; align-items: flex-start; }
   .pspec dl div { grid-template-columns: 1fr; gap: 2px; }
   .cquote .quote__row { grid-template-columns: 1fr; }
-  .fams { padding: 44px 0 40px; }
-  .fams__art { display: none; }
+  .fams { padding: 44px 0 40px; background-image: url('/img/home/families-bg-sm.webp'); background-position: 70% center; }
   .fams__grid { gap: 12px; }
   .fams__lead { font-size: 15.5px; }
   .fams__stats { width: 100%; border-radius: var(--radius-lg); padding: 12px 4px; }
