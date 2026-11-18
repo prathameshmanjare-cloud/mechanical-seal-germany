@@ -1,0 +1,73 @@
+SEITEN-ID: P093
+SEITENTITEL: Industrial Compressors
+URL: /applications/compressors-refrigeration/industrial-compressors/
+SEITENTYP: listing
+BREADCRUMB: Applications > Compressors & Refrigeration > Industrial Compressors
+
+SEO-TITEL
+Industrial Compressors | SAP Parts
+
+META-BESCHREIBUNG
+Industrial Compressors | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Industrial Compressors
+
+Technical introduction
+
+Industrial compressor shaft sealing depends on the compressed gas, pressure regime, speed and lubrication system. Some services require specialised dry gas technology rather than standard liquid-lubricated seals.
+
+Selection and engineering checks
+
+A correct replacement needs more than a similar picture. Confirm the dimensions, construction and material version.
+
+• Gas and lubricant chemistry.
+
+• Speed. Calculate relevant sliding speed and review starts and stops.
+
+• Temperature. Check continuous and start-up temperatures at the sealing interface.
+
+• Pressure profile. Use the actual pressure at the seal chamber and note transients.
+
+• Seal support.
+
+• Equipment design.
+
+Common failure mechanism
+
+Do not offer a liquid-pump mechanical seal as a direct gas seal replacement without engineering validation.
+
+Technical Selection
+
+A mechanical seal works as part of the complete machine. The liquid, contact pressure, shaft movement and heat removal all affect the selection. Choose a verified catalog product or send the technical details for review.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Identification and replacement support
+
+Cannot find the exact part? Send the OEM number, dimensions or a drawing. Our team can review the possible replacement before you order.
+
+Engineering detail — how we solve the problem
+
+Compressor-specific operating conditions
+
+Check whether the process interface is gas-, oil- or refrigerant-wetted, and identify changes at start-up and standstill. Pressure reversals, temperature swings and shaft dynamics affect seal design. Requirements should be defined from the actual machine and service.
+
+Gas sealing and leakage control
+
+Gas applications require an arrangement designed for the relevant leakage and lubrication regime. Do not transfer assumptions from a conventional liquid-lubricated seal. Specify gas composition, pressure variation, cleanliness, temperature, speed and safety requirements.
+
+Secondary seal material selection
+
+Check chemical compatibility against the complete fluid mixture, cleaning agents, exposure time and operating temperature. Consider swelling, compression set, extrusion gaps and dynamic movement where applicable. The polymer name by itself does not define the performance of the finished compound.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

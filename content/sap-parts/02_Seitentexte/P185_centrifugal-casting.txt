@@ -1,0 +1,77 @@
+SEITEN-ID: P185
+SEITENTITEL: Centrifugal Casting
+URL: /about-us/manufacturing-capabilities/centrifugal-casting/
+SEITENTYP: information
+BREADCRUMB: About Us > Manufacturing Capabilities > Centrifugal Casting
+
+SEO-TITEL
+Centrifugal Casting | SAP Parts
+
+META-BESCHREIBUNG
+Centrifugal Casting | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Centrifugal Casting
+
+Technical introduction
+
+Our centrifugal casting capability supports the production of suitable cast components and material grades for industrial sealing applications. Centrifugal forces influence melt distribution during casting.
+
+Technical Overview
+
+Our centrifugal casting capability supports the production of suitable cast components and material grades for industrial sealing applications. Centrifugal forces influence melt distribution during casting.
+
+Selection and engineering checks
+
+The following points help define the correct sealing solution and its limits.
+
+• Alloy specification.
+
+• Casting route.
+
+• Heat treatment.
+
+• Blank geometry.
+
+• Machining allowance.
+
+• Inspection.
+
+Common Risks
+
+A good material can still fail when the design or operating conditions are wrong. Cast condition is not a substitute for validated final face properties and dimensional inspection.
+
+Engineering approach
+
+SAP Parts reviews the operating duty, checks the available dimensions and material options, and identifies the information needed before a qualified solution can be proposed. The aim is reliable operation with a practical total cost.
+
+Sap Parts Engineering
+
+Our integrated process supports early material and cost decisions.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Manufacturing tolerances and functional faces
+
+Process planning must link the turning, grinding and lapping stages to the finished seal geometry. Flatness, squareness, concentricity, roughness and dimensional control matter differently at different interfaces. Establish measurement methods and lot traceability for critical dimensions.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+Define the relevant specification, controlled drawing revision, selected materials, required checks and acceptance criteria. A manufacturing or quality capability is not a product certification.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

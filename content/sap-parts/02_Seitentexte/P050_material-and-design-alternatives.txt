@@ -1,0 +1,79 @@
+SEITEN-ID: P050
+SEITENTITEL: Material and Design Alternatives
+URL: /oem-replacement/replacement-information/material-and-design-alternatives/
+SEITENTYP: information
+BREADCRUMB: OEM Replacement > Replacement Information > Material and Design Alternatives
+
+SEO-TITEL
+Material and Design Alternatives | SAP Parts
+
+META-BESCHREIBUNG
+Material and Design Alternatives | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Material and Design Alternatives
+
+Technical introduction
+
+A replacement can be used as an opportunity to improve corrosion resistance, abrasion performance, service life or manufacturing cost. It is not automatically identical to the OEM construction.
+
+Technical Overview
+
+A replacement can be used as an opportunity to improve corrosion resistance, abrasion performance, service life or manufacturing cost. It is not automatically identical to the OEM construction.
+
+Selection and engineering checks
+
+The following points help define the correct sealing solution and its limits.
+
+• Original failure mode.
+
+• Operating pressure. Use the actual pressure at the seal chamber and note transients.
+
+• Medium. State the full medium composition, including particles and cleaning fluids.
+
+• Speed. Calculate relevant sliding speed and review starts and stops.
+
+• Replacement material. Specify the grade and pairing rather than a broad material family.
+
+• Qualification tests.
+
+• Price and lifecycle cost.
+
+Common Risks
+
+A good material can still fail when the design or operating conditions are wrong. The alternative must be clearly marked as an engineered option subject to confirmation.
+
+Engineering approach
+
+SAP Parts reviews the operating duty, checks the available dimensions and material options, and identifies the information needed before a qualified solution can be proposed. The aim is reliable operation with a practical total cost.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Replacement verification workflow
+
+An OEM number is an identification starting point, not automatic proof of interchangeability. Verify equipment variant, revision, shaft and housing geometry, seat, face materials, elastomers, operating conditions and available space. Only publish cross-references supported by verified product records.
+
+Stationary interface and seating geometry
+
+Confirm seat outside diameter, axial thickness, installation depth, anti-rotation method, elastomer seat and housing tolerance. The counterface must remain square to the shaft and must not be distorted by uneven mounting force. A visually similar ring can have a different functional geometry.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

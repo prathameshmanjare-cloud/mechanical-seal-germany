@@ -1,0 +1,79 @@
+SEITEN-ID: P152
+SEITENTITEL: Hydraulic Balance
+URL: /technology/mechanical-seal-knowledge-base/hydraulic-balance/
+SEITENTYP: information
+BREADCRUMB: Technology > Mechanical Seal Knowledge Base > Hydraulic Balance
+
+SEO-TITEL
+Hydraulic Balance | SAP Parts
+
+META-BESCHREIBUNG
+Hydraulic Balance | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Hydraulic Balance
+
+Technical introduction
+
+Hydraulic balance reduces the area on which sealed pressure creates closing force. It is a design method for controlling face loading at pressure.
+
+Technical Principle
+
+A hydraulic balance design changes the pressure-loaded area of a seal face. The balance ratio is the hydraulically loaded area divided by the sliding face area. Lowering the hydraulic closing area can reduce the pressure-related face load.
+
+Materials And Design
+
+This can help maintain lubrication under higher pressure or higher speed. It can also reduce frictional heating. However, reducing closing load too far may increase leakage or face separation. The right balance ratio depends on the entire pressure and speed range, including start-up and possible pressure reversals.
+
+Engineering Conditions
+
+The engineer must know the actual seal chamber pressure. Pump discharge pressure alone is not always the pressure acting at the seal. Face widths, balance diameters and shaft or sleeve geometry are part of the calculation.
+
+Reliability And Cost
+
+A balanced design does not replace good lubrication, correct surface finish or suitable materials. Every design has defined operating limits that must be verified.
+
+Selection and engineering checks
+
+• Loaded area.
+
+• Sliding face area.
+
+• Balance ratio k = Ah/As.
+
+• Pressure. Use the actual pressure at the seal chamber and note transients.
+
+• Seal size.
+
+• Leakage margin.
+
+Sap Parts Engineering
+
+Hydraulic balance can reduce wear when confirmed with the complete operating envelope.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Hydraulic loading and pressure transients
+
+Use the pressure at the seal chamber, including start-up, shutdown, pressure reversal and pulsation—not simply the maximum rated pump pressure. Face balance ratio and support-system pressure affect frictional loading and leakage. Pressure protection or alternative seal chamber geometry requires engineering verification.
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Axial loading and installation
+
+The spring acts together with hydraulic pressure on the effective seal area. Check its working compression at the specified installation length; excessive compression can increase heat generation, whereas insufficient closing force can compromise face tracking. Direction-sensitive coil springs also require a verified rotation direction.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

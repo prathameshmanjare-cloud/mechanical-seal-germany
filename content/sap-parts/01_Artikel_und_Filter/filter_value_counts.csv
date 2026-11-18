@@ -1,0 +1,905 @@
+﻿attribute_id,raw_value,article_count
+application,Pump,6024
+application,Pump / industrial equipment,5792
+application,Industrial pumps,5484
+application,Industrial and process pumps,3244
+application,Industrial and water pumps,2824
+application,Hygienic Pump,2495
+application,Industrial process pumps / equipment,2300
+application,Pump / mixer,2000
+application,Stationary seats and mating rings,1498
+application,Standard pump mechanical seals,1424
+application,Chemical and industrial pumps,444
+application,Water / process pump,344
+application,Wastewater / submersible pump,312
+application,Hygienic pump seal,312
+application,Submersible / wastewater pump,224
+application,Agitators / Mixing,208
+application,Water pumps,184
+application,Andritz ACP centrifugal pumps,170
+application,General industrial sealing,144
+application,Industrial Pumps,128
+application,Shaft fixing components,128
+application,Industrial / Water / Chemical Pumps,116
+application,Water / General Pumps,116
+application,Industrial pumps / process applications,100
+application,Industrial equipment,96
+application,Industrial pumps; packing conversion,92
+application,Chemical / Water Pumps,88
+application,Submersible pump,88
+application,Refrigeration Compressor,87
+application,ABS pumps,76
+application,Grundfos / Hilge pumps,68
+application,Fristam pumps,68
+application,Industrial sealing,59
+application,Ebara pumps,40
+application,Alfa Laval pumps,40
+application,Johnson pumps,40
+application,Short-build mechanical seals / general pump applications,36
+application,Process pumps,36
+application,APV pumps,36
+application,Industrial pump / seal cartridge,35
+application,CSF Inox pumps,28
+application,Industrial process equipment,25
+application,Hygienic pump,23
+application,Pump / agitator,23
+application,Industrial pump,21
+application,Flygt / Grindex pumps,20
+application,GEA / Tuchenhagen pumps,20
+application,WEMCO / Hidrostal pumps,16
+application,INOXPA pumps,16
+application,Godwin pumps,12
+application,Industrial mixing and pumps,11
+application,Process / hygienic pump,8
+application,Agitator,8
+application,Armatec Equipment,4
+application,Hygienic / Sterile,4
+application,Sterile / hygienic process equipment; Miccra (drawing filename only),4
+application,Sterile / hygienic process equipment,4
+application,Refrigeration System Pump / Compressor Equipment,2
+balanced_design,Double hydraulically balanced,100
+balanced_design,Unbalanced,36
+equipment_manufacturer,Alfa Laval,2557
+equipment_manufacturer,Flygt,312
+equipment_manufacturer,Flygt / Grindex,312
+equipment_manufacturer,INOXPA,100
+equipment_manufacturer,Andritz,74
+equipment_manufacturer,Hilge,68
+equipment_manufacturer,APV,37
+equipment_manufacturer,Fristam,33
+equipment_manufacturer,Johnson,32
+equipment_manufacturer,Tuchenhagen,24
+equipment_manufacturer,KSB,21
+equipment_manufacturer,Sabroe,18
+equipment_manufacturer,Stal,13
+equipment_manufacturer,Howden,9
+equipment_manufacturer,Bitzer,7
+equipment_manufacturer,Daikin,6
+equipment_manufacturer,Carrier,5
+equipment_manufacturer,Thermo-King,5
+equipment_manufacturer,Bock,4
+equipment_manufacturer,Copeland,4
+equipment_manufacturer,Frick,3
+equipment_manufacturer,Vilter,3
+equipment_manufacturer,Gram,2
+equipment_manufacturer,Grasso,2
+equipment_manufacturer,Witt,2
+equipment_manufacturer,Dunham Bush,1
+manufacturer_display,SAP Parts,18629
+manufacturer_display,Vulcan,6780
+manufacturer_display,EagleBurgmann,3431
+manufacturer_display,Alfa Laval,2557
+manufacturer_display,ANGA,2300
+manufacturer_display,Chesterton,1336
+manufacturer_display,SEPA TEC,923
+manufacturer_display,CHEMOPAC,832
+manufacturer_display,ADITEC,344
+manufacturer_display,Flygt,312
+manufacturer_display,Flygt / Grindex,312
+manufacturer_display,AESSEAL,299
+manufacturer_display,John Crane,282
+manufacturer_display,INOXPA,100
+manufacturer_display,Andritz,74
+manufacturer_display,Hilge,68
+manufacturer_display,APV,37
+manufacturer_display,Lidering,35
+manufacturer_display,Fristam,33
+manufacturer_display,Johnson,32
+manufacturer_display,Flowserve,25
+manufacturer_display,Tuchenhagen,24
+manufacturer_display,KSB,21
+manufacturer_display,Sabroe,18
+manufacturer_display,Stal,13
+manufacturer_display,ASPAG / AESSEAL,11
+manufacturer_display,Howden,9
+manufacturer_display,Bitzer,7
+manufacturer_display,Daikin,6
+manufacturer_display,Carrier,5
+manufacturer_display,Thermo-King,5
+manufacturer_display,Bock,4
+manufacturer_display,Copeland,4
+manufacturer_display,Frick,3
+manufacturer_display,Vilter,3
+manufacturer_display,Gram,2
+manufacturer_display,Grasso,2
+manufacturer_display,Witt,2
+manufacturer_display,Dunham Bush,1
+material_combination,SiC/SiC/FKM,10499
+material_combination,CAR/SiC/FKM,8681
+material_combination,CAR/CER/NBR,8592
+material_combination,TC/TC/EPDM,8592
+material_combination,CER/NBR,358
+material_combination,SiC/FKM,358
+material_combination,SiC/EPDM,358
+material_combination,TC/EPDM,358
+material_combination,SiCAR/SiC/,186
+material_combination,SiCAR/SiC/EPDM,90
+material_combination,SiCAR/SiC/NBR,90
+material_combination,SiCAR/SiC/FKM,90
+material_combination,SiCAR/SiC/PTFE,90
+material_combination,CAR/SiC/EPDM,89
+material_combination,CAR/SiC/NBR,89
+material_combination,CAR/SiC/PTFE,89
+material_combination,SICAR/SIC/,84
+material_combination,CAR/SiC/,68
+material_combination,CER/PTFE,66
+material_combination,CAR/SIC/,54
+rotating_face_material,CAR,17662
+rotating_face_material,SiC,10499
+rotating_face_material,TC,8592
+rotating_face_material,SiCAR,546
+rotating_face_material,SICAR,84
+seal_configuration,Single,21416
+seal_configuration,Double,749
+seal_configuration,Flushed,745
+seal_series,LKH,604
+seal_series,GD 06,536
+seal_series,GD 10,284
+seal_series,GD 20,284
+seal_series,GD N10,284
+seal_series,GD N20,284
+seal_series,GD Rubber Bellows Seat,252
+seal_series,GD 11,212
+seal_series,GD 22,212
+seal_series,M74F,208
+seal_series,LKH Evap,208
+seal_series,GD 1609,204
+seal_series,GD 1609S,204
+seal_series,GD 1609B,204
+seal_series,GD 1609BS,204
+seal_series,H7N,204
+seal_series,HA211,204
+seal_series,GD 1520,200
+seal_series,GD A2,196
+seal_series,GD A2H,196
+seal_series,GD 55B,196
+seal_series,GD 52B,192
+seal_series,GD 56B,192
+seal_series,GD 95,188
+seal_series,GD A1,188
+seal_series,LKHex,187
+seal_series,GD 97,184
+seal_series,GD 1511,184
+seal_series,GD 1511J,184
+seal_series,GD Standard Seat O-Ring,176
+seal_series,BT-AR,176
+seal_series,GD 96,172
+seal_series,GD 21,172
+seal_series,GD 31,172
+seal_series,GD 40,172
+seal_series,GD 40L,172
+seal_series,GD 40S,172
+seal_series,GD 12,168
+seal_series,Type 10,160
+seal_series,Type 20,160
+seal_series,4400,156
+seal_series,HGH201,148
+seal_series,Type 8DIN,148
+seal_series,BB1,144
+seal_series,BT-RN,144
+seal_series,R-MG12,140
+seal_series,Type 12,140
+seal_series,Type 24,140
+seal_series,GD 8DIN Short,136
+seal_series,GD 8DIN Long,136
+seal_series,GD 24DIN Short,136
+seal_series,GD 24DIN Long,136
+seal_series,GD 12 DIN,136
+seal_series,GD 126,136
+seal_series,GD 19,136
+seal_series,GD 192,136
+seal_series,GD 193,136
+seal_series,GD 19S,136
+seal_series,GD 192S,136
+seal_series,GD 193S,136
+seal_series,GD 19L,136
+seal_series,GD 19B,136
+seal_series,GD 192B,136
+seal_series,GD 193B,136
+seal_series,BB3,136
+seal_series,BB4-D,136
+seal_series,A1,136
+seal_series,SMS,136
+seal_series,GD 98,132
+seal_series,GD 24,132
+seal_series,GD 24L,132
+seal_series,GD 24S,132
+seal_series,GD 14DIN,132
+seal_series,GD 142DIN,132
+seal_series,GD 14DINS,132
+seal_series,GD 142DINS,132
+seal_series,BB7,132
+seal_series,SHG,132
+seal_series,442M,132
+seal_series,Type 24S,129
+seal_series,Typ 17U,128
+seal_series,GD 1677,128
+seal_series,GD 1677M,128
+seal_series,GD Locking Collar,128
+seal_series,GD 1724,128
+seal_series,SMN,128
+seal_series,EM300,128
+seal_series,Type 24L,128
+seal_series,LKH-112 Multi-Stage Centrifugal Pump,126
+seal_series,GD 8,124
+seal_series,GD 7D,124
+seal_series,GD 1659,124
+seal_series,GD 1659S,124
+seal_series,GD 1659B,124
+seal_series,GD 1659BS,124
+seal_series,GD 1659L,124
+seal_series,GD 1659SL,124
+seal_series,GD 1659BSL,124
+seal_series,GD 1724L,124
+seal_series,GD 1724S,124
+seal_series,BB8,124
+seal_series,US,124
+seal_series,V,124
+seal_series,VT,124
+seal_series,VS,124
+seal_series,BT-C8,124
+seal_series,MFLWT,124
+seal_series,R-MG1S20,124
+seal_series,R-502,124
+seal_series,Type 8,124
+seal_series,Type 1677M,124
+seal_series,Type 8DINS,124
+seal_series,GD 1688,120
+seal_series,GD 20H,120
+seal_series,GD N20H,120
+seal_series,GD 8 DIN,120
+seal_series,GD 8 DINS,120
+seal_series,GD 8B,120
+seal_series,BB1S,120
+seal_series,BB6,120
+seal_series,VB,120
+seal_series,VBT,120
+seal_series,SAJ,120
+seal_series,CAPI/S,120
+seal_series,HJ92N,120
+seal_series,R-MG13,120
+seal_series,R-560C/BIA,120
+seal_series,R-21,120
+seal_series,R-58U/59U,120
+seal_series,Type 1677,120
+seal_series,150,120
+seal_series,250,120
+seal_series,LKHI,117
+seal_series,Typ 13 / 13N,116
+seal_series,Typ F,116
+seal_series,GD 18,116
+seal_series,GD 32,116
+seal_series,GD 1645,116
+seal_series,GD 1645S,116
+seal_series,GD 1645B,116
+seal_series,GD 1645BS,116
+seal_series,M3N,116
+seal_series,R-MFL85N,116
+seal_series,R-M7N/M74N,116
+seal_series,Type 1520,116
+seal_series,Type 19L,116
+seal_series,Type 1724,116
+seal_series,491,116
+seal_series,Type 1724L,116
+seal_series,Type 1724S,116
+seal_series,LKH-113 Multi-Stage Centrifugal Pump,113
+seal_series,GD 11J,112
+seal_series,GD N11,112
+seal_series,GD N22,112
+seal_series,USP,112
+seal_series,BT-FH,112
+seal_series,SBS,112
+seal_series,R-2100,112
+seal_series,R-HJ92N,112
+seal_series,Type 8B,112
+seal_series,Type 40,112
+seal_series,Type 1520H,112
+seal_series,LKH-114 Multi-Stage Centrifugal Pump,111
+seal_series,BT-C56,108
+seal_series,MFLCT,108
+seal_series,R-BT-RN3,108
+seal_series,R-960,108
+seal_series,R-M74D,108
+seal_series,1810,108
+seal_series,2810,108
+seal_series,Typ 70A,104
+seal_series,Typ 70B,104
+seal_series,SeccoMixR,104
+seal_series,R-BT-RN,104
+seal_series,R-560A,104
+seal_series,R-TSDC-A04,104
+seal_series,Type 40L,104
+seal_series,Type 40S,104
+seal_series,DB,100
+seal_series,BB2,100
+seal_series,BEQ,100
+seal_series,Mtex-QN,100
+seal_series,R-MG1,100
+seal_series,S10,100
+seal_series,S20,100
+seal_series,170,100
+seal_series,Type 14DIN,100
+seal_series,Type 142DIN,100
+seal_series,Type 14DINS,100
+seal_series,Type 142DINS,100
+seal_series,Type 1511,100
+seal_series,Type 1511J,100
+seal_series,Type 19S,100
+seal_series,Type 192S,100
+seal_series,Type 193S,100
+seal_series,Type 19B,100
+seal_series,Type 192B,100
+seal_series,Type 193B,100
+seal_series,Type 11,100
+seal_series,Type 22,100
+seal_series,W,96
+seal_series,BB21,96
+seal_series,R-606,96
+seal_series,Type 19,96
+seal_series,Type 192,96
+seal_series,Type 193,96
+seal_series,Type 1688L,96
+seal_series,GD 82,92
+seal_series,GD 13,92
+seal_series,All to Do,92
+seal_series,A10,92
+seal_series,A11,92
+seal_series,R-BT-FN/BT-FN.NU,92
+seal_series,440,92
+seal_series,Type 12DIN,92
+seal_series,Type 52B,92
+seal_series,Type 56B,92
+seal_series,SolidC,91
+seal_series,LKH-123/P Multi-Stage Centrifugal Pump,90
+seal_series,Compressor Equipment Reference,89
+seal_series,Type 55B,89
+seal_series,Typ 14,88
+seal_series,E1,88
+seal_series,R-1527,88
+seal_series,R-125,88
+seal_series,GD A4,84
+seal_series,GD A4J,84
+seal_series,GD A5,84
+seal_series,GD A5J,84
+seal_series,GD 06X,84
+seal_series,BB4-1,84
+seal_series,BB4-2,84
+seal_series,BB5,84
+seal_series,76.53,84
+seal_series,SBS-C,84
+seal_series,R-JB103,84
+seal_series,Type 13,84
+seal_series,Type 95,84
+seal_series,Type 97,84
+seal_series,Type 25,84
+seal_series,280M,84
+seal_series,BB4-3,80
+seal_series,BB4-4,80
+seal_series,USC,80
+seal_series,R-TSSC-A05,80
+seal_series,Type 10 / 20,80
+seal_series,Type 23,80
+seal_series,Type 226,80
+seal_series,LKH-124/P Multi-Stage Centrifugal Pump,80
+seal_series,MDZ,76
+seal_series,R-HG212,76
+seal_series,R-TSSC-A04,76
+seal_series,Type 96,76
+seal_series,ACP seal conversion,74
+seal_series,Type 18,73
+seal_series,R-T1/FBC,72
+seal_series,Type 7D,72
+seal_series,Type 1511 / 1511J,72
+seal_series,Type 11 / 22,72
+seal_series,Type 24L / 24S,72
+seal_series,Type 98,72
+seal_series,Type 40L / 40S,72
+seal_series,LKH-122/P Multi-Stage Centrifugal Pump,69
+seal_series,LKH Prime,69
+seal_series,GD 1678,68
+seal_series,76.12,68
+seal_series,BT-C7,68
+seal_series,R-JB104,68
+seal_series,Type 12DIN / 126,68
+seal_series,Type 126,68
+seal_series,GD 13 DIN,64
+seal_series,BT-FN,64
+seal_series,R-128/128P,64
+seal_series,R-124,64
+seal_series,Type 13DIN,64
+seal_series,Type 1724L / 1724S,64
+seal_series,Type 1688,64
+seal_series,LKH-123US Multi-Stage Centrifugal Pump,64
+seal_series,LKH-124US Multi-Stage Centrifugal Pump,63
+seal_series,GD 9,60
+seal_series,R-108,60
+seal_series,R-M2N,60
+seal_series,Type 8DIN / 8DINS,60
+seal_series,LKH-112US Multi-Stage Centrifugal Pump,59
+seal_series,LKH-113US Multi-Stage Centrifugal Pump,59
+seal_series,LKH-122US Multi-Stage Centrifugal Pump,58
+seal_series,GD seal,56
+seal_series,VD,56
+seal_series,Type 9,56
+seal_series,Type 19Z,56
+seal_series,LKH-114US Multi-Stage Centrifugal Pump,55
+seal_series,LKH Prime UltraPure,54
+seal_series,A3,52
+seal_series,VSK,52
+seal_series,76.62,52
+seal_series,R-120/120P,52
+seal_series,R-112,52
+seal_series,R-113,52
+seal_series,Type 14DIN / 142DIN,52
+seal_series,Type 14DINS / 142DINS,52
+seal_series,Type 19S / 192S,52
+seal_series,Type 19B / 192B,52
+seal_series,LKH UltraPure,52
+seal_series,GD 195,48
+seal_series,UST,48
+seal_series,BE2,48
+seal_series,76.60,48
+seal_series,R-102U,48
+seal_series,Type 19 / 192,48
+seal_series,GD 25,47
+seal_series,A4,44
+seal_series,US2,44
+seal_series,HRN,44
+seal_series,H12N,44
+seal_series,Splitex,44
+seal_series,R-4702,44
+seal_series,R-802,44
+seal_series,LKHPF,44
+seal_series,Multi Spring Balanced Seal,40
+seal_series,EP,40
+seal_series,BT-C5E,40
+seal_series,SeccoMix 1-11,40
+seal_series,R-560D,40
+seal_series,LKHex UltraPure,37
+seal_series,SAAE,36
+seal_series,AX05,36
+seal_series,USS,36
+seal_series,BED,36
+seal_series,GF,36
+seal_series,R-110,36
+seal_series,R-152,36
+seal_series,SolidC UltraPure,33
+seal_series,BP,32
+seal_series,BU,32
+seal_series,EPD,32
+seal_series,MS,32
+seal_series,BB750,32
+seal_series,BT-PNL,32
+seal_series,R-156,32
+seal_series,R-108U,32
+seal_series,WB2,32
+seal_series,Wave Spring Unbalanced Seal,28
+seal_series,ACPD,28
+seal_series,ACPS,28
+seal_series,GD 260B,28
+seal_series,HR,28
+seal_series,Type 1678,28
+seal_series,BB13L,25
+seal_series,Type 06,25
+seal_series,Conical Spring Seal,24
+seal_series,GD 1632,24
+seal_series,GD 1694,24
+seal_series,GD 1688W,24
+seal_series,76.14,24
+seal_series,BB7K-AL,24
+seal_series,BB20,24
+seal_series,BT-ARP,24
+seal_series,M2N,24
+seal_series,H3B,24
+seal_series,R-202/208,24
+seal_series,Type 1678M,24
+seal_series,CURC,22
+seal_series,FIDC,21
+seal_series,BB14-9018,21
+seal_series,Elastomer Bellow Seal,20
+seal_series,PTFE Bellows Seal,20
+seal_series,GD 60,20
+seal_series,GD 65,20
+seal_series,GD 1688Y,20
+seal_series,E2,20
+seal_series,76.68,20
+seal_series,BB19E,20
+seal_series,M461,20
+seal_series,R-T2,20
+seal_series,GD 23,19
+seal_series,GD 70,16
+seal_series,GD 42,16
+seal_series,GD 297,16
+seal_series,GD 1683,16
+seal_series,BPD,16
+seal_series,BB1H8,16
+seal_series,BB1H6,16
+seal_series,MG1,16
+seal_series,MG9,16
+seal_series,R-103/103A,16
+seal_series,Type 21/31,16
+seal_series,LKH-112-114US Multi-Stage Centrifugal,15
+seal_series,LKH-112-114 Multi-Stage Centrifugal Pu,13
+seal_series,LKH-122-124/P US Multi-Stage Centrifug,13
+seal_series,Groundfoss Seal/Lubi (catalogue wording),12
+seal_series,GD 75,12
+seal_series,GD 260A,12
+seal_series,GD 40S8,12
+seal_series,GD 1640,12
+seal_series,GD 29,12
+seal_series,GD V0633,12
+seal_series,GD 1650,12
+seal_series,BUV,12
+seal_series,76.61,12
+seal_series,BB1/BB5,12
+seal_series,R-102,12
+seal_series,R-101,12
+seal_series,R-706L,12
+seal_series,LKH-122-124/P Multi-Stage Centrifugal,11
+seal_series,BB3-AL,9
+seal_series,GD 1724P,8
+seal_series,GD 81,8
+seal_series,GD 17B,8
+seal_series,GD 19C,8
+seal_series,GD 16,8
+seal_series,GD 272,8
+seal_series,GD V9018,8
+seal_series,GD 1676,8
+seal_series,GD 1696,8
+seal_series,GD 1698,8
+seal_series,GD 94,8
+seal_series,GD 1661,8
+seal_series,A12,8
+seal_series,A13,8
+seal_series,B12,8
+seal_series,76.17,8
+seal_series,BB19,8
+seal_series,BB1/BB5S,8
+seal_series,BB1H6L,8
+seal_series,EH700,8
+seal_series,MFL85N,8
+seal_series,MF95N,8
+seal_series,GSO-DN,8
+seal_series,R-XB,8
+seal_series,ATD Armatec 125,4
+seal_series,DST Version A / BAU-40,4
+seal_series,AIO Steril / Miccra,4
+seal_series,AIO Steril / GRD Tarnkappe,4
+seal_series,GD 1578,4
+seal_series,GD 1653,4
+seal_series,GD 1642,4
+seal_series,GD 1605,4
+seal_series,GD V9200,4
+seal_series,GD B94,4
+seal_series,76.51,4
+seal_series,76.66,4
+seal_series,76.70,4
+seal_series,76.54,4
+seal_series,76.69,4
+seal_series,76.71,4
+seal_series,76.55,4
+seal_series,BB93,4
+seal_series,BB15A,4
+seal_series,BB19C,4
+seal_series,BB3KK,4
+seal_series,BB1H,4
+seal_series,BB1H7,4
+seal_series,Cartex-DN,4
+seal_series,MBS100,4
+seal_series,MFL65,4
+seal_series,Type AIO,4
+seal_series,Type DOS,4
+seal_series,Type SQE,4
+seal_series,4CP,3
+seal_series,4CPD,3
+seal_series,4C / 4CN,2
+seal_series,4M,2
+seal_series,4EB,2
+seal_series,4HL,2
+seal_series,SAI,2
+seal_series,SCUSI,2
+seal_series,DMSF,2
+seal_series,CDSA,2
+seal_series,UNITAS S,1
+seal_series,UNITAS Q,1
+seal_series,UNITAS T,1
+seal_series,4EYS,1
+seal_series,4MC,1
+seal_series,4HLQ,1
+seal_series,4RPQ,1
+seal_series,LDC38,1
+seal_series,LDC40,1
+seal_series,LDC40-ANSI,1
+seal_series,LDC80,1
+seal_series,LDC80G,1
+seal_series,LDC82,1
+seal_series,LDC83,1
+seal_series,LDC90,1
+seal_series,LMB85,1
+seal_series,LMB86,1
+seal_series,LS15,1
+seal_series,LS18,1
+seal_series,LS18B,1
+seal_series,LS19,1
+seal_series,LS40A,1
+seal_series,LS40C,1
+seal_series,LS50LS50C,1
+seal_series,LS60B,1
+seal_series,LS60BDIN,1
+seal_series,LS60IL,1
+seal_series,LS60IN,1
+seal_series,LS60LS60DIN,1
+seal_series,LS61,1
+seal_series,LSC10B-FQ,1
+seal_series,LSC211A-FD,1
+seal_series,LSC38-FQ,1
+seal_series,LSC40-F,1
+seal_series,LSC41-F,1
+seal_series,LSC50-F,1
+seal_series,LSC80,1
+seal_series,LSC85,1
+seal_series,LSC90,1
+seal_series,LST8,1
+seal_series,LST9,1
+seal_series,LSTD,1
+seal_series,II,1
+seal_series,AESSEAL,1
+seal_series,CS,1
+seal_series,CSC,1
+seal_series,CRCO,1
+seal_series,CSS,1
+seal_series,CSSN,1
+seal_series,CURE,1
+seal_series,SISR,1
+seal_series,SISS,1
+seal_series,SMSS,1
+seal_series,SMSS23,1
+seal_series,CDFC,1
+seal_series,CDFI,1
+seal_series,CDP,1
+seal_series,CDPN,1
+seal_series,DISP,1
+seal_series,DMSC,1
+seal_series,DSNM,1
+seal_series,LSEAL,1
+seal_series,PCPS,1
+seal_series,ISOS,1
+seal_series,RDS,1
+seal_series,RDSX,1
+seal_series,SAIH,1
+seal_series,T05,1
+seal_series,T05VC,1
+seal_series,BDFI,1
+seal_series,BDTP,1
+seal_series,BQFD,1
+seal_series,BSAI,1
+seal_series,BSAIG,1
+seal_series,BSFG,1
+seal_series,BSIV,1
+seal_series,CDM,1
+seal_series,CDMSC,1
+seal_series,CSM,1
+seal_series,ESM,1
+seal_series,CSWIB,1
+seal_series,DSWIB,1
+seal_series,SCMS,1
+seal_series,CAPI,1
+seal_series,TXS,1
+seal_series,CFC,1
+seal_series,CFFC,1
+seal_series,HPVD,1
+seal_series,HPVS,1
+seal_series,UDGS,1
+seal_series,CCS,1
+seal_series,HHCS,1
+seal_series,CDPH,1
+seal_series,IADC,1
+seal_series,IASC,1
+seal_series,M7N,1
+seal_series,Cartex-ABPN,1
+seal_series,Cartex-ABDN,1
+seal_series,Unitex,1
+seal_series,BT-A2,1
+seal_series,SeccoMix1,1
+seal_series,SeccoMix481,1
+seal_series,SeccoMix461,1
+seal_series,AGSZ,1
+seal_series,AGSR,1
+seal_series,M481,1
+seal_series,DGS,1
+seal_series,PDGS,1
+seal_series,MDGS,1
+seal_series,TDGS,1
+seal_series,EBU800,1
+seal_series,CobaSeal,1
+seal_series,R-BT-FN,1
+seal_series,R-10R/10T,1
+seal_series,R-APV,1
+seal_series,R-6,1
+seal_series,R-16,1
+seal_series,R-H12N,1
+seal_series,R-M3N,1
+seal_series,R-31K/31U,1
+seal_series,R-706E,1
+seal_series,R-706K,1
+seal_series,R-109/8U,1
+seal_series,R-58B/59B,1
+seal_series,R-AL,1
+seal_series,R-109B/8B-1,1
+seal_series,R-10T/10R,1
+seal_series,R-LPS,1
+seal_series,R-6SB/SB,1
+seal_series,R-6CK-16,1
+seal_series,R-6A,1
+seal_series,R-6-CH-16,1
+seal_series,R-BT-AR,1
+seal_series,R-6B,1
+seal_series,R-6C,1
+seal_series,R-6BG,1
+seal_series,R-706H,1
+seal_series,R-706D,1
+seal_series,R-706F,1
+seal_series,R-706A,1
+seal_series,R-706B,1
+seal_series,R-HG202,1
+seal_series,R-TSDC-A03,1
+seal_series,R-TSSP-FA01,1
+seal_series,R-TSSC-C03,1
+seal_series,R-TSWE,1
+seal_series,R-LWR-22,1
+seal_series,R-TSSP-CO1,1
+seal_series,R-TSMB-B07,1
+seal_series,R-TSSC-A01,1
+seal_series,R-TSDC-B01,1
+seal_series,R-HRN,1
+seal_series,R-TS-XE,1
+seal_series,R-6CF-16,1
+seal_series,R-4701,1
+seal_series,R-LW,1
+seal_series,R-609,1
+seal_series,R-680,1
+seal_series,R-GEA,1
+seal_series,Type 65,1
+seal_series,Type 82,1
+seal_series,Type 20H,1
+seal_series,Type 11J,1
+seal_series,Type 11/22,1
+seal_series,Type 1609 / 1609S,1
+seal_series,Type 1645 / 1645S,1
+seal_series,Type 1659 / 1659S,1
+seal_series,Type 1659L / 1659SL,1
+seal_series,Type 52B/56B,1
+seal_series,Type 60,1
+seal_series,Type 1653,1
+seal_series,Type 192G,1
+seal_series,Type 28,1
+seal_series,Type 127B,1
+seal_series,Type 195,1
+seal_series,Type 1578,1
+seal_series,Type 197,1
+seal_series,Type 68,1
+seal_series,Type 17B,1
+seal_series,Type 9X,1
+seal_series,Type 293,1
+seal_series,Type 1694,1
+seal_series,Type 16,1
+seal_series,Type 26,1
+seal_series,Type 29,1
+seal_series,Type 1662/1663,1
+seal_series,Type 32,1
+seal_series,B02/12/13,1
+seal_series,M03/M03S,1
+seal_series,W07DM,1
+seal_series,ARG-BN,1
+seal_series,ARG-DIN-R,1
+seal_series,ARG-DIN-VE,1
+seal_series,Type MBC,1
+seal_series,Type DB,1
+seal_series,Type DMBC,1
+seal_series,Type SWS,1
+seal_series,Type D85,1
+seal_series,Type ALL,1
+seal_series,Type HST,1
+seal_series,Type TYPE,1
+seal_series,Type WP,1
+seal_series,Type STATIONARY,1
+seal_series,Type MFL,1
+seal_series,ISC2 Series,1
+seal_series,HSH,1
+seal_series,ISC2-682XP,1
+seal_series,ISC2-PP and ISC2-682PP,1
+seal_series,QBQ and QBQ LZ,1
+seal_series,BXRH,1
+seal_series,ISC2-682XB,1
+seal_series,ISC2-BB and ISC2-682BB,1
+seal_series,MD-200,1
+seal_series,M Series,1
+seal_series,ST,1
+seal_series,Gaspac L,1
+seal_series,Supplypac,1
+seal_series,Drypac,1
+seal_series,SLC,1
+seal_series,SLM Series,1
+seal_series,GX-200,1
+seal_series,GF-200,1
+seal_series,GTSP,1
+seal_series,GTS,1
+seal_series,SEAL,1
+seal_series,Bladder Accumulators,1
+seal_series,Circulators,1
+seal_series,Seal Gard,1
+seal_series,SLD,1
+seal_type,Other,16278
+seal_type,Multi-Spring Mechanical Seal,5211
+seal_type,Rubber Bellows Mechanical Seal,4140
+seal_type,Cylindrical Spring Mechanical Seal,3538
+seal_type,Conical Spring Mechanical Seal,2374
+seal_type,Stationary Seal Seat,1498
+seal_type,Mechanical Seal Service Kit,1296
+seal_type,Single Spring Mechanical Seal,917
+seal_type,Wave / Sinusoidal Spring Seal,856
+seal_type,Component Mechanical Seal,628
+seal_type,Single Cartridge Mechanical Seal,447
+seal_type,Double Cartridge Mechanical Seal,437
+seal_type,Metal Bellows Mechanical Seal,419
+seal_type,Cartridge Mechanical Seal,385
+seal_type,Agitator Seal,208
+seal_type,Locking Collar,128
+seal_type,Compressor Mechanical Seal,89
+seal_type,PTFE Bellows Seal,20
+seal_type,Hygienic Mechanical Seal,8
+seal_type,Custom-Engineered,4
+secondary_seal_material,FKM,19628
+secondary_seal_material,EPDM,9487
+secondary_seal_material,NBR,9129
+secondary_seal_material,PTFE,245
+spring_design,Multi-Spring,3244
+spring_design,Cylindrical Spring,3208
+spring_design,Rubber Bellows,2824
+spring_design,O-Ring / rubber sleeve,1432
+spring_design,Conical Spring,1344
+spring_design,Single Spring,916
+spring_design,Wave / Sinusoidal Spring,444
+spring_design,Stationary multiple springs,100
+spring_design,Gasket / clamped,47
+spring_design,Conical spring,36
+spring_design,PTFE,19
+stationary_face_material,SiC,20777
+stationary_face_material,CER,9016
+stationary_face_material,TC,8950
+stationary_face_material,SIC,138
+stationary_seat_type,GD Rubber Bellows Seat,252
+stationary_seat_type,GD Standard Seat O-Ring,176
+stationary_seat_type,GD 21,172
+stationary_seat_type,GD 31,172
+stationary_seat_type,GD 8DIN Short,136
+stationary_seat_type,GD 8DIN Long,136
+stationary_seat_type,GD 24DIN Short,136
+stationary_seat_type,GD 24DIN Long,136
+stationary_seat_type,G6 / G4,116
+stationary_seat_type,GD 32,116
+stationary_seat_type,GD 25,47
+stationary_seat_type,GD 23,19
+stationary_seat_type,BAU-40,4
+stationary_seat_type,AIO special integrated,4
+stationary_seat_type,AIO special / Tarnkappe,4

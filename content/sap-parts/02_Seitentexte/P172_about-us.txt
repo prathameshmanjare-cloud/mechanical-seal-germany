@@ -1,0 +1,57 @@
+SEITEN-ID: P172
+SEITENTITEL: About Us
+URL: /about-us/
+SEITENTYP: information
+BREADCRUMB: About Us
+
+SEO-TITEL
+About Us | SAP Parts
+
+META-BESCHREIBUNG
+About Us | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+About Us
+
+Technical introduction
+
+SAP Parts has worked in industrial sealing since 2009. Our team in Leverkusen combines engineering, tribology, integrated manufacturing and logistics.
+
+Our Main Areas
+
+Select a topic below to learn about its technical requirements and available SAP Parts support. - Our Company: SAP Parts combines engineering in Leverkusen with integrated production and industrial sealing know-how. - Engineering & Development: Our development work connects materials, geometry and operating conditions. We support OEMs throughout the sealing process. - Manufacturing Capabilities: SAP Parts combines several manufacturing capabilities to support sealing parts, materials and engineering projects. - Quality & Traceability: Reliable sealing needs controlled manufacturing, documented materials and clear application requirements. - Logistics & Supply: Our Leverkusen distribution centre combines stock handling with engineering support for OEMs and repair customers.
+
+How We Work
+
+We start with the application and the exact operating conditions. The correct dimensions, material pairing and documentation help reduce avoidable repairs and incorrect part selection.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+A useful engineering enquiry
+
+Send the current seal or equipment reference, shaft and seat dimensions, operating pressure at the seal, temperature, speed, medium, solids, duty cycle and photographs or drawings. We review geometry, materials and duty before recommending a replacement, altered design or development project.
+
+Technical information we need
+
+Define the relevant specification, controlled drawing revision, selected materials, required checks and acceptance criteria. A manufacturing or quality capability is not a product certification.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

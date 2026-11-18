@@ -1,0 +1,79 @@
+SEITEN-ID: P153
+SEITENTITEL: Dry Running & Lubrication
+URL: /technology/mechanical-seal-knowledge-base/dry-running-lubrication/
+SEITENTYP: information
+BREADCRUMB: Technology > Mechanical Seal Knowledge Base > Dry Running & Lubrication
+
+SEO-TITEL
+Dry Running & Lubrication | SAP Parts
+
+META-BESCHREIBUNG
+Dry Running & Lubrication | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Dry Running & Lubrication
+
+Technical introduction
+
+Dry running means that a sufficient lubricating fluid film is absent. Many standard seals can fail quickly when face temperatures rise.
+
+Technical Principle
+
+A conventional liquid-lubricated mechanical seal normally needs a stable film between the faces. During dry running or poor lubrication, the film cannot carry the normal load, so friction and temperature may rise rapidly.
+
+Materials And Design
+
+Possible causes include empty suction lines, trapped air, low liquid level, hot fluid that flashes to vapour, blocked circulation and an incorrect seal arrangement. A pump may contain liquid while the local sealing interface has poor lubrication.
+
+Engineering Conditions
+
+Some specialised materials and seal designs can tolerate defined dry-running periods. This must be proven for the stated pressure, speed, temperature and duration. It does not mean the same seal is suitable for continuous dry operation.
+
+Reliability And Cost
+
+Prevention begins with operating data and system design: venting, priming, cooling, monitoring and suitable support fluids. If dry operation is an unavoidable part of the duty, it must be treated as a design requirement from the start.
+
+Selection and engineering checks
+
+• Dry period.
+
+• Surface speed. Calculate relevant sliding speed and review starts and stops.
+
+• Face force.
+
+• Ambient cooling.
+
+• Material thermal properties. Specify the grade and pairing rather than a broad material family.
+
+• Start/stop pattern.
+
+Sap Parts Engineering
+
+Special solutions are engineered and validated for defined dry-running duty.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Lubrication limits and thermal risk
+
+The term dry running covers different situations: temporary liquid loss, a gas-filled interface or an intentionally gas-lubricated design. Conventional liquid-lubricated seals may overheat rapidly without the intended fluid film. Define the duration, frequency and environmental conditions before selecting face materials or special geometry.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

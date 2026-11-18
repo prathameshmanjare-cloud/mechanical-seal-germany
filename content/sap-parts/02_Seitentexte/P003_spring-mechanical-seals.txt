@@ -1,0 +1,57 @@
+SEITEN-ID: P003
+SEITENTITEL: Spring Mechanical Seals
+URL: /shop/spring-mechanical-seals/
+SEITENTYP: listing
+BREADCRUMB: Shop > Spring Mechanical Seals
+
+SEO-TITEL
+Spring Mechanical Seals | SAP Parts
+
+META-BESCHREIBUNG
+Spring Mechanical Seals | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Spring Mechanical Seals
+
+Technical introduction
+
+Spring-loaded mechanical seals use a flexible element to maintain controlled face contact. Select by design, installation dimensions and operating conditions.
+
+Choose A Category
+
+Select the seal family or technical category that matches your requirement. - Single Spring: One coil spring gives the axial force needed to keep the seal faces together at standstill and helps compensate for wear during operation. - Multi-Spring: Several small springs share the axial load around the seal ring. - Conical Spring: A conical coil spring can combine axial loading with torque transmission in certain mechanical seal designs. - Cylindrical Spring: A cylindrical coil spring provides axial loading in many standard pusher and bellows seals. - Wave / Sinusoidal Spring: Wave and sinusoidal spring elements can provide compact axial loading where installation space is limited.
+
+Technical Selection
+
+A mechanical seal works as part of the complete machine. The liquid, contact pressure, shaft movement and heat removal all affect the selection. Choose a verified catalog product or send the technical details for review.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Identification and replacement support
+
+Cannot find the exact part? Send the OEM number, dimensions or a drawing. Our team can review the possible replacement before you order.
+
+Engineering detail — how we solve the problem
+
+Axial loading and installation
+
+The spring acts together with hydraulic pressure on the effective seal area. Check its working compression at the specified installation length; excessive compression can increase heat generation, whereas insufficient closing force can compromise face tracking. Direction-sensitive coil springs also require a verified rotation direction.
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Stationary interface and seating geometry
+
+Confirm seat outside diameter, axial thickness, installation depth, anti-rotation method, elastomer seat and housing tolerance. The counterface must remain square to the shaft and must not be distorted by uneven mounting force. A visually similar ring can have a different functional geometry.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

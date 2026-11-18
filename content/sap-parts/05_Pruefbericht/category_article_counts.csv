@@ -1,0 +1,211 @@
+﻿page_id,page_title,count_primary_products
+P001,Home,0
+P002,Shop,0
+P003,Spring Mechanical Seals,0
+P004,Single Spring,917
+P005,Multi-Spring,5211
+P006,Conical Spring,2374
+P007,Cylindrical Spring,3538
+P008,Wave / Sinusoidal Spring,856
+P009,Bellows Mechanical Seals,0
+P010,Rubber Bellows,4140
+P011,Metal Bellows,419
+P012,Welded Metal Bellows,0
+P013,PTFE Bellows,20
+P014,Cartridge Mechanical Seals,385
+P015,Single Cartridge,447
+P016,Double Cartridge,437
+P017,Tandem Cartridge,0
+P018,Split Cartridge,0
+P019,Hygienic Mechanical Seals,8
+P020,Hygienic Single Seals,0
+P021,Hygienic Double Seals,0
+P022,Sanitary Pump Seals,0
+P023,Special Mechanical Seals,89
+P024,Split Seals,0
+P025,High-Pressure Designs,0
+P026,High-Temperature Designs,0
+P027,Dry-Running Designs,0
+P028,Custom-Engineered Seals,212
+P029,Stationary Seal Seats,1498
+P030,O-Ring Mounted Seats,0
+P031,Cup Mounted Seats,0
+P032,L-Shaped Seats,0
+P033,Press-Fit Seats,0
+P034,Special Stationary Seats,0
+P035,Mechanical Seal Components,756
+P036,Rotary Units,0
+P037,Stationary Seats,0
+P038,Seal Face Sets,0
+P039,Complete Assemblies,1296
+P040,OEM Replacement,0
+P041,Find a Replacement,0
+P042,Search by OEM Part Number,0
+P043,Search by Equipment Model,0
+P044,Search by Seal Series,0
+P045,Search by Dimensions,0
+P046,Replacement Information,0
+P047,Verified OEM Cross-References,0
+P048,Compatible Equipment,0
+P049,SAP Parts Replacement SKU,0
+P050,Material and Design Alternatives,0
+P051,Manufacturers,0
+P052,Pump & Equipment Manufacturers,0
+P053,KSB,0
+P054,Alfa Laval,0
+P055,Grundfos,0
+P056,Wilo / EMU,0
+P057,Flygt / Xylem,0
+P058,NETZSCH,0
+P059,Vogelsang,0
+P060,Börger,0
+P061,SEEPEX,0
+P062,Sulzer,0
+P063,Other Manufacturers,0
+P064,Mechanical Seal Manufacturers,0
+P065,EagleBurgmann,0
+P066,John Crane,0
+P067,AESSEAL,0
+P068,Vulcan,0
+P069,Other Seal Manufacturers,0
+P070,Applications,0
+P071,Industrial Pumps,0
+P072,Centrifugal Pumps,0
+P073,Multistage Pumps,0
+P074,Chemical Process Pumps,0
+P075,Booster & Water Pumps,0
+P076,High-Pressure Pumps,0
+P077,Wastewater & Submersible,0
+P078,Sewage Pumps,0
+P079,Slurry Pumps,0
+P080,Drainage & Dewatering Pumps,0
+P081,Submersible Pumps,0
+P082,Positive Displacement Pumps,0
+P083,Rotary Lobe Pumps,0
+P084,Progressive Cavity Pumps,0
+P085,Gear Pumps,0
+P086,Screw & Twin-Screw Pumps,0
+P087,Rotary Vane Pumps,0
+P088,Hygienic & Sanitary,0
+P089,Hygienic Centrifugal Pumps,0
+P090,Sanitary Rotary Lobe Pumps,0
+P091,Dairy & Beverage Processing Pumps,0
+P092,Compressors & Refrigeration,0
+P093,Industrial Compressors,0
+P094,Refrigeration Compressors,0
+P095,Gas Sealing Applications,0
+P096,Mixing & Agitation,0
+P097,Industrial Agitators,0
+P098,Tank Mixers,0
+P099,Submersible Mixers,0
+P100,Biogas Agitators,0
+P101,Special Equipment,0
+P102,Marine Equipment,0
+P103,Vacuum Pumps,0
+P104,Fire-Fighting Pumps,0
+P105,Special OEM Equipment,0
+P106,Industries,0
+P107,Process Industries,0
+P108,Chemical,0
+P109,Petrochemical,0
+P110,Oil & Gas,0
+P111,Refineries,0
+P112,Pharmaceutical,0
+P113,Food & Beverage,0
+P114,Pulp & Paper,0
+P115,Infrastructure & Utilities,0
+P116,Water & Wastewater,0
+P117,Power Generation,0
+P118,Building Services & HVAC,0
+P119,Industrial Refrigeration,0
+P120,Marine & Offshore,0
+P121,Heavy & Industrial Equipment,0
+P122,Mining & Minerals,0
+P123,Construction,0
+P124,Metal & Glass Processing,0
+P125,Automotive,0
+P126,Aerospace,0
+P127,Energy & Agriculture,0
+P128,Biogas & Agriculture,0
+P129,Biofuels & Ethanol,0
+P130,Renewable Energy,0
+P131,Technology,0
+P132,Tribology & Surface Engineering,0
+P133,Friction & Wear,0
+P134,Surface Roughness & Flatness,0
+P135,Lubrication & Heat Generation,0
+P136,Abrasive Wear,0
+P137,Advanced Coatings,0
+P138,Material Engineering & Cost Optimization,0
+P139,Cost-Optimized Material Substitution,0
+P140,Seal Face Material Pairings,0
+P141,Tungsten Carbide & Alternatives,0
+P142,White Cast Iron & High-Chrome Alloys,0
+P143,Silicon Carbide & Carbon Materials,0
+P144,Coating Selection & Manufacturing Cost,0
+P145,Mechanical Seal Knowledge Base,0
+P146,How Mechanical Seals Work,0
+P147,Seal Types & Designs,0
+P148,Seal Face Materials Explained,0
+P149,Elastomers & Chemical Compatibility,0
+P150,Material Pairing Selection,0
+P151,Spring Force & Face Loading,0
+P152,Hydraulic Balance,0
+P153,Dry Running & Lubrication,0
+P154,Failure Analysis,0
+P155,Installation & Common Mistakes,0
+P156,Maintenance & Troubleshooting,0
+P157,Seal Lifetime & Total Cost of Ownership,0
+P158,Engineering Experience,0
+P159,High-Pressure Sealing,0
+P160,Abrasive & Fibrous Media,0
+P161,Dry-Running Challenges,0
+P162,Hygienic Sealing,0
+P163,Liquid Cooling Applications,0
+P164,Custom Sealing Engineering,0
+P165,Reliability & Cost Optimization,0
+P166,Emerging Sealing Technologies,0
+P167,Data Center Liquid Cooling,0
+P168,Hydrogen Applications,0
+P169,Carbon Capture,0
+P170,High-Efficiency Heat Pumps,0
+P171,Geothermal Applications,0
+P172,About Us,0
+P173,Our Company,0
+P174,Who We Are,0
+P175,Our History – Since 2009,0
+P176,Engineering in Leverkusen,0
+P177,OEM Supply Experience,0
+P178,Engineering & Development,0
+P179,Tribology Expertise,0
+P180,Custom Seal Design,0
+P181,Material Development,0
+P182,Cost Optimization,0
+P183,Technical Support,0
+P184,Manufacturing Capabilities,0
+P185,Centrifugal Casting,0
+P186,Precision Machining,0
+P187,Sintering & Powder Metallurgy,0
+P188,Rubber & Elastomer Production,0
+P189,Integrated Manufacturing,0
+P190,Quality & Traceability,0
+P191,Quality Management,0
+P192,Material Traceability,0
+P193,Inspection & Testing,0
+P194,Technical Documentation,0
+P195,Application-Specific Compliance,0
+P196,Logistics & Supply,0
+P197,Leverkusen Distribution Center,0
+P198,"1,200 m² High-Bay Warehouse",0
+P199,OEM Production Supply,0
+P200,Spare Parts & Repair Supply,0
+P201,Inventory Planning,0
+P202,Contact,0
+P203,Request Support,0
+P204,Request a Quote,0
+P205,Technical Consultation,0
+P206,Submit a Drawing,0
+P207,Identify an Unknown Seal,0
+P208,Custom Seal Development,0
+P209,Legal Notice,0
+P210,Other Mechanical Seals,16278

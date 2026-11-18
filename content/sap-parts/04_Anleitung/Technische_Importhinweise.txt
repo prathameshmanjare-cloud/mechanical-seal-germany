@@ -1,0 +1,43 @@
+# Technical integration notes
+
+## Keys and relationships
+- Product unique key: `sap_article_number`; immutable import identifier: `record_id`.
+- Page key: `page_id` (P001…P210); page route `page_url`.
+- Product→page: `product_category_links.csv`; no duplicate SKU records.
+- Parent-child navigation: `categories.csv` breadcrumb and `parent_breadcrumb` fields. The `page_id` maps editorial assets and listing routes.
+- `Shop > Other` is an explicitly valid business category, new CMS route `/shop/other/`; 16,278 products are deliberately retained there.
+
+## Faceted search
+- Primary numeric diameter filter: `facet_shaft_diameter_mm` (decimal mm). Store numeric with decimals, not alphabetical text ordering. Invalid values become empty facet (raw value remains).
+- Use separate rotating and stationary face filters; never collapse into one face. Normalize CAR→Carbon, CER→Ceramic, SiC→SiC, TC→Tungsten Carbide. Preserve raw columns for engineering display/export.
+- Filters work as AND across attributes, OR inside one multi-selection facet. Recompute available facet values/counts from currently matching SKUs. Missing data must not turn into `Unknown` as a selectable value by default.
+- `category_filters.csv` is a proposed visibility matrix. Hide attributes where no matching SKU has a value. For SEO pages outside the Shop navigation, no product association should be fabricated.
+- The raw `seal_series` contains many distinct values; use an autocomplete or searchable list.
+- `facet_search_text` supports case-insensitive substring/typeahead search of article number, series, part ref and model; use a proper indexed text search service for scale.
+- Vendor/manufacturer names denote catalog references, not manufacturer endorsements. Avoid claiming verified cross-compatibility.
+
+## Page content
+- Each original Word file was parsed; only the editorial section headed `English website copy` was included in the plain-text page files. Implementation notes and internal drafting labels are excluded.
+- `Seitenverzeichnis.csv` references the plain-text page copy in `02_Seitentexte/`; developers format and implement the CMS pages themselves. No HTML or JSON is supplied.
+- Original URL paths preserved. Home and Legal Notice have dedicated pages. New Other listing page uses generated copy.
+- Review `Legal Notice`, company dates/addresses, and any regulated claims through the client's business/legal owner before publishing.
+
+## Images
+- Category artworks are conceptual technical renderings, not dimensional drawings or proof of product specifications.
+- Render category images with object-fit: contain, responsive aspect ratio 4:3, accessible alt text and lazy-loading for listings.
+- Do not repurpose a category image as proof of exact SKU geometry/materials.
+- Distinct subcategory images, individual SKU photographs and confirmed technical drawings require future physical/CAD asset input.
+
+## Acceptance checklist
+1. Every article resolves by SKU to exactly one primary category page.
+2. Every mapped page id resolves to an existing CMS route; `/shop/other/` is registered.
+3. No orphan pages or duplicate route paths after import.
+4. Product pages show diameter, both sealing-face materials and elastomer independently where supplied.
+5. Numeric filter tests (e.g. 20 mm) match correct values and do not mis-match 200 mm.
+6. Material combination filters respect all three component materials.
+7. Query by part number and SKU produces matching records.
+8. A missing diameter or balance value is omitted from that facet, not incorrectly set to a default.
+9. Category/listing image renders and carries representative-image disclosure.
+10. Pagination and multi-filter queries remain performant on 38,881 products.
+11. No brand association or stock-availability claim is inferred from cross-reference fields.
+12. Source approval state/assumed technical values are reviewed as required by the client release process.

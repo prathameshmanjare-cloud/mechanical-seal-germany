@@ -1,0 +1,49 @@
+SEITEN-ID: P132
+SEITENTITEL: Tribology & Surface Engineering
+URL: /technology/tribology-surface-engineering/
+SEITENTYP: information
+BREADCRUMB: Technology > Tribology & Surface Engineering
+
+SEO-TITEL
+Tribology & Surface Engineering | SAP Parts
+
+META-BESCHREIBUNG
+Tribology & Surface Engineering | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Tribology & Surface Engineering
+
+Reliable mechanical sealing is an application of tribology: the science of friction, wear and lubrication. We study what happens at the interface of two moving seal faces and use those findings to develop practical sealing solutions.
+
+The seal face is a working interface
+
+A rotating ring and a stationary seat form the primary sealing interface. Their surfaces are finished to a controlled geometry, but the faces do not operate as two perfectly dry, permanently touching planes in normal liquid service. A thin fluid film provides lubrication while allowing a controlled, very small leakage flow. The resulting behaviour depends on liquid properties, speed, pressure and face geometry.
+
+Closing force, film stability and heat
+
+Springs and hydraulic forces act to close the seal; hydrodynamic and other film-related forces can help separate the surfaces. Excessive contact loading increases friction and heat, while inadequate face stability can increase leakage. The system must remove the generated heat through the medium, surrounding hardware or a suitable support arrangement.
+
+Flatness is not roughness
+
+Flatness describes the departure of the sealing surface from an ideal plane; roughness describes smaller-scale surface texture. Both affect lubrication and leakage, but one measurement cannot replace the other. Surface finish requirements must be tied to the actual material, geometry and application.
+
+Wear mechanisms and diagnostics
+
+Abrasive particles may score faces; insufficient lubrication can cause adhesive damage, thermal distortion or rapid wear. Chemical attack, thermal cycling, cavitation and secondary-seal hang-up can create symptoms that look similar at first inspection. A useful failure review examines the two mating faces, elastomer and hardware together and records conditions before disassembly.
+
+Material engineering, not material substitution by price
+
+A candidate carbon, ceramic, silicon carbide, tungsten carbide, cast alloy or engineered coating must be evaluated against its counterface, process chemistry, operating temperature, thermal conductivity, wear mechanism and manufacturing tolerances. A lower-cost material is only an improvement if reliability and functional requirements remain satisfied.
+
+How SAP Parts supports development
+
+Our approach starts with a duty specification and existing component geometry. We define the likely failure mechanism, evaluate face combinations and component design, agree measurable acceptance criteria and plan testing where necessary. This turns tribology from a theoretical subject into engineering decisions that can be reproduced in production.
+
+Engineering support
+
+Send us a part reference, drawing or operating data. SAP Parts will review compatibility, design conditions and material selection before proposing a replacement or engineered alternative.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

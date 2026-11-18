@@ -1,0 +1,81 @@
+SEITEN-ID: P157
+SEITENTITEL: Seal Lifetime & Total Cost of Ownership
+URL: /technology/mechanical-seal-knowledge-base/seal-lifetime-total-cost-of-ownership/
+SEITENTYP: information
+BREADCRUMB: Technology > Mechanical Seal Knowledge Base > Seal Lifetime & Total Cost of Ownership
+
+SEO-TITEL
+Seal Lifetime & Total Cost of Ownership | SAP Parts
+
+META-BESCHREIBUNG
+Seal Lifetime & Total Cost of Ownership | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Seal Lifetime & Total Cost of Ownership
+
+Technical introduction
+
+The purchase price is only one part of a sealing system cost. Downtime, labour, spare parts, lost product and additional energy can be much more expensive.
+
+Technical Principle
+
+The purchase price is only one part of the cost of a mechanical seal. A failure can stop a production line, waste product, create cleaning work and require urgent maintenance. The value of reliable sealing is therefore often much higher than the price of the component.
+
+Materials And Design
+
+Total cost of ownership can include the seal price, installation time, support-fluid use, spare-part stock, planned maintenance, unplanned downtime and any product loss. The relevant costs vary by plant and application.
+
+Engineering Conditions
+
+A more expensive material may reduce total cost if it extends service life in a demanding duty. In another application, a well-selected lower-cost cast alloy or standard material pairing may meet the same requirement. The decision should use operating data and a documented comparison.
+
+Reliability And Cost
+
+SAP Parts focuses on material development, design selection and manufacturing efficiency. We assess opportunities to lower cost without presenting unverified service-life results as proven.
+
+Selection and engineering checks
+
+• Seal price.
+
+• Expected life.
+
+• Service hours.
+
+• Downtime cost.
+
+• Replacement labour.
+
+• Process loss.
+
+• Inspection frequency.
+
+Sap Parts Engineering
+
+SAP Parts looks at both component cost and the cost of operating the equipment.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

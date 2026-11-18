@@ -1,0 +1,49 @@
+SEITEN-ID: P004
+SEITENTITEL: Single Spring
+URL: /shop/spring-mechanical-seals/single-spring/
+SEITENTYP: listing
+BREADCRUMB: Shop > Spring Mechanical Seals > Single Spring
+
+SEO-TITEL
+Single Spring | SAP Parts
+
+META-BESCHREIBUNG
+Single Spring | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Single Spring
+
+Single-spring mechanical seals use one spring to maintain the axial closing force between the rotating seal ring and stationary seat. Correct operation depends on the installed working length, spring design, hydraulic loading and process conditions—not on shaft diameter alone.
+
+How this seal works
+
+A single coil spring provides closing force at standstill and helps maintain contact as the seal faces wear or the shaft moves axially. During liquid-lubricated operation, a very thin fluid film normally separates the mating faces. The seal must balance sufficient closing force against frictional heat and wear. The spring is only one part of the overall face-load system: the hydraulic pressure acts on the effective seal geometry as well.
+
+What makes designs different
+
+Some single-spring designs are direction-dependent: shaft rotation must tend to tighten, rather than unwind, their spring connection. Other designs can operate in either direction. This is a design-specific attribute; it must be verified from the actual construction. Pusher and non-pusher arrangements also behave differently with respect to axial movement and secondary-seal friction.
+
+Critical dimensions and interfaces
+
+Confirm shaft or sleeve diameter, seal-chamber bore, stationary-seat outside diameter, seat thickness, drive and anti-rotation features, and the installed axial working length. The nominal shaft diameter is not sufficient to establish interchangeability. Face geometry and the gland or housing interface determine the mechanical fit.
+
+Face materials and media
+
+Choose the rotating and stationary faces as a pairing—not as two independent materials. Carbon/ceramic, carbon/silicon carbide and hard/hard combinations may be appropriate for different duties, but depend on lubrication, solids content, temperature, chemistry and start-stop frequency. Secondary seals and metallic springs must also withstand the liquid and cleaning agents.
+
+Typical failure modes and engineering response
+
+An incorrect axial setting can increase face load and temperature or reduce contact stability. Dry running, vapor formation, abrasive particles, shaft runout, installation damage and chemically unsuitable elastomers can also cause leakage. SAP Parts evaluates the duty, verifies geometry, then recommends a matched seal arrangement and materials instead of a visual look-alike replacement.
+
+Data required for quotation
+
+Provide the OEM or existing seal reference, shaft diameter, installed length, seat dimensions, shaft rotation, medium and solids, pressure at the seal, temperature range, speed, expected dry-running or start-stop conditions, and available drawings or photographs.
+
+Engineering support
+
+Send us a part reference, drawing or operating data. SAP Parts will review compatibility, design conditions and material selection before proposing a replacement or engineered alternative.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

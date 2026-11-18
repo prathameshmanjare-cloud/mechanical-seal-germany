@@ -1,0 +1,57 @@
+SEITEN-ID: P023
+SEITENTITEL: Special Mechanical Seals
+URL: /shop/special-mechanical-seals/
+SEITENTYP: listing
+BREADCRUMB: Shop > Special Mechanical Seals
+
+SEO-TITEL
+Special Mechanical Seals | SAP Parts
+
+META-BESCHREIBUNG
+Special Mechanical Seals | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Special Mechanical Seals
+
+Technical introduction
+
+Special mechanical seals address service conditions that need design changes beyond a standard product. Each selection requires verified process data.
+
+Choose A Category
+
+Select the seal family or technical category that matches your requirement. - Split Seals: Split seal designs allow installation around existing shafts in equipment where dismantling is expensive or impractical. - High-Pressure Designs: High pressure increases hydraulic forces acting on the seal faces. - High-Temperature Designs: High temperature affects face lubrication, secondary seals, spring alloys and the shape of seal components. - Dry-Running Designs: Some services provide little or no lubricating liquid at the faces. - Custom-Engineered Seals: Custom seals are developed when standard dimensions, media compatibility or duty limits do not meet the application requirements.
+
+Technical Selection
+
+A mechanical seal works as part of the complete machine. The liquid, contact pressure, shaft movement and heat removal all affect the selection. Choose a verified catalog product or send the technical details for review.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Identification and replacement support
+
+Cannot find the exact part? Send the OEM number, dimensions or a drawing. Our team can review the possible replacement before you order.
+
+Engineering detail — how we solve the problem
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Replacement verification workflow
+
+An OEM number is an identification starting point, not automatic proof of interchangeability. Verify equipment variant, revision, shaft and housing geometry, seat, face materials, elastomers, operating conditions and available space. Only publish cross-references supported by verified product records.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

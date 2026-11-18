@@ -1,0 +1,73 @@
+SEITEN-ID: P025
+SEITENTITEL: High-Pressure Designs
+URL: /shop/special-mechanical-seals/high-pressure-designs/
+SEITENTYP: listing
+BREADCRUMB: Shop > Special Mechanical Seals > High-Pressure Designs
+
+SEO-TITEL
+High-Pressure Designs | SAP Parts
+
+META-BESCHREIBUNG
+High-Pressure Designs | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+High-Pressure Designs
+
+Technical introduction
+
+High pressure increases hydraulic forces acting on the seal faces. Hydraulic balance, strength and distortion control are key design topics.
+
+Selection and engineering checks
+
+A correct replacement needs more than a similar picture. Confirm the dimensions, construction and material version.
+
+• Differential pressure. Use the actual pressure at the seal chamber and note transients.
+
+• Balance ratio.
+
+• Shaft speed. Calculate relevant sliding speed and review starts and stops.
+
+• Face material strength. Specify the grade and pairing rather than a broad material family.
+
+• Chamber cooling.
+
+• Pressure reversals. Use the actual pressure at the seal chamber and note transients.
+
+Common failure mechanism
+
+A high-pressure rating cannot be inferred from material hardness alone.
+
+Technical Selection
+
+A mechanical seal works as part of the complete machine. The liquid, contact pressure, shaft movement and heat removal all affect the selection. Choose a verified catalog product or send the technical details for review.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Identification and replacement support
+
+Cannot find the exact part? Send the OEM number, dimensions or a drawing. Our team can review the possible replacement before you order.
+
+Engineering detail — how we solve the problem
+
+Hydraulic loading and pressure transients
+
+Use the pressure at the seal chamber, including start-up, shutdown, pressure reversal and pulsation—not simply the maximum rated pump pressure. Face balance ratio and support-system pressure affect frictional loading and leakage. Pressure protection or alternative seal chamber geometry requires engineering verification.
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Stationary interface and seating geometry
+
+Confirm seat outside diameter, axial thickness, installation depth, anti-rotation method, elastomer seat and housing tolerance. The counterface must remain square to the shaft and must not be distorted by uneven mounting force. A visually similar ring can have a different functional geometry.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

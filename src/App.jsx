@@ -10,6 +10,13 @@ import Contact from './pages/Contact'
 import Impressum from './pages/Impressum'
 import Applications from './pages/Applications'
 import Technology from './pages/Technology'
+import CmsPage from './pages/CmsPage'
+import NotFound from './pages/NotFound'
+import { pages } from './lib/site'
+
+// Routes still served by the legacy pages until their phase-2 templates exist.
+const LEGACY = new Set(['/', '/contact/'])
+const cmsRoutes = pages.filter((p) => !LEGACY.has(p.url))
 
 function ScrollTop() {
   const { pathname } = useLocation()
@@ -34,7 +41,10 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
-          <Route path="*" element={<Home />} />
+          {cmsRoutes.map((p) => (
+            <Route key={p.id} path={p.url} element={<CmsPage key={p.id} id={p.id} />} />
+          ))}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

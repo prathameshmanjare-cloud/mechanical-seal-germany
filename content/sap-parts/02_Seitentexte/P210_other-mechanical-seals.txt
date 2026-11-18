@@ -1,0 +1,21 @@
+SEITEN-ID: P210
+SEITENTITEL: Other Mechanical Seals
+URL: /shop/other/
+SEITENTYP: listing
+BREADCRUMB: Shop > Other
+
+SEO-TITEL
+Other Mechanical Seals | SAP Parts
+
+META-BESCHREIBUNG
+Other Mechanical Seals | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Other Mechanical Seals
+
+Explore additional SAP Parts mechanical seal types and replacement references that do not fall within the dedicated design families. Search by part number, dimensions, sealing-face materials or equipment reference. For selection support, provide the operating medium, pressure, speed and installation dimensions.
+
+Engineering support
+
+Our team supports application-specific selection of material pairings, shaft sealing interfaces and seal geometry. Send drawings or an existing reference for a technical review.

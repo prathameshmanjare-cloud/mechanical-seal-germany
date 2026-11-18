@@ -1,0 +1,57 @@
+SEITEN-ID: P196
+SEITENTITEL: Logistics & Supply
+URL: /about-us/logistics-supply/
+SEITENTYP: information
+BREADCRUMB: About Us > Logistics & Supply
+
+SEO-TITEL
+Logistics & Supply | SAP Parts
+
+META-BESCHREIBUNG
+Logistics & Supply | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Logistics & Supply
+
+Technical introduction
+
+Our Leverkusen distribution centre combines stock handling with engineering support for OEMs and repair customers.
+
+Our Main Areas
+
+Select a topic below to learn about its technical requirements and available SAP Parts support. - Leverkusen Distribution Center: SAP Parts operates a distribution centre in Leverkusen, Germany, supporting European supply of industrial sealing components. - 1,200 m² High-Bay Warehouse: Our Leverkusen high-bay warehouse covers approximately 1,200 m². The storage operation supports structured handling of seals and replacement parts. - OEM Production Supply: OEM production requires repeatable components, agreed specifications and reliable planning. A sealing part must remain consistent across production batches. - Spare Parts & Repair Supply: Repair customers often need fast identification of a worn seal. Reliable supply starts with a correct part match and clear stock information. - Inventory Planning: Inventory planning connects OEM demand forecasts with production and local stock. It can reduce shortages when part definitions remain stable.
+
+How We Work
+
+We start with the application and the exact operating conditions. The correct dimensions, material pairing and documentation help reduce avoidable repairs and incorrect part selection.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Technical identification before shipment
+
+Availability is only helpful if the delivered part is the correct construction and revision. Link each SKU to a controlled drawing, dimensions, material options and picking identifiers. Show stock and delivery claims only when verified by the operational system.
+
+Storage and product preservation
+
+Seal faces must be protected against chips and impact, while elastomers require suitable storage conditions and age control. Keep identifiable packaging and traceable variants to prevent mix-ups. Appropriate storage rules depend on component materials and shelf-life specifications.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+Define the relevant specification, controlled drawing revision, selected materials, required checks and acceptance criteria. A manufacturing or quality capability is not a product certification.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

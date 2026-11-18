@@ -1,0 +1,79 @@
+SEITEN-ID: P139
+SEITENTITEL: Cost-Optimized Material Substitution
+URL: /technology/material-engineering-cost-optimization/cost-optimized-material-substitution/
+SEITENTYP: information
+BREADCRUMB: Technology > Material Engineering & Cost Optimization > Cost-Optimized Material Substitution
+
+SEO-TITEL
+Cost-Optimized Material Substitution | SAP Parts
+
+META-BESCHREIBUNG
+Cost-Optimized Material Substitution | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Cost-Optimized Material Substitution
+
+Technical introduction
+
+The most expensive material is not always the most economical choice. SAP Parts examines whether a simpler bulk alloy, different face combination or modified manufacturing route can meet the actual operating requirement.
+
+Technical Principle
+
+An alternative material can reduce material price, coating steps, machining time or processing risk. But a cost reduction is useful only if the seal still meets its required service life and operating limits.
+
+Materials And Design
+
+The first task is to find the real wear mechanism. Abrasion, corrosion, fatigue, thermal cracking and poor lubrication require different solutions. Replacing one expensive material with another hard material is not enough.
+
+Engineering Conditions
+
+For selected duties, a suitable high-chromium white cast iron may be evaluated as an alternative to a coated construction. This requires comparison of wear resistance, toughness, corrosion, surface finish, dimensional stability and mating-face behaviour. White cast iron is not a universal replacement for tungsten carbide coatings.
+
+Reliability And Cost
+
+SAP Parts approaches cost reduction through material engineering and integrated manufacturing. A proposal should document the expected saving, the technical risks and the tests needed before series approval.
+
+Selection and engineering checks
+
+• Wear mechanism.
+
+• Chemical attack.
+
+• Required life.
+
+• Initial price.
+
+• Processing steps.
+
+• Inspection and validation cost.
+
+Sap Parts Engineering
+
+Our goal is to lower total cost without losing required sealing reliability.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

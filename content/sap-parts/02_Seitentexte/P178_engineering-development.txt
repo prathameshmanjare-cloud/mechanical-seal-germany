@@ -1,0 +1,57 @@
+SEITEN-ID: P178
+SEITENTITEL: Engineering & Development
+URL: /about-us/engineering-development/
+SEITENTYP: information
+BREADCRUMB: About Us > Engineering & Development
+
+SEO-TITEL
+Engineering & Development | SAP Parts
+
+META-BESCHREIBUNG
+Engineering & Development | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Engineering & Development
+
+Technical introduction
+
+Our development work connects materials, geometry and operating conditions. We support OEMs throughout the sealing process.
+
+Our Main Areas
+
+Select a topic below to learn about its technical requirements and available SAP Parts support. - Tribology Expertise: Tribology helps us understand the contact between rotating and stationary sealing faces. We use this knowledge to examine friction, lubrication, wear and surface quality. - Custom Seal Design: Custom seal design adapts dimensions, loading elements, materials and interfaces to the equipment. It begins with a clear operating requirement. - Material Development: SAP Parts examines material and coating options to meet friction, wear, corrosion and cost targets. A better solution may use a different material grade or production process. - Cost Optimization: Engineering-led cost reduction aims to keep required performance while simplifying materials, processing or procurement. - Technical Support: Technical support helps identify the correct seal, review unusual failures and check the information needed for a replacement or design.
+
+How We Work
+
+We start with the application and the exact operating conditions. The correct dimensions, material pairing and documentation help reduce avoidable repairs and incorrect part selection.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+A useful engineering enquiry
+
+Send the current seal or equipment reference, shaft and seat dimensions, operating pressure at the seal, temperature, speed, medium, solids, duty cycle and photographs or drawings. We review geometry, materials and duty before recommending a replacement, altered design or development project.
+
+Technical information we need
+
+Define the relevant specification, controlled drawing revision, selected materials, required checks and acceptance criteria. A manufacturing or quality capability is not a product certification.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

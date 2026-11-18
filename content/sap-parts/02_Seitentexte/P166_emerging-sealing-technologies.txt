@@ -1,0 +1,57 @@
+SEITEN-ID: P166
+SEITENTITEL: Emerging Sealing Technologies
+URL: /technology/emerging-sealing-technologies/
+SEITENTYP: information
+BREADCRUMB: Technology > Emerging Sealing Technologies
+
+SEO-TITEL
+Emerging Sealing Technologies | SAP Parts
+
+META-BESCHREIBUNG
+Emerging Sealing Technologies | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Emerging Sealing Technologies
+
+Technical introduction
+
+New applications create new demands for mechanical sealing. We review these duties without claiming unverified product qualifications.
+
+Our Main Areas
+
+Select a topic below to learn about its technical requirements and available SAP Parts support. - Data Center Liquid Cooling: Direct liquid cooling requires reliable pumps and careful control of contamination. Sealing materials may be exposed to treated or deionised water with limited lubricity. - Hydrogen Applications: Hydrogen sealing requires application-specific assessment of leakage, gas behaviour, materials and safety requirements. Pump seal designs do not automatically transfer to gas service. - Carbon Capture: Carbon capture equipment handles fluids that may contain CO2 and impurities under varying pressures and temperatures. Material compatibility depends on the full process chemistry. - High-Efficiency Heat Pumps: Industrial heat pumps use refrigerants and thermal circuits with repeated changes in operating conditions. Seals must match the exact machine and working fluid. - Geothermal Applications: Geothermal pumps may face hot water, dissolved minerals, corrosion and scale. Seal reliability depends on temperature and deposits near the contact faces.
+
+How We Work
+
+We start with the application and the exact operating conditions. The correct dimensions, material pairing and documentation help reduce avoidable repairs and incorrect part selection.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

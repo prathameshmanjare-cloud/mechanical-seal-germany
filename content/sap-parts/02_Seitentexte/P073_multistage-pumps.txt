@@ -1,0 +1,73 @@
+SEITEN-ID: P073
+SEITENTITEL: Multistage Pumps
+URL: /applications/industrial-pumps/multistage-pumps/
+SEITENTYP: listing
+BREADCRUMB: Applications > Industrial Pumps > Multistage Pumps
+
+SEO-TITEL
+Multistage Pumps | SAP Parts
+
+META-BESCHREIBUNG
+Multistage Pumps | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Multistage Pumps
+
+Technical introduction
+
+Multistage pumps can operate at high pressures and may have compact seal chambers. The actual pressure at the seal is more important than the pump discharge pressure alone.
+
+Selection and engineering checks
+
+A correct replacement needs more than a similar picture. Confirm the dimensions, construction and material version.
+
+• Seal chamber pressure. Use the actual pressure at the seal chamber and note transients.
+
+• Shaft diameter. Confirm all related dimensions, not only nominal shaft size.
+
+• Balance.
+
+• Stage arrangement.
+
+• Flushing.
+
+• Temperature. Check continuous and start-up temperatures at the sealing interface.
+
+Common failure mechanism
+
+Using pump discharge pressure as the only design value can give the wrong face load.
+
+Technical Selection
+
+A mechanical seal works as part of the complete machine. The liquid, contact pressure, shaft movement and heat removal all affect the selection. Choose a verified catalog product or send the technical details for review.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Identification and replacement support
+
+Cannot find the exact part? Send the OEM number, dimensions or a drawing. Our team can review the possible replacement before you order.
+
+Engineering detail — how we solve the problem
+
+Sealing duty at the pump
+
+The pressure and temperature at the seal chamber may differ from values at the suction or discharge nozzles. Assess operating speed, start-stop sequence, solids, vapor pressure, shaft movement and available cooling or flushing. A product match requires both geometry and duty suitability.
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Hydraulic loading and pressure transients
+
+Use the pressure at the seal chamber, including start-up, shutdown, pressure reversal and pulsation—not simply the maximum rated pump pressure. Face balance ratio and support-system pressure affect frictional loading and leakage. Pressure protection or alternative seal chamber geometry requires engineering verification.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

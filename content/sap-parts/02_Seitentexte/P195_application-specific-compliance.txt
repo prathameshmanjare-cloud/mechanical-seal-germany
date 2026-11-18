@@ -1,0 +1,81 @@
+SEITEN-ID: P195
+SEITENTITEL: Application-Specific Compliance
+URL: /about-us/quality-traceability/application-specific-compliance/
+SEITENTYP: information
+BREADCRUMB: About Us > Quality & Traceability > Application-Specific Compliance
+
+SEO-TITEL
+Application-Specific Compliance | SAP Parts
+
+META-BESCHREIBUNG
+Application-Specific Compliance | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Application-Specific Compliance
+
+Technical introduction
+
+Compliance is a product- and use-specific task. SAP Parts can support material selection, documentation and coordination of required testing and approvals for regulated applications.
+
+Technical Principle
+
+Sealing materials for drinking water, food or other regulated services need application-specific documentation. The rules depend on the market, the product type and the materials in contact with the medium.
+
+Materials And Design
+
+For EU drinking water applications, new harmonised hygiene requirements for materials and products in contact with drinking water start applying from 31 December 2026, with transition provisions. For the United Kingdom, applicable water fitting rules and relevant approval schemes such as WRAS may be important. For the United States, NSF/ANSI/CAN 61 is a common health-effects standard for products and materials in contact with drinking water.
+
+Engineering Conditions
+
+SAP Parts can support the engineering route: define the application, select candidate materials, prepare a bill of materials, gather supplier declarations and coordinate necessary testing and approval steps. The actual certificate belongs to the defined product and scope after assessment by the responsible body.
+
+Reliability And Cost
+
+We do not treat one approved elastomer as automatic approval of an entire mechanical seal. We also do not claim universal EU, UK or US certification. Ask our engineering team about the documentation and validation route for your project.
+
+Selection and engineering checks
+
+• EU drinking water rules.
+
+• UK water fitting requirements and WRAS pathways.
+
+• NSF/ANSI/CAN 61 for drinking water.
+
+• EU food-contact framework when relevant.
+
+• Exact product and wetted materials. Specify the grade and pairing rather than a broad material family.
+
+Compliance And Approval Route
+
+Step 1: Define the country, the product and the intended contact medium. Step 2: Identify every wetted material, including elastomers and impregnants. Step 3: Agree the applicable standards and required product evidence. Step 4: Arrange tests and assessment with the relevant approved body. Step 5: Publish an approval claim only when a valid certificate covers the exact part and scope.
+
+Sap Parts Engineering
+
+We help develop for defined compliance requirements; approvals are granted by the relevant bodies after successful assessment.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Manufacturing tolerances and functional faces
+
+Process planning must link the turning, grinding and lapping stages to the finished seal geometry. Flatness, squareness, concentricity, roughness and dimensional control matter differently at different interfaces. Establish measurement methods and lot traceability for critical dimensions.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Technical information we need
+
+Define the relevant specification, controlled drawing revision, selected materials, required checks and acceptance criteria. A manufacturing or quality capability is not a product certification.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

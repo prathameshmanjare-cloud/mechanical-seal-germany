@@ -1,0 +1,73 @@
+SEITEN-ID: P079
+SEITENTITEL: Slurry Pumps
+URL: /applications/wastewater-submersible/slurry-pumps/
+SEITENTYP: listing
+BREADCRUMB: Applications > Wastewater & Submersible > Slurry Pumps
+
+SEO-TITEL
+Slurry Pumps | SAP Parts
+
+META-BESCHREIBUNG
+Slurry Pumps | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Slurry Pumps
+
+Technical introduction
+
+Slurry pumps expose sealing faces to abrasive particles. Material pairing, solids exclusion and seal chamber design are often more important than nominal hardness alone.
+
+Selection and engineering checks
+
+A correct replacement needs more than a similar picture. Confirm the dimensions, construction and material version.
+
+• Particle size and hardness.
+
+• Concentration.
+
+• Pressure. Use the actual pressure at the seal chamber and note transients.
+
+• Viscosity.
+
+• Flush or barrier fluid. Check lubrication, vapor pressure and compatibility with the support fluid.
+
+• Geometry.
+
+Common failure mechanism
+
+A hard-hard face pair still needs suitable lubrication and can fail from thermal shock.
+
+Technical Selection
+
+A mechanical seal works as part of the complete machine. The liquid, contact pressure, shaft movement and heat removal all affect the selection. Choose a verified catalog product or send the technical details for review.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Identification and replacement support
+
+Cannot find the exact part? Send the OEM number, dimensions or a drawing. Our team can review the possible replacement before you order.
+
+Engineering detail — how we solve the problem
+
+Abrasive handling and face protection
+
+Particle size, concentration and hardness affect the wear mechanism at the faces and secondary seals. Consider flush or barrier arrangements where suitable and verify whether process-side geometry encourages particle accumulation. Select a complete arrangement rather than relying only on a harder face material.
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Stationary interface and seating geometry
+
+Confirm seat outside diameter, axial thickness, installation depth, anti-rotation method, elastomer seat and housing tolerance. The counterface must remain square to the shaft and must not be distorted by uneven mounting force. A visually similar ring can have a different functional geometry.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.
