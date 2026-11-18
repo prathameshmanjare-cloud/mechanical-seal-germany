@@ -1,7 +1,10 @@
 // Home (P001): search first, then the shop families, the other site sections and the editorial copy.
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { ArrowRight, CalendarDays, Factory, Hash, Layers, Ruler, Search, Settings, Wrench } from 'lucide-react'
+import {
+  ArrowRight, Boxes, CalendarDays, Circle, Droplet, Ellipsis, Factory, Hash, LayoutGrid, Layers, Package, Ruler, Search, Settings,
+  Waves, Wrench,
+} from 'lucide-react'
 import RichText, { CtaBox } from './RichText'
 import { ctaOf, introOf } from '../../lib/content'
 import { pageById, sections, totals } from '../../lib/site'
@@ -10,6 +13,16 @@ const SHOP = '/shop/'
 const FIND = 'P041' // OEM Replacement > Find a Replacement
 const FIND_ICONS = [Hash, Factory, Wrench, Ruler]
 const fmt = (n) => n.toLocaleString('en')
+
+// Badge icon per seal family, by keyword in its title.
+const FAMILY_ICONS = [
+  [/spring/i, Waves], [/bellows/i, Package], [/cartridge/i, Settings], [/hygienic/i, Droplet],
+  [/special/i, Boxes], [/seat/i, Circle], [/component/i, LayoutGrid], [/other/i, Ellipsis],
+]
+function FamilyIcon({ title }) {
+  const Icon = FAMILY_ICONS.find(([re]) => re.test(title))?.[1] ?? Layers
+  return <Icon size={22} strokeWidth={1.7} aria-hidden="true" />
+}
 
 function HomeSearch() {
   const [q, setQ] = useState('')
@@ -52,45 +65,73 @@ export default function HomeTemplate({ page, content }) {
             </ul>
           </div>
           <div className="home__art" aria-hidden="true" />
-          {finders.length > 0 && (
-            <nav className="home__finders" aria-label="Ways to find a replacement">
-              <p className="home__finders-title">Find a replacement by</p>
-              {finders.map((f, i) => {
-                const Icon = FIND_ICONS[i % FIND_ICONS.length]
-                return (
-                  <Link key={f.id} to={f.url} className="home__finder">
-                    <Icon size={20} aria-hidden="true" />
-                    <span>{f.title.replace(/^Search by /, '')}</span>
-                    <ArrowRight size={18} aria-hidden="true" />
-                  </Link>
-                )
-              })}
-            </nav>
-          )}
         </div>
         <span className="home__hero-note" aria-hidden="true">Representative illustration</span>
       </section>
 
-      <div className="pbody">
-        <section className="container home__families">
-          <div className="section-head">
-            <h2>Shop by seal family</h2>
-            <Link to={SHOP} className="link-arrow">All {fmt(totals.products)} articles <ArrowRight size={15} /></Link>
+      {finders.length > 0 && (
+        <div className="container home__finders-wrap">
+          <nav className="home__finders" aria-label="Ways to find a replacement">
+            <p className="home__finders-title">Find a replacement by</p>
+            {finders.map((f, i) => {
+              const Icon = FIND_ICONS[i % FIND_ICONS.length]
+              return (
+                <Link key={f.id} to={f.url} className="home__finder">
+                  <Icon size={20} aria-hidden="true" />
+                  <span>{f.title.replace(/^Search by /, '')}</span>
+                  <ArrowRight size={18} aria-hidden="true" />
+                </Link>
+              )
+            })}
+          </nav>
+        </div>
+      )}
+
+      <section className="fams" aria-labelledby="fams-title">
+        <svg className="fams__art" viewBox="0 0 400 400" aria-hidden="true">
+          {[180, 150, 120, 90].map((r) => <circle key={r} cx="200" cy="200" r={r} />)}
+          {[170, 140, 110].map((r) => <ellipse key={r} cx="230" cy="200" rx={r * 0.55} ry={r} />)}
+        </svg>
+        <div className="container">
+          <div className="fams__head">
+            <div>
+              <p className="fams__eyebrow">Explore our range</p>
+              <h2 id="fams-title" className="fams__title">Shop by <span>Seal Family</span></h2>
+              <p className="fams__lead">A complete range of mechanical seals and components for diverse industrial applications.</p>
+            </div>
+            <ul className="fams__stats">
+              <li><Layers size={24} strokeWidth={1.6} aria-hidden="true" /><span><strong>{families.length}</strong>Seal families</span></li>
+              <li><Package size={24} strokeWidth={1.6} aria-hidden="true" /><span><strong>{fmt(totals.products)}</strong>Articles</span></li>
+              <li><CalendarDays size={24} strokeWidth={1.6} aria-hidden="true" /><span><strong>Since 2009</strong>in sealing engineering</span></li>
+            </ul>
           </div>
-          <div className="home__grid">
-            {families.map((f) => (
-              <Link key={f.id} to={f.url} className="home__fam">
-                {f.image && <img src={f.image} alt="" loading="lazy" width="240" height="180" />}
-                <span>
-                  <strong>{f.title}</strong>
-                  <small>{f.productCount ? `${fmt(f.productCount)} articles` : 'Identification on request'}</small>
+
+          <div className="fams__grid">
+            {families.map((f, i) => (
+              <Link key={f.id} to={f.url} className={`fam ${i === 0 ? 'fam--featured' : ''}`}>
+                <span className="fam__media">
+                  <span className="fam__badge"><FamilyIcon title={f.title} /></span>
+                  {f.image && <img src={f.image} alt="" loading="lazy" width="320" height="240" />}
+                </span>
+                <span className="fam__body">
+                  <span className="fam__text">
+                    <strong data-allow-widow>{f.title}</strong>
+                    <small>{f.productCount ? `${fmt(f.productCount)} articles` : 'Identification on request'}</small>
+                  </span>
+                  <span className="fam__go"><ArrowRight size={18} aria-hidden="true" /></span>
                 </span>
               </Link>
             ))}
           </div>
-          <p className="home__note">Images are representative illustrations of each seal family.</p>
-        </section>
 
+          <div className="fams__foot">
+            <p className="fams__note">Images are representative illustrations of each seal family.</p>
+            <Link to={SHOP} className="btn btn--primary fams__all">View all {fmt(totals.products)} articles <ArrowRight size={17} aria-hidden="true" /></Link>
+          </div>
+        </div>
+      </section>
+
+      <div className="pbody">
         <section className="container home__sections">
           <div className="section-head">
             <h2>Find by reference, equipment or topic</h2>

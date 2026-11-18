@@ -433,16 +433,57 @@ h3.rt__h { font-size: 18.5px; }
 .home__finder svg:first-child { color: var(--brand); }
 .home__finder svg:last-child { color: var(--navy); }
 .home__hero-note { position: absolute; right: 16px; bottom: 10px; font-size: 11.5px; color: rgba(255,255,255,.85); }
-.home__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
-.home__fam { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; transition: border-color .15s, box-shadow .15s; }
-.home__fam:hover { border-color: var(--brand); box-shadow: var(--shadow-sm); }
-.home__fam img { width: 100%; aspect-ratio: 16 / 10; object-fit: contain; background: var(--surface); padding: 12px; mix-blend-mode: multiply; }
-.home__fam span { display: flex; flex-direction: column; gap: 2px; padding: 12px 16px 16px; border-top: 1px solid var(--line); }
-.home__fam strong { font-size: 15.5px; font-weight: 600; color: var(--ink); line-height: 1.3; }
-.home__fam:hover strong { color: var(--brand); }
-.home__fam small { font-size: 13.5px; color: var(--muted); }
-.home__note { margin-top: 10px; font-size: 13px; color: var(--muted); }
-.home__sections { margin-top: 56px; }
+/* Shop by seal family */
+.fams { position: relative; overflow: hidden; padding: 64px 0 56px; background: radial-gradient(900px 420px at 85% 0%, #e3eefc 0%, transparent 70%), linear-gradient(180deg, #f7faff 0%, #f1f6fd 100%); }
+.fams__art { position: absolute; top: -60px; right: 40px; width: 320px; height: 320px; pointer-events: none; }
+.fams__art circle, .fams__art ellipse { fill: none; stroke: #b9d0ee; stroke-width: 1; opacity: .55; }
+.fams .container { position: relative; max-width: 1360px; }
+.fams__head { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; margin-bottom: 36px; }
+.fams__eyebrow { display: flex; align-items: center; gap: 14px; font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--navy-2); }
+.fams__eyebrow::after { content: ''; width: 64px; height: 2px; background: var(--brand); border-radius: 2px; }
+.fams__title { margin-top: 10px; font-size: clamp(30px, 3.4vw, 46px); font-weight: 800; letter-spacing: -0.025em; }
+.fams__title span { color: var(--brand); }
+.fams__lead { margin-top: 10px; max-width: 600px; font-size: 17px; color: #475569; }
+.fams__stats { display: flex; flex: none; align-items: center; padding: 14px 8px; background: rgba(255,255,255,.75); border: 1px solid #e3ebf6; border-radius: 999px; box-shadow: 0 10px 30px rgba(11,31,58,.06); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.fams__stats li { display: flex; align-items: center; gap: 12px; padding: 0 26px; border-left: 1px solid #dbe4f0; }
+.fams__stats li:first-child { border-left: 0; }
+.fams__stats svg { flex: none; color: var(--brand); }
+.fams__stats span { display: flex; flex-direction: column; font-size: 14px; line-height: 1.25; color: #475569; white-space: nowrap; }
+.fams__stats strong { font-size: 19px; color: var(--ink); font-variant-numeric: tabular-nums; }
+.fams__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
+
+.fam { position: relative; display: flex; flex-direction: column; overflow: hidden; background: #fff; border: 1px solid #e3ebf6; border-radius: 16px; box-shadow: 0 6px 20px rgba(11,31,58,.05); transition: transform .2s var(--ease), box-shadow .2s, border-color .2s; }
+.fam:hover { transform: translateY(-3px); border-color: #c7d8f0; box-shadow: 0 18px 40px rgba(11,31,58,.12); }
+.fam__media { position: relative; display: grid; place-items: center; margin: 6px 6px 0; padding: 18px 18px 6px; border-radius: 12px; background:
+  radial-gradient(140% 60% at 50% 118%, #d7e6f9 0 48%, transparent 49%),
+  linear-gradient(180deg, #f9fbff 0%, #eef4fc 100%); }
+.fam__media img { width: 100%; height: auto; max-width: 290px; aspect-ratio: 4 / 3; object-fit: cover; mix-blend-mode: multiply; transition: transform .3s var(--ease);
+  /* Fade the studio backdrop of the render so the seal sits directly on the card. */
+  -webkit-mask-image: radial-gradient(ellipse 62% 58% at 50% 50%, #000 62%, transparent 100%);
+  mask-image: radial-gradient(ellipse 62% 58% at 50% 50%, #000 62%, transparent 100%); }
+.fam:hover .fam__media img { transform: scale(1.04); }
+.fam__badge { position: absolute; top: 12px; left: 12px; z-index: 1; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: #fff; color: var(--brand); box-shadow: 0 4px 12px rgba(11,31,58,.10); }
+.fam__body { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 18px 18px; }
+.fam__text { display: flex; flex-direction: column; min-width: 0; }
+.fam__text strong { font-size: 17px; font-weight: 700; line-height: 1.3; color: var(--ink); }
+.fam__text small { margin-top: 2px; font-size: 14.5px; color: #5b6474; }
+.fam__go { flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: #fff; border: 1px solid #dbe4f0; color: var(--brand); box-shadow: 0 3px 10px rgba(11,31,58,.06); transition: background .2s, color .2s, border-color .2s; }
+.fam:hover .fam__go { background: var(--brand); border-color: var(--brand); color: #fff; }
+
+/* Featured (first) family */
+.fam--featured { border-color: transparent; background: linear-gradient(160deg, #1d5fd0 0%, #0f3f99 55%, #0b2f73 100%); box-shadow: 0 18px 40px rgba(16,63,153,.30); }
+.fam--featured .fam__media { background: radial-gradient(70% 70% at 50% 45%, #e9f2ff 0%, #cfe0fa 55%, rgba(207,224,250,0) 100%); }
+.fam--featured .fam__badge { background: rgba(255,255,255,.18); color: #fff; box-shadow: none; }
+.fam--featured .fam__text strong, .fam--featured .fam__text small { color: #fff; }
+.fam--featured .fam__text small { opacity: .85; }
+.fam--featured .fam__go { background: #fff; border-color: #fff; color: var(--brand); }
+.fam--featured:hover .fam__go { background: var(--navy); border-color: var(--navy); color: #fff; }
+
+.fams__foot { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 32px; }
+.fams__note { padding-left: 14px; border-left: 3px solid var(--brand); font-size: 14px; color: #5b6474; }
+.fams__all { height: 50px; padding: 0 26px; border-radius: 999px; font-size: 16px; background: var(--navy-2); }
+.fams__all:hover { background: var(--navy); }
+.home__sections { margin-top: 16px; }
 
 /* ---------- Footer ---------- */
 .footer { background: var(--navy); color: #9fb2cc; font-size: 14.5px; }
@@ -531,7 +572,8 @@ h3.rt__h { font-size: 18.5px; }
 @media (max-width: 1080px) {
   .split, .cms__grid, .cms__grid:has(.cquote), .pdp__top, .pdp__body { grid-template-columns: 1fr; gap: 32px; }
   .split__aside, .cms__side, .pdp__aside { position: static; }
-  .home__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fams__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fams__head { flex-direction: column; align-items: flex-start; }
   .footer__grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 900px) {
@@ -563,7 +605,24 @@ h3.rt__h { font-size: 18.5px; }
   .exact { flex-direction: column; align-items: flex-start; }
   .pspec dl div { grid-template-columns: 1fr; gap: 2px; }
   .cquote .quote__row { grid-template-columns: 1fr; }
-  .home__grid { gap: 10px; }
+  .fams { padding: 44px 0 40px; }
+  .fams__art { display: none; }
+  .fams__grid { gap: 12px; }
+  .fams__lead { font-size: 15.5px; }
+  .fams__stats { width: 100%; border-radius: var(--radius-lg); padding: 12px 4px; }
+  .fams__stats li { flex: 1; flex-direction: column; align-items: flex-start; gap: 6px; padding: 0 12px; }
+  .fams__stats span { font-size: 12.5px; white-space: normal; }
+  .fams__stats strong { font-size: 16px; }
+  .fams__stats svg { width: 20px; height: 20px; }
+  .fam { border-radius: 12px; }
+  .fam__media { padding: 12px 10px 4px; }
+  .fam__badge { top: 8px; left: 8px; width: 34px; height: 34px; }
+  .fam__badge svg { width: 18px; height: 18px; }
+  .fam__body { padding: 10px 12px 12px; gap: 8px; }
+  .fam__text strong { font-size: 14.5px; }
+  .fam__text small { font-size: 12.5px; }
+  .fam__go { width: 32px; height: 32px; }
+  .fams__foot { flex-direction: column; align-items: stretch; }
   .home__hero { --banner: 210px; background-image: url('/img/home/hero-sm.webp'), linear-gradient(180deg, #f8f9fd 0%, #e1effc 100%); }
   .home__hero .home__inner { padding-top: 32px; }
   .home__title { font-size: 36px; }
@@ -578,7 +637,6 @@ h3.rt__h { font-size: 18.5px; }
   .home__search .search__btn svg { display: none; }
   .home__finders { grid-template-columns: 1fr; padding: 16px; }
   .home__finder { padding: 12px 14px; font-size: 15px; }
-  .home__fam span { padding: 10px 12px 12px; }
   .footer__grid { grid-template-columns: 1fr; gap: 28px; }
   .footer__bottom { flex-direction: column; }
   .search--lg .search__btn { padding: 0 14px; }
