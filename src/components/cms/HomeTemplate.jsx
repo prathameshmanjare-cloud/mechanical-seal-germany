@@ -1,7 +1,7 @@
 // Home (P001): search first, then the shop families, the other site sections and the editorial copy.
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { ArrowRight, Factory, Hash, Ruler, Search, Wrench } from 'lucide-react'
+import { ArrowRight, CalendarDays, Factory, Hash, Layers, Ruler, Search, Settings, Wrench } from 'lucide-react'
 import RichText, { CtaBox } from './RichText'
 import { ctaOf, introOf } from '../../lib/content'
 import { pageById, sections, totals } from '../../lib/site'
@@ -23,7 +23,7 @@ function HomeSearch() {
     <form className="search search--lg cms-search home__search" role="search" onSubmit={go}>
       <Search size={18} className="search__icon" aria-hidden="true" />
       <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="SAP Parts SKU, OEM number, series or shaft Ø…" aria-label="Search the catalogue" />
-      <button type="submit" className="btn btn--primary search__btn">Search</button>
+      <button type="submit" className="btn btn--primary search__btn">Search <ArrowRight size={16} aria-hidden="true" /></button>
     </form>
   )
 }
@@ -39,37 +39,37 @@ export default function HomeTemplate({ page, content }) {
       <section className="home__hero">
         <div className="container home__inner">
           <div className="home__intro">
-            <p className="home__eyebrow">SAP Parts Europe · Leverkusen, Germany</p>
-            <h1 className="home__title">Mechanical seal catalogue</h1>
+            <p className="home__eyebrow">Mechanical seal catalogue</p>
+            <h1 className="home__title">
+              Find the Right <span className="home__title-accent">Mechanical Seal</span>
+            </h1>
             <p className="home__lead">{introOf(content) || 'Find your mechanical seal by OEM reference, SAP Parts SKU, dimensions, manufacturer or seal type.'}</p>
             <HomeSearch />
             <ul className="home__facts">
-              <li><strong>{fmt(totals.products)}</strong> articles</li>
-              <li><strong>{families.length}</strong> seal families</li>
-              <li><strong>Since 2009</strong> in sealing engineering</li>
+              <li><Layers size={26} strokeWidth={1.6} aria-hidden="true" /><span><strong>{fmt(totals.products)}</strong>Articles</span></li>
+              <li><Settings size={26} strokeWidth={1.6} aria-hidden="true" /><span><strong>{families.length}</strong>Seal families</span></li>
+              <li><CalendarDays size={26} strokeWidth={1.6} aria-hidden="true" /><span><strong>Since 2009</strong>in sealing engineering</span></li>
             </ul>
           </div>
+          <div className="home__art" aria-hidden="true" />
+          {finders.length > 0 && (
+            <nav className="home__finders" aria-label="Ways to find a replacement">
+              <p className="home__finders-title">Find a replacement by</p>
+              {finders.map((f, i) => {
+                const Icon = FIND_ICONS[i % FIND_ICONS.length]
+                return (
+                  <Link key={f.id} to={f.url} className="home__finder">
+                    <Icon size={20} aria-hidden="true" />
+                    <span>{f.title.replace(/^Search by /, '')}</span>
+                    <ArrowRight size={18} aria-hidden="true" />
+                  </Link>
+                )
+              })}
+            </nav>
+          )}
         </div>
         <span className="home__hero-note" aria-hidden="true">Representative illustration</span>
       </section>
-
-      {finders.length > 0 && (
-        <nav className="home__finders" aria-label="Ways to find a replacement">
-          <div className="container home__finders-inner">
-            <p className="home__finders-title">Find a replacement by</p>
-            {finders.map((f, i) => {
-              const Icon = FIND_ICONS[i % FIND_ICONS.length]
-              return (
-                <Link key={f.id} to={f.url} className="home__finder">
-                  <Icon size={18} aria-hidden="true" />
-                  <span>{f.title.replace(/^Search by /, '')}</span>
-                  <ArrowRight size={16} aria-hidden="true" />
-                </Link>
-              )
-            })}
-          </div>
-        </nav>
-      )}
 
       <div className="pbody">
         <section className="container home__families">
