@@ -4,9 +4,11 @@ import { company } from '../data'
 import { menus } from '../lib/nav'
 import { pageById, sections } from '../lib/site'
 
+import { Logo } from './Header'
+
 const shop = menus.find((m) => m.to === '/shop/')
 const legal = pageById('P209')
-import { Logo } from './Header'
+const year = new Date().getFullYear()
 
 export default function Footer() {
   return (
@@ -15,7 +17,7 @@ export default function Footer() {
         <div>
           <Logo light />
           <p className="footer__lead">
-            Design, development and manufacturing of mechanical seals in Germany. Operated by {company.operator} since {company.since}.
+            German sealing engineering since {company.since}. Integrated manufacturing, tribology and custom development.
           </p>
         </div>
         <div>
@@ -38,7 +40,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container footer__bottom">
-        <span>© {new Date().getFullYear()} {company.name}</span>
+        <span>© {year} {company.operator}</span>
         <Link to={legal.url}>{legal.title}</Link>
       </div>
     </footer>

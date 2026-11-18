@@ -1,8 +1,180 @@
 {
+  "headers": [
+    {
+      "source": "/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=2592000"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/products",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/products/cartridge-seals",
+      "destination": "/shop/cartridge-mechanical-seals/",
+      "permanent": true
+    },
+    {
+      "source": "/products/metal-bellows",
+      "destination": "/shop/bellows-mechanical-seals/metal-bellows/",
+      "permanent": true
+    },
+    {
+      "source": "/products/splitted-seals",
+      "destination": "/shop/special-mechanical-seals/split-seals/",
+      "permanent": true
+    },
+    {
+      "source": "/products/agitator-seals",
+      "destination": "/applications/mixing-agitation/",
+      "permanent": true
+    },
+    {
+      "source": "/products/elastomer-bellows",
+      "destination": "/shop/bellows-mechanical-seals/rubber-bellows/",
+      "permanent": true
+    },
+    {
+      "source": "/products/high-pressure",
+      "destination": "/shop/special-mechanical-seals/high-pressure-designs/",
+      "permanent": true
+    },
+    {
+      "source": "/products/stationary-seals",
+      "destination": "/shop/stationary-seal-seats/",
+      "permanent": true
+    },
+    {
+      "source": "/products/sterile-seals",
+      "destination": "/shop/hygienic-mechanical-seals/",
+      "permanent": true
+    },
+    {
+      "source": "/products/custom-seals",
+      "destination": "/shop/special-mechanical-seals/custom-engineered-seals/",
+      "permanent": true
+    },
+    {
+      "source": "/products/seal-faces",
+      "destination": "/shop/mechanical-seal-components/seal-face-sets/",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/about-us/",
+      "permanent": true
+    },
+    {
+      "source": "/impressum",
+      "destination": "/legal-notice/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/produkte.html",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/cartridges.html",
+      "destination": "/shop/cartridge-mechanical-seals/",
+      "permanent": true
+    },
+    {
+      "source": "/metallfaltenbalg.html",
+      "destination": "/shop/bellows-mechanical-seals/metal-bellows/",
+      "permanent": true
+    },
+    {
+      "source": "/geteilte-gleitringdichtungen.html",
+      "destination": "/shop/special-mechanical-seals/split-seals/",
+      "permanent": true
+    },
+    {
+      "source": "/ruehrwerksdichtungen.html",
+      "destination": "/applications/mixing-agitation/",
+      "permanent": true
+    },
+    {
+      "source": "/gummibalg-gleitringdichtungen.html",
+      "destination": "/shop/bellows-mechanical-seals/rubber-bellows/",
+      "permanent": true
+    },
+    {
+      "source": "/hochdruck-gleitringdichtungen.html",
+      "destination": "/shop/special-mechanical-seals/high-pressure-designs/",
+      "permanent": true
+    },
+    {
+      "source": "/stationaere-gleitringdichtungen.html",
+      "destination": "/shop/stationary-seal-seats/",
+      "permanent": true
+    },
+    {
+      "source": "/sterildichtungen.html",
+      "destination": "/shop/hygienic-mechanical-seals/",
+      "permanent": true
+    },
+    {
+      "source": "/sonderdichtungen.html",
+      "destination": "/shop/special-mechanical-seals/custom-engineered-seals/",
+      "permanent": true
+    },
+    {
+      "source": "/sic-wc-kohle-keramik-anfertigung-nach-zeichnung.html",
+      "destination": "/shop/mechanical-seal-components/seal-face-sets/",
+      "permanent": true
+    },
+    {
+      "source": "/radialwellendichtringe.html",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/drehdurchfuehrungen.html",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/wehrtechnik.html",
+      "destination": "/shop/",
+      "permanent": true
+    },
+    {
+      "source": "/impressum.html",
+      "destination": "/legal-notice/",
+      "permanent": true
+    },
+    {
+      "source": "/products/:slug",
+      "destination": "/shop/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/((?!api/|data/).*)",
-      "destination": "/index.html"
+      "destination": "/app.html"
     }
   ],
   "functions": {

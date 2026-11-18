@@ -1,11 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
-import { Menu, X, ArrowRight, ChevronDown, Search, Check } from 'lucide-react'
+import { Menu, X, ArrowRight, ChevronDown, Search } from 'lucide-react'
 import MegaMenu, { preloadMegaImages } from './MegaMenu'
 import { menus } from '../lib/nav'
 
-const SRC = 'https://www.mechanical-seal-germany.com'
 const SHOP = '/shop/'
 const CONTACT = '/contact/'
 
@@ -31,15 +30,15 @@ function MobileSearch({ onSearch }) {
 
 export function Logo({ light = false }) {
   return (
-    <Link to="/" className={`logo ${light ? 'logo--light' : ''}`} aria-label="Mechanical Seals Germany, home">
+    <Link to="/" className={`logo ${light ? 'logo--light' : ''}`} aria-label="SAP Parts, home">
       <svg className="logo__mark" viewBox="0 0 64 44" aria-hidden="true">
         <path className="logo__b1" d="M2 42 L18 2 H32 L16 42 Z" />
         <path className="logo__b2" d="M22 42 L38 2 H52 L36 42 Z" />
         <path className="logo__b3" d="M42 42 L50 22 H62 L54 42 Z" />
       </svg>
       <span className="logo__text">
-        <strong>Mechanical Seal</strong>
-        <small>Germany</small>
+        <strong>SAP Parts</strong>
+        <small>Mechanical Seals</small>
       </span>
     </Link>
   )
@@ -170,17 +169,6 @@ export default function Header() {
           <button className="icon-btn" onClick={openSearch} aria-label="Search">
             <Search size={20} />
           </button>
-          <div className={`dd dd--lang ${menu === 'lang' ? 'is-open' : ''}`}>
-            <button className="dd__btn" onClick={() => setMenu(menu === 'lang' ? null : 'lang')} aria-expanded={menu === 'lang'}>
-              EN <ChevronDown size={15} />
-            </button>
-            {menu === 'lang' && (
-              <div className="dd__panel dd__panel--right">
-                <span className="dd__item dd__item--row is-current"><strong>English</strong><Check size={14} /></span>
-                <a href={SRC} className="dd__item dd__item--row" target="_blank" rel="noreferrer"><strong>Deutsch</strong><small>DE</small></a>
-              </div>
-            )}
-          </div>
           <Link to={CONTACT} className="btn btn--quote">
             Request a Quote <ArrowRight size={16} />
           </Link>

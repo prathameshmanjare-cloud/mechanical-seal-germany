@@ -1,5 +1,6 @@
 // Renders any page of the SAP Parts category tree with the template for its page type.
 import { useEffect, useState } from 'react'
+import HomeTemplate from '../components/cms/HomeTemplate'
 import ListingTemplate from '../components/cms/ListingTemplate'
 import InfoTemplate from '../components/cms/InfoTemplate'
 import LegalTemplate from '../components/cms/LegalTemplate'
@@ -21,6 +22,7 @@ export default function CmsPage({ id }) {
     return () => { live = false }
   }, [id])
 
+  if (page.url === '/') return <HomeTemplate page={page} content={content} />
   if (page.type === 'legal') return <LegalTemplate page={page} content={content} />
   if (page.type === 'listing') return <ListingTemplate page={page} content={content} />
   return <InfoTemplate page={page} content={content} aside={page.url === CONTACT ? <QuoteForm /> : null} />
