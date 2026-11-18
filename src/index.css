@@ -1786,3 +1786,4 @@ h1, h2, h3, h4, h5, h6, .kicker, blockquote { text-wrap: balance; }
   .sku__specs { font-size: 12.5px; }
   .sku__cta { grid-column: 1 / -1; margin: 8px 14px 14px; }
 }
+.catalog.is-loading .catalog__main { opacity: .55; transition: opacity .15s .1s; pointer-events: none; }

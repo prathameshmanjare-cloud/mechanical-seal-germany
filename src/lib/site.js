@@ -35,24 +35,6 @@ const getJson = (url) => {
 // Editorial copy: { id, sections: [{ h, blocks: [{ p } | { ul: [] }] }] }
 export const loadPageContent = (id) => getJson(`/data/pages/${id}.json`)
 
-// Product rows for one primary category shard, decoded to objects.
-const decoded = new Map()
-export function loadShard(id) {
-  if (!decoded.has(id)) {
-    decoded.set(
-      id,
-      getJson(`/data/products/${id}.json`).then(({ fields, rows }) => rows.map((r) => Object.fromEntries(fields.map((f, i) => [f, r[i]])))),
-    )
-  }
-  return decoded.get(id)
-}
-
-// All product rows for a listing page (its own shard plus every descendant shard).
-export async function loadProducts(page) {
-  const parts = await Promise.all(page.shards.map(loadShard))
-  return parts.flat()
-}
-
 // Related pages for an information page: its children, otherwise its siblings.
 export function related(page) {
   const ids = page.children.length ? page.children : page.parent ? pageById(page.parent).children.filter((x) => x !== page.id) : []

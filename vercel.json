@@ -1,3 +1,15 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    {
+      "source": "/((?!api/|data/).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "functions": {
+    "api/*.js": {
+      "includeFiles": "content/sap-parts/01_Artikel_und_Filter/{categories.csv,filter_definitions.csv,product_category_links.csv,products_import.csv.gz}",
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  }
 }

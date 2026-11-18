@@ -1,6 +1,6 @@
 // Template A — listing / search page (deck slides 5–6):
 // search first, then context, filters, results with sort and paging, then editorial copy.
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Search, SlidersHorizontal, X } from 'lucide-react'
 import CmsHero from './CmsHero'
@@ -8,8 +8,8 @@ import Facets from './Facets'
 import SkuCard from './SkuCard'
 import RichText, { CtaBox } from './RichText'
 import { ctaOf, introOf } from '../../lib/content'
-import { loadProducts, pageById } from '../../lib/site'
-import { PAGE_SIZE, SORTS, compute, filterDef, formatNumber, prepare, readState } from '../../lib/listing'
+import { pageById } from '../../lib/site'
+import { SORTS, filterDef, formatNumber, readState, searchUrl } from '../../lib/listing'
 
 const SHOP = '/shop/'
 
@@ -83,19 +83,24 @@ function SubCategories({ page }) {
   )
 }
 
+// Fetches /api/search for the current URL state. Keeps the previous result on screen while the next loads.
+function useSearch(url) {
+  const [res, setRes] = useState({ url: null, data: null, error: false })
+  useEffect(() => {
+    const ctrl = new AbortController()
+    fetch(url, { signal: ctrl.signal })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(r.status))))
+      .then((data) => setRes({ url, data, error: false }))
+      .catch((e) => e.name !== 'AbortError' && setRes((prev) => ({ ...prev, url, error: true })))
+    return () => ctrl.abort()
+  }, [url])
+  return { ...res, loading: res.url !== url }
+}
+
 function Catalog({ page, params, setParams }) {
-  const [rows, setRows] = useState(null)
-  const [error, setError] = useState(false)
   const [drawer, setDrawer] = useState(false)
   const state = readState(params, page.filters)
-
-  useEffect(() => {
-    let live = true
-    loadProducts(page).then((r) => live && setRows(prepare(r))).catch(() => live && setError(true))
-    return () => { live = false }
-  }, [page])
-
-  const view = useMemo(() => rows && compute(rows, readState(params, page.filters), page.filters), [rows, params, page.filters])
+  const { data: view, error, loading } = useSearch(searchUrl(page, params))
 
   const edit = (fn, keepPage = false) => {
     const next = new URLSearchParams(params)
@@ -123,7 +128,7 @@ function Catalog({ page, params, setParams }) {
     document.getElementById('results')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
-  if (error) return <div className="container"><div className="empty">Product data could not be loaded. Please reload the page.</div></div>
+  if (error && !loading) return <div className="container"><div className="empty">Product data could not be loaded. Please reload the page.</div></div>
   if (!view) {
     return (
       <div className="container catalog catalog--loading" aria-busy="true">
@@ -133,13 +138,11 @@ function Catalog({ page, params, setParams }) {
     )
   }
 
-  const pages = Math.max(1, Math.ceil(view.results.length / PAGE_SIZE))
-  const current = Math.min(state.page, pages)
-  const slice = view.results.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE)
+  const { items: slice, page: current, pages } = view
   const filtered = state.q || Object.keys(state.sel).length
 
   return (
-    <div className="container catalog" id="results">
+    <div className={`container catalog ${loading ? 'is-loading' : ''}`} id="results" aria-busy={loading}>
       <aside className={`filters2 ${drawer ? 'is-open' : ''}`} aria-label="Filters">
         <div className="filters2__title">
           Filter by
@@ -152,7 +155,7 @@ function Catalog({ page, params, setParams }) {
       <div className="catalog__main">
         <div className="catalog__bar">
           <strong aria-live="polite">
-            {view.results.length.toLocaleString('en')} {view.results.length === 1 ? 'article' : 'articles'}
+            {view.count.toLocaleString('en')} {view.count === 1 ? 'article' : 'articles'}
             {filtered ? <span className="catalog__of"> of {view.total.toLocaleString('en')}</span> : null}
           </strong>
           <div className="catalog__tools">

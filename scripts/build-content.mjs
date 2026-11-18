@@ -4,15 +4,15 @@
 // Outputs (all generated, git-ignored):
 //   src/generated/site.json          page tree, SEO fields, filter visibility (bundled)
 //   public/data/pages/<id>.json      parsed editorial copy per page (fetched on route)
-//   public/data/products/<id>.json   compact product rows per primary category page
-//   public/data/sku-index.json       sap_article_number -> primary page id
+//
+// Products are served by the search API (api/search.js), which reads the same package via shared/catalog.mjs.
 //
 // Fails (exit 1) on integrity errors from the package's acceptance checklist.
 
 import fs from 'node:fs'
 import path from 'node:path'
-import zlib from 'node:zlib'
 import { fileURLToPath } from 'node:url'
+import { ATTR_FIELD, eachCsvRecord, imageOf, readCsv as readCsvIn, toFilterDefs, toProduct } from '../shared/catalog.mjs'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const SRC = path.join(ROOT, 'content/sap-parts')
@@ -24,39 +24,7 @@ const errors = []
 const warnings = []
 const t0 = Date.now()
 
-// ---------- CSV ----------
-
-function parseCsv(text) {
-  if (text.charCodeAt(0) === 0xfeff) text = text.slice(1)
-  const rows = []
-  let row = []
-  let field = ''
-  let quoted = false
-  for (let i = 0; i < text.length; i++) {
-    const c = text[i]
-    if (quoted) {
-      if (c === '"') {
-        if (text[i + 1] === '"') { field += '"'; i++ } else quoted = false
-      } else field += c
-    } else if (c === '"') quoted = true
-    else if (c === ',') { row.push(field); field = '' }
-    else if (c === '\n' || c === '\r') {
-      if (c === '\r' && text[i + 1] === '\n') i++
-      row.push(field); field = ''
-      if (row.length > 1 || row[0] !== '') rows.push(row)
-      row = []
-    } else field += c
-  }
-  if (field || row.length) { row.push(field); rows.push(row) }
-  const [head, ...body] = rows
-  return body.map((r) => Object.fromEntries(head.map((h, i) => [h.trim(), (r[i] ?? '').trim()])))
-}
-
-const readCsv = (name) => {
-  const file = path.join(DATA, name)
-  const buf = fs.readFileSync(file)
-  return parseCsv((name.endsWith('.gz') ? zlib.gunzipSync(buf) : buf).toString('utf8'))
-}
+const readCsv = (name) => readCsvIn(DATA, name)
 
 // ---------- Editorial text files ----------
 
@@ -137,28 +105,6 @@ function classify(sections) {
   })
 }
 
-// ---------- Material normalisation (per 04_Anleitung) ----------
-
-const MATERIAL = {
-  CAR: 'Carbon', Carbon: 'Carbon',
-  CER: 'Ceramic', Ceramic: 'Ceramic',
-  TC: 'Tungsten Carbide', 'Tungsten Carbide': 'Tungsten Carbide',
-  SIC: 'SiC', SiC: 'SiC',
-  SICAR: 'SiCAR', SiCAR: 'SiCAR',
-}
-const material = (v, field, sku) => {
-  if (!v) return null
-  if (MATERIAL[v]) return MATERIAL[v]
-  warnings.push(`Unmapped ${field} "${v}" (${sku})`)
-  return v
-}
-const num = (v) => {
-  if (v === '' || v == null) return null
-  const n = Number(v)
-  return Number.isFinite(n) ? n : null
-}
-const str = (v) => v || null
-
 // ---------- Load ----------
 
 const categories = readCsv('categories.csv')
@@ -166,10 +112,8 @@ const directory = readCsv('Seitenverzeichnis.csv')
 const filterDefs = readCsv('filter_definitions.csv')
 const categoryFilters = readCsv('category_filters.csv')
 const links = readCsv('product_category_links.csv')
-const products = readCsv('products_import.csv.gz')
 
 const dirById = new Map(directory.map((d) => [d.page_id, d]))
-const imageOf = (p) => (p ? `/img/category/${path.basename(p, path.extname(p))}.webp` : null)
 
 // ---------- Pages ----------
 
@@ -209,7 +153,6 @@ for (const c of categories) {
     textFile: d?.textdatei,
     ownProducts: 0,
     productCount: 0,
-    shards: [],
     filters: [],
   })
 }
@@ -234,97 +177,43 @@ for (const l of links) {
   linkBySku.set(l.sap_article_number, l.page_id)
 }
 
-// Compact row layout; field order documented in each shard's "fields" array.
-const FIELDS = [
-  'sku', 'title', 'sealType', 'series', 'refManufacturer', 'mpn', 'oemPn', 'equipmentManufacturer', 'equipmentModel',
-  'shaftD', 'seatOd', 'installLength', 'otherDims', 'rotatingFace', 'stationaryFace', 'secondarySeal',
-  'materialCombination', 'configuration', 'balance', 'springDesign', 'seatType', 'application', 'image', 'search',
-]
-// Facet attribute id (filter_definitions.csv) -> row field
-const ATTR_FIELD = {
-  shaft_diameter_mm: 'shaftD', stationary_seat_od_mm: 'seatOd', installation_length_mm: 'installLength',
-  seal_type: 'sealType', seal_series: 'series', seal_configuration: 'configuration', spring_design: 'springDesign',
-  rotating_face_material: 'rotatingFace', stationary_face_material: 'stationaryFace', secondary_seal_material: 'secondarySeal',
-  material_combination: 'materialCombination', balanced_design: 'balance', stationary_seat_type: 'seatType', application: 'application',
-  manufacturer_display: 'refManufacturer', equipment_manufacturer: 'equipmentManufacturer',
-}
-
 const seenSku = new Set()
-const shards = new Map()
-const skuIndex = {}
+const counts = new Map() // page id -> own product count
 const presentAttrs = new Map() // page id -> Set(field)
 
-for (const r of products) {
-  const sku = r.sap_article_number
-  if (!sku) { errors.push(`Row ${r.record_id} has no sap_article_number`); continue }
-  if (seenSku.has(sku)) { errors.push(`Duplicate SKU ${sku}`); continue }
+eachCsvRecord(DATA, 'products_import.csv.gz', (get) => {
+  const sku = get('sap_article_number')
+  if (!sku) { errors.push(`Row ${get('record_id')} has no sap_article_number`); return }
+  if (seenSku.has(sku)) { errors.push(`Duplicate SKU ${sku}`); return }
   seenSku.add(sku)
 
   const pageId = linkBySku.get(sku)
-  if (!pageId) { errors.push(`SKU ${sku} has no primary page link`); continue }
-  if (r.category_page_id && r.category_page_id !== pageId) errors.push(`SKU ${sku} category mismatch ${r.category_page_id} vs ${pageId}`)
-  if (r.shaft_diameter_mm && num(r.facet_shaft_diameter_mm) == null) warnings.push(`SKU ${sku} invalid shaft diameter "${r.shaft_diameter_mm}"`)
+  if (!pageId) { errors.push(`SKU ${sku} has no primary page link`); return }
+  const own = get('category_page_id')
+  if (own && own !== pageId) errors.push(`SKU ${sku} category mismatch ${own} vs ${pageId}`)
 
-  const row = {
-    sku,
-    title: r.product_title,
-    sealType: str(r.seal_type),
-    series: str(r.seal_series),
-    refManufacturer: str(r.manufacturer_display),
-    mpn: str(r.manufacturer_part_number),
-    oemPn: str(r.oem_part_number),
-    equipmentManufacturer: str(r.equipment_manufacturer),
-    equipmentModel: str(r.equipment_model),
-    shaftD: num(r.facet_shaft_diameter_mm),
-    seatOd: num(r.facet_stationary_seat_od_mm),
-    installLength: num(r.facet_installation_length_mm),
-    otherDims: str(r.other_dimensions_mm),
-    rotatingFace: material(r.facet_rotating_face_material || r.rotating_face_material, 'rotating face', sku),
-    stationaryFace: material(r.facet_stationary_face_material || r.stationary_face_material, 'stationary face', sku),
-    secondarySeal: str(r.facet_secondary_seal_material || r.secondary_seal_material),
-    materialCombination: str(r.facet_material_combination || r.material_combination),
-    configuration: str(r.seal_configuration),
-    balance: str(r.balanced_design),
-    springDesign: str(r.spring_design),
-    seatType: str(r.stationary_seat_type),
-    application: str(r.application),
-    image: imageOf(r.product_image),
-    search: (r.facet_search_text || '').toLowerCase(),
-  }
-  // technical_drawing intentionally dropped: values reference third-party catalogue PDFs.
-
-  if (!shards.has(pageId)) shards.set(pageId, [])
-  shards.get(pageId).push(FIELDS.map((f) => row[f]))
-  skuIndex[sku] = pageId
-
+  const row = toProduct(get, (w) => warnings.push(w))
+  counts.set(pageId, (counts.get(pageId) || 0) + 1)
   if (!presentAttrs.has(pageId)) presentAttrs.set(pageId, new Set())
   const present = presentAttrs.get(pageId)
-  for (const f of FIELDS) if (row[f] != null) present.add(f)
-}
+  for (const [k, v] of Object.entries(row)) if (v != null) present.add(k)
+})
 
 for (const sku of linkBySku.keys()) if (!seenSku.has(sku)) errors.push(`Link for unknown SKU ${sku}`)
 
-// Roll product counts, shards and attribute presence up the tree.
+// Roll product counts and attribute presence up the tree.
 const subtree = (id) => [id, ...pages.get(id).children.flatMap(subtree)]
+const withProducts = new Map()
 for (const p of pages.values()) {
-  p.ownProducts = shards.get(p.id)?.length || 0
-  const ids = subtree(p.id).filter((x) => shards.has(x))
-  p.shards = ids
-  p.productCount = ids.reduce((n, x) => n + shards.get(x).length, 0)
+  p.ownProducts = counts.get(p.id) || 0
+  withProducts.set(p.id, subtree(p.id).filter((x) => counts.has(x)))
+  p.productCount = withProducts.get(p.id).reduce((n, x) => n + counts.get(x), 0)
 }
 
 // ---------- Filters ----------
 
 const defById = new Map(filterDefs.map((f) => [f.attribute_id, f]))
-const filters = filterDefs.map((f) => ({
-  id: f.attribute_id,
-  field: ATTR_FIELD[f.attribute_id] ?? null,
-  label: f.label_en,
-  type: f.data_type,
-  unit: f.unit || null,
-  typeahead: /typeahead/i.test(f.usage_notes),
-  note: f.usage_notes,
-}))
+const filters = toFilterDefs(filterDefs)
 for (const f of filters) if (!(f.id in ATTR_FIELD)) warnings.push(`Filter ${f.id} has no field mapping`)
 
 for (const cf of categoryFilters) {
@@ -332,7 +221,7 @@ for (const cf of categoryFilters) {
   if (!p) { errors.push(`category_filters.csv: unknown page ${cf.page_id}`); continue }
   if (!defById.has(cf.attribute_id)) { errors.push(`category_filters.csv: unknown attribute ${cf.attribute_id}`); continue }
   const field = ATTR_FIELD[cf.attribute_id]
-  const hasData = field ? p.shards.some((s) => presentAttrs.get(s)?.has(field)) : p.productCount > 0
+  const hasData = field ? withProducts.get(p.id).some((s) => presentAttrs.get(s)?.has(field)) : p.productCount > 0
   if (cf.display_if_data_present === 'true' && !hasData) continue
   p.filters.push({ id: cf.attribute_id, order: Number(cf.display_order) || 0 })
 }
@@ -342,7 +231,6 @@ for (const p of pages.values()) p.filters = p.filters.sort((a, b) => a.order - b
 
 fs.rmSync(OUT_PUB, { recursive: true, force: true })
 fs.mkdirSync(path.join(OUT_PUB, 'pages'), { recursive: true })
-fs.mkdirSync(path.join(OUT_PUB, 'products'), { recursive: true })
 fs.mkdirSync(OUT_GEN, { recursive: true })
 
 for (const p of pages.values()) {
@@ -353,10 +241,6 @@ for (const p of pages.values()) {
   fs.writeFileSync(path.join(OUT_PUB, 'pages', `${p.id}.json`), JSON.stringify({ id: p.id, sections: parsed.sections }))
 }
 
-for (const [id, rows] of shards) {
-  fs.writeFileSync(path.join(OUT_PUB, 'products', `${id}.json`), JSON.stringify({ page: id, fields: FIELDS, rows }))
-}
-fs.writeFileSync(path.join(OUT_PUB, 'sku-index.json'), JSON.stringify(skuIndex))
 
 const site = {
   generated: new Date().toISOString(),
@@ -371,7 +255,7 @@ fs.writeFileSync(path.join(OUT_GEN, 'site.json'), JSON.stringify(site))
 const types = {}
 for (const p of pages.values()) types[p.type] = (types[p.type] || 0) + 1
 const emptyListings = [...pages.values()].filter((p) => p.type === 'listing' && p.productCount === 0).length
-console.log(`[content] ${pages.size} pages ${JSON.stringify(types)}, ${seenSku.size} products in ${shards.size} shards, ${emptyListings} listing pages without products (${Date.now() - t0} ms)`)
+console.log(`[content] ${pages.size} pages ${JSON.stringify(types)}, ${seenSku.size} products on ${counts.size} pages, ${emptyListings} listing pages without products (${Date.now() - t0} ms)`)
 if (warnings.length) {
   console.warn(`[content] ${warnings.length} warning(s):`)
   for (const w of warnings.slice(0, 20)) console.warn('  - ' + w)
