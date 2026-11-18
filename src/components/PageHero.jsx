@@ -7,7 +7,7 @@ export function Crumbs({ items }) {
       <Link to="/">Home</Link>
       {items.map((c) => (
         <span key={c.label}>
-          <ChevronRight size={13} />
+          <ChevronRight size={13} aria-hidden="true" />
           {c.to ? <Link to={c.to}>{c.label}</Link> : <span aria-current="page">{c.label}</span>}
         </span>
       ))}
@@ -15,20 +15,25 @@ export function Crumbs({ items }) {
   )
 }
 
-export default function PageHero({ crumbs, title, text, img, pos = '70% 50%', variant = '', children }) {
+// Page header: breadcrumb, optional eyebrow, H1, lead, slot (search, SKU) and optional representative image.
+export default function PageHero({ crumbs, eyebrow, title, text, image, imageAlt, children }) {
   return (
-    <section className={`phero ${variant}`}>
-      {img && (
-        <div className="phero__media" aria-hidden="true">
-          <img src={img} alt="" style={{ objectPosition: pos }} fetchPriority="high" />
+    <header className={`phead ${image ? 'phead--img' : ''}`}>
+      <div className="container phead__inner">
+        <div className="phead__text">
+          <Crumbs items={crumbs} />
+          {eyebrow && <p className="phead__eyebrow">{eyebrow}</p>}
+          <h1 className="phead__title">{title}</h1>
+          {text && <p className="phead__lead">{text}</p>}
+          {children}
         </div>
-      )}
-      <div className="container phero__inner">
-        <Crumbs items={crumbs} />
-        <h1 className="phero__title">{title}</h1>
-        {text && <p className="phero__text">{text}</p>}
-        {children}
+        {image && (
+          <figure className="phead__fig">
+            <img src={image} alt={imageAlt || ''} width="480" height="360" fetchPriority="high" />
+            <figcaption>Representative illustration</figcaption>
+          </figure>
+        )}
       </div>
-    </section>
+    </header>
   )
 }

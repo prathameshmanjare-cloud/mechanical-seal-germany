@@ -40,7 +40,7 @@ export default function QuoteForm() {
           placeholder="Shaft and seat dimensions, medium, pressure, temperature, speed, existing materials…*"
           aria-label="Operating data and message"
         />
-        <button type="submit" className="btn btn--blue quote__submit">
+        <button type="submit" className="btn btn--primary quote__submit">
           {sent ? <><Check size={16} /> Opening your email app…</> : <>Send enquiry <ArrowRight size={16} /></>}
         </button>
       </form>

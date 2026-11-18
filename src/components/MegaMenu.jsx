@@ -8,10 +8,10 @@ import {
   Truck, Users, Wind, Wrench, Zap,
 } from 'lucide-react'
 import { pageById, sections, totals } from '../lib/site'
-import { photos } from '../data'
 
 // Icon by keyword in the page title; first match wins.
 const ICONS = [
+  [/^shop$/i, Boxes], [/^oem/i, Search], [/^contact$/i, MessageSquareQuote], [/^about/i, Users], [/^technology$/i, Atom], [/^industries$/i, Factory], [/^applications$/i, Settings2],
   [/spring/i, Cog], [/bellows/i, Layers], [/cartridge/i, CircleDot], [/hygienic|sanitary|wastewater|water/i, Droplets],
   [/special equipment/i, Settings2], [/special/i, Hexagon], [/seat/i, Disc3], [/component/i, Boxes], [/other/i, Layers],
   [/find|search/i, Search], [/information/i, Info], [/pump/i, Factory], [/seal manufacturer/i, Building2],
@@ -38,7 +38,7 @@ let warmed = false
 export function preloadMegaImages() {
   if (warmed || typeof window === 'undefined') return
   warmed = true
-  const urls = new Set([photos.refinery])
+  const urls = new Set()
   for (const s of sections) {
     if (s.image) urls.add(s.image)
     for (const id of s.children) if (pageById(id).image) urls.add(pageById(id).image)
@@ -80,11 +80,6 @@ export default function MegaMenu({ id, onFind, onClose }) {
             )
           })}
         </ul>
-        <img className="mega__skyline" src={photos.refinery} alt="" aria-hidden="true" />
-        <svg className="mega__swoosh" viewBox="0 0 280 120" preserveAspectRatio="none" aria-hidden="true">
-          <path d="M0 120 C 90 110, 170 70, 280 0 L280 120 Z" />
-          <path d="M60 120 C 140 95, 210 55, 280 14" className="mega__swoosh-line" />
-        </svg>
       </aside>
 
       <div className="mega__main">
@@ -120,12 +115,12 @@ export default function MegaMenu({ id, onFind, onClose }) {
           )}
         </div>
         <ul className="mega__strip">
-          {strip.map(([I, t]) => <li key={t}><I size={20} strokeWidth={1.8} /> {t}</li>)}
+          {strip.map(([I, t]) => <li key={t}><I size={16} strokeWidth={1.8} aria-hidden="true" /> {t}</li>)}
         </ul>
       </div>
 
       <aside className="mega__cta">
-        <h3>Can&rsquo;t find<br /><em>the part?</em></h3>
+        <h3>Can&rsquo;t find the part?</h3>
         <p>Send the OEM number, dimensions or a drawing. Our engineers check fit, duty and materials before quoting.</p>
         {section.image && (
           <figure className="mega__fig">
@@ -133,7 +128,7 @@ export default function MegaMenu({ id, onFind, onClose }) {
             <figcaption>Representative illustration</figcaption>
           </figure>
         )}
-        <button type="button" className="btn btn--white mega__find" onClick={onFind}>
+        <button type="button" className="btn btn--primary mega__find" onClick={onFind}>
           <Search size={17} /> Search the catalogue <ArrowRight size={16} />
         </button>
       </aside>

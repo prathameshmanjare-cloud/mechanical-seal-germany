@@ -18,19 +18,20 @@ export function CtaBox({ section }) {
         <h2>{section?.h || 'Engineering enquiry'}</h2>
         {section ? <Blocks blocks={section.blocks} /> : <p>Send us the seal reference, equipment data, drawing or dimensions.</p>}
       </div>
-      <Link to="/contact/" className="btn btn--blue">Send an enquiry <ArrowRight size={16} /></Link>
+      <Link to="/contact/" className="btn btn--primary">Send an enquiry <ArrowRight size={16} /></Link>
     </aside>
   )
 }
 
-// Renders parsed editorial sections. Intro and CTA sections are handled by the page templates.
+// Renders parsed editorial sections. The intro is the page lead; the CTA section normally renders as a
+// side box (CtaBox) unless includeCta is set, e.g. on Contact where the enquiry form takes that place.
 // Section headings are h2; after a group label (itself an h2) they nest as h3 until the next group.
-export default function RichText({ sections }) {
+export default function RichText({ sections, includeCta = false }) {
   let inGroup = false
   return (
     <div className="rt">
       {sections.map((s, i) => {
-        if (s.kind === 'intro' || s.kind === 'cta') return null
+        if (s.kind === 'intro' || (s.kind === 'cta' && !includeCta)) return null
         if (s.kind === 'group') {
           inGroup = true
           return <h2 key={i} className="rt__group">{s.h}</h2>
