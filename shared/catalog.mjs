@@ -218,6 +218,14 @@ export function getCatalog(root = process.cwd()) {
     return scopes.get(id)
   }
 
-  catalog = { rows, bySku, pages, defs, scope, loadMs: Date.now() - t0 }
+  // Variant family: same primary page and seal series.
+  const families = new Map()
+  const familyOf = (p) => {
+    const key = `${p.pageId}|${p.series ?? ''}`
+    if (!families.has(key)) families.set(key, rows.filter((r) => r.pageId === p.pageId && r.series === p.series))
+    return families.get(key)
+  }
+
+  catalog = { rows, bySku, pages, defs, scope, familyOf, loadMs: Date.now() - t0 }
   return catalog
 }

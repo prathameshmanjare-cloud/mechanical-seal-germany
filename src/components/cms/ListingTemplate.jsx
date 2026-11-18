@@ -8,7 +8,7 @@ import Facets from './Facets'
 import SkuCard from './SkuCard'
 import RichText, { CtaBox } from './RichText'
 import { ctaOf, introOf } from '../../lib/content'
-import { pageById } from '../../lib/site'
+import { pageById, productUrl } from '../../lib/site'
 import { SORTS, filterDef, formatNumber, readState, searchUrl } from '../../lib/listing'
 
 const SHOP = '/shop/'
@@ -172,6 +172,16 @@ function Catalog({ page, params, setParams }) {
           </div>
         </div>
         <Chips state={state} clear={clear} clearAll={clearAll} />
+        {view.exact && (
+          <Link to={productUrl(view.exact.sku)} className="exact">
+            <span>
+              <small>Exact article number match</small>
+              <strong>{view.exact.title}</strong>
+              <code>{view.exact.sku}</code>
+            </span>
+            <span className="exact__go">Open article <ArrowRight size={15} /></span>
+          </Link>
+        )}
 
         {slice.length ? (
           <div className="sku-grid">{slice.map((p) => <SkuCard key={p.sku} p={p} />)}</div>

@@ -11,6 +11,7 @@ import Applications from './pages/Applications'
 import Technology from './pages/Technology'
 import CmsPage from './pages/CmsPage'
 import NotFound from './pages/NotFound'
+import ProductPage from './pages/ProductPage'
 import { pages } from './lib/site'
 
 // Routes still served by the legacy pages until their phase-2 templates exist.
@@ -39,6 +40,7 @@ export default function App() {
           <Route path="/technology" element={<Technology />} />
           <Route path="/about" element={<About />} />
           <Route path="/impressum" element={<Impressum />} />
+          <Route path="/product/:sku" element={<ProductPage />} />
           {cmsRoutes.map((p) => (
             <Route key={p.id} path={p.url} element={<CmsPage key={p.id} id={p.id} />} />
           ))}

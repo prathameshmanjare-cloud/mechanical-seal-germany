@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { formatNumber } from '../../lib/listing'
+import { productUrl } from '../../lib/site'
 
 // One article record. Only supplied values are shown; nothing is defaulted.
 export default function SkuCard({ p }) {
@@ -14,13 +15,13 @@ export default function SkuCard({ p }) {
 
   return (
     <article className="sku">
-      <div className="sku__media">
+      <Link to={productUrl(p.sku)} className="sku__media" tabIndex={-1} aria-hidden="true">
         {p.image && <img src={p.image} alt="" loading="lazy" width="160" height="120" />}
         <span className="sku__rep">Representative image</span>
-      </div>
+      </Link>
       <div className="sku__body">
         <span className="sku__type">{p.sealType}</span>
-        <h3>{p.title}</h3>
+        <h3><Link to={productUrl(p.sku)} className="sku__link">{p.title}</Link></h3>
         <code className="sku__id">{p.sku}</code>
         <dl className="sku__specs">
           {specs.map(([k, v]) => (

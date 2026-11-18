@@ -2,7 +2,7 @@
 //
 // Query: scope=<page id> (category subtree; omitted = whole catalogue), facets=<comma-separated filter ids>,
 //        q, sort, page, and filter selections as produced by the listing UI (attr=value…, attr_min/attr_max).
-// Returns: { total, count, page, pages, pageSize, items: [...], facets: {...} }
+// Returns: { exact, total, count, page, pages, pageSize, items: [...], facets: {...} }
 import { getCatalog } from '../shared/catalog.mjs'
 import { PAGE_SIZE, compute, prepare, readState } from '../shared/search.mjs'
 
@@ -35,7 +35,12 @@ export function GET(request) {
   const pages = Math.max(1, Math.ceil(results.length / PAGE_SIZE))
   const page = Math.min(state.page, pages)
 
+  // A query that is exactly one article number points straight to its product page.
+  const exactSku = state.q.trim().toUpperCase()
+  const exact = cat.bySku.get(exactSku)
+
   return json({
+    exact: exact ? pick(exact) : null,
     total: rows.length,
     count: results.length,
     page,

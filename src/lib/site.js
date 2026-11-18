@@ -40,3 +40,6 @@ export function related(page) {
   const ids = page.children.length ? page.children : page.parent ? pageById(page.parent).children.filter((x) => x !== page.id) : []
   return ids.map(pageById)
 }
+
+// Canonical article page.
+export const productUrl = (sku) => `/product/${encodeURIComponent(sku)}/`
