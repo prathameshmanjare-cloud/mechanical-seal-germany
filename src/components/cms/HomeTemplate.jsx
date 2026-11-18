@@ -49,23 +49,27 @@ export default function HomeTemplate({ page, content }) {
               <li><strong>Since 2009</strong> in sealing engineering</li>
             </ul>
           </div>
-          {finders.length > 0 && (
-            <nav className="home__finders" aria-label="Ways to find a replacement">
-              <p className="home__finders-title">Find a replacement by</p>
-              {finders.map((f, i) => {
-                const Icon = FIND_ICONS[i % FIND_ICONS.length]
-                return (
-                  <Link key={f.id} to={f.url} className="home__finder">
-                    <Icon size={18} aria-hidden="true" />
-                    <span>{f.title.replace(/^Search by /, '')}</span>
-                    <ArrowRight size={16} aria-hidden="true" />
-                  </Link>
-                )
-              })}
-            </nav>
-          )}
         </div>
+        <span className="home__hero-note" aria-hidden="true">Representative illustration</span>
       </section>
+
+      {finders.length > 0 && (
+        <nav className="home__finders" aria-label="Ways to find a replacement">
+          <div className="container home__finders-inner">
+            <p className="home__finders-title">Find a replacement by</p>
+            {finders.map((f, i) => {
+              const Icon = FIND_ICONS[i % FIND_ICONS.length]
+              return (
+                <Link key={f.id} to={f.url} className="home__finder">
+                  <Icon size={18} aria-hidden="true" />
+                  <span>{f.title.replace(/^Search by /, '')}</span>
+                  <ArrowRight size={16} aria-hidden="true" />
+                </Link>
+              )
+            })}
+          </div>
+        </nav>
+      )}
 
       <div className="pbody">
         <section className="container home__families">
