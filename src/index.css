@@ -437,7 +437,15 @@ h3.rt__h { font-size: 18.5px; }
 .home__finder svg:last-child { color: var(--navy); }
 .home__hero-note { position: absolute; right: 16px; bottom: 60px; font-size: 11.5px; color: rgba(255,255,255,.85); }
 /* Shop by seal family */
-.fams { position: relative; overflow: hidden; padding: 64px 0 56px; background: #eef4fd url('/img/home/families-bg.webp') center / cover no-repeat; }
+/* The section is 1.3-2x taller than the 2:1 artwork, so any single crop cuts it. Instead the artwork is drawn
+   twice at its true proportions: pinned to the top (seal drawing, fading out downwards) and pinned to the bottom
+   (swooshes, fading out upwards), over the artwork's own light tone. */
+.fams { --fams-bg: url('/img/home/families-bg.webp'); position: relative; isolation: isolate; overflow: hidden; padding: 64px 0 56px; background: #eef4fd; }
+.fams::before, .fams::after { content: ''; position: absolute; left: 0; right: 0; z-index: -1; aspect-ratio: 1746 / 901; background: var(--fams-bg) center / 100% 100% no-repeat; pointer-events: none; }
+.fams::before { top: 0; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 6%, #000 50%, transparent 92%); mask-image: linear-gradient(180deg, transparent 0, #000 6%, #000 50%, transparent 92%); }
+/* Keep the seal drawing clear of the finder bar that overlaps the top of this section. */
+.home__finders-wrap + .fams::before { top: 56px; }
+.fams::after { bottom: 0; -webkit-mask-image: linear-gradient(0deg, #000 38%, transparent 68%); mask-image: linear-gradient(0deg, #000 38%, transparent 68%); }
 .fams .container { position: relative; max-width: 1360px; }
 .fams__head { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; margin-bottom: 36px; }
 .fams__eyebrow { display: flex; align-items: center; gap: 14px; font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--navy-2); }
@@ -608,7 +616,7 @@ h3.rt__h { font-size: 18.5px; }
   .exact { flex-direction: column; align-items: flex-start; }
   .pspec dl div { grid-template-columns: 1fr; gap: 2px; }
   .cquote .quote__row { grid-template-columns: 1fr; }
-  .fams { padding: 44px 0 40px; background-image: url('/img/home/families-bg-sm.webp'); background-position: 70% center; }
+  .fams { --fams-bg: url('/img/home/families-bg-sm.webp'); padding: 44px 0 40px; }
   .fams__grid { gap: 12px; }
   .fams__lead { font-size: 15.5px; }
   .fams__stats { width: 100%; border-radius: var(--radius-lg); padding: 12px 4px; }
