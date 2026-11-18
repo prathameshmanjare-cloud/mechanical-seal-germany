@@ -71,7 +71,14 @@ function CopySku({ sku }) {
 function NotFoundSku({ sku }) {
   useHead({ title: 'Article not found | SAP Parts', description: '', canonical: '/shop/' })
   return (
-    <section className="sheet pnf">
+    <>
+    <section className="phero pdp__hero">
+      <div className="container phero__inner">
+        <Crumbs items={[{ label: 'Shop', to: '/shop/' }, { label: 'Article not found' }]} />
+        <h1 className="phero__title pdp__title">Article not found</h1>
+      </div>
+    </section>
+    <section className="sheet pdp__sheet">
       <div className="container">
         <div className="empty nomatch">
           <strong>No article with the number “{sku}”.</strong>
@@ -83,6 +90,7 @@ function NotFoundSku({ sku }) {
         </div>
       </div>
     </section>
+    </>
   )
 }
 

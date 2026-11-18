@@ -154,10 +154,10 @@ function Catalog({ page, params, setParams }) {
 
       <div className="catalog__main">
         <div className="catalog__bar">
-          <strong aria-live="polite">
+          <h2 className="catalog__count" aria-live="polite">
             {view.count.toLocaleString('en')} {view.count === 1 ? 'article' : 'articles'}
             {filtered ? <span className="catalog__of"> of {view.total.toLocaleString('en')}</span> : null}
-          </strong>
+          </h2>
           <div className="catalog__tools">
             <button className="btn btn--outline catalog__filter-btn" onClick={() => setDrawer(true)}>
               <SlidersHorizontal size={15} /> Filters

@@ -94,7 +94,7 @@ export default function MegaMenu({ id, onFind, onClose }) {
         </div>
         <div className="mega__tree" key={group.id}>
           <Link to={group.url} className="mega__lead">
-            {group.image && <span className="mega__lead-img"><img src={group.image} alt="" /></span>}
+            {group.image && <span className="mega__lead-img"><img src={group.image} alt="" /><i className="mega__rep">Representative illustration</i></span>}
             <span className="mega__lead-txt">
               <small>{countLabel(group)}</small>
               <strong>{group.title}</strong>
@@ -128,9 +128,10 @@ export default function MegaMenu({ id, onFind, onClose }) {
         <h3>Can&rsquo;t find<br /><em>the part?</em></h3>
         <p>Send the OEM number, dimensions or a drawing. Our engineers check fit, duty and materials before quoting.</p>
         {section.image && (
-          <div className="mega__fig" aria-hidden="true">
+          <figure className="mega__fig">
             <img key={section.image} src={section.image} alt="" />
-          </div>
+            <figcaption>Representative illustration</figcaption>
+          </figure>
         )}
         <button type="button" className="btn btn--white mega__find" onClick={onFind}>
           <Search size={17} /> Search the catalogue <ArrowRight size={16} />

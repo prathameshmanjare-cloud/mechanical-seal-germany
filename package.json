@@ -10,7 +10,8 @@
     "prebuild": "node scripts/build-content.mjs",
     "build": "vite build && node scripts/postbuild.mjs",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "qa": "npm run build && node scripts/qa.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.68.0",

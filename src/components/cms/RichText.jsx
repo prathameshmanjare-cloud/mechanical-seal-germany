@@ -24,23 +24,29 @@ export function CtaBox({ section }) {
 }
 
 // Renders parsed editorial sections. Intro and CTA sections are handled by the page templates.
+// Section headings are h2; after a group label (itself an h2) they nest as h3 until the next group.
 export default function RichText({ sections }) {
+  let inGroup = false
   return (
     <div className="rt">
       {sections.map((s, i) => {
         if (s.kind === 'intro' || s.kind === 'cta') return null
-        if (s.kind === 'group') return <h2 key={i} className="rt__group">{s.h}</h2>
+        if (s.kind === 'group') {
+          inGroup = true
+          return <h2 key={i} className="rt__group">{s.h}</h2>
+        }
+        const H = inGroup ? 'h3' : 'h2'
         if (s.kind === 'checklist') {
           return (
             <section key={i} className="rt__section rt__check">
-              <h3><ClipboardList size={18} strokeWidth={1.8} /> {s.h}</h3>
+              <H className="rt__h"><ClipboardList size={18} strokeWidth={1.8} /> {s.h}</H>
               <Blocks blocks={s.blocks} />
             </section>
           )
         }
         return (
           <section key={i} className="rt__section">
-            {s.h && <h3>{s.h}</h3>}
+            {s.h && <H className="rt__h">{s.h}</H>}
             <Blocks blocks={s.blocks} />
           </section>
         )
