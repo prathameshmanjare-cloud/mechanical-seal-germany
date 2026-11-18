@@ -12,7 +12,3 @@ export const company = {
   email: 'europe@sapparts.com',
 }
 
-// Decorative photo in the mega menu (Unsplash License, free for commercial use).
-export const photos = {
-  refinery: 'https://images.unsplash.com/photo-1588011930968-eadac80e6a5a?auto=format&fit=crop&w=1400&q=70',
-}

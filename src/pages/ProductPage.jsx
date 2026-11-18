@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { ArrowRight, Check, Copy, Info, MessageSquareQuote, Search } from 'lucide-react'
-import { Crumbs } from '../components/PageHero'
+import PageHero from '../components/PageHero'
 import { useHead } from '../lib/head'
 import { pageById, productUrl, trail } from '../lib/site'
 import { formatNumber } from '../lib/listing'
@@ -72,24 +72,19 @@ function NotFoundSku({ sku }) {
   useHead({ title: 'Article not found | SAP Parts', description: '', canonical: '/shop/' })
   return (
     <>
-    <section className="phero pdp__hero">
-      <div className="container phero__inner">
-        <Crumbs items={[{ label: 'Shop', to: '/shop/' }, { label: 'Article not found' }]} />
-        <h1 className="phero__title pdp__title">Article not found</h1>
-      </div>
-    </section>
-    <section className="sheet pdp__sheet">
+    <PageHero crumbs={[{ label: 'Shop', to: '/shop/' }, { label: 'Article not found' }]} title="Article not found" />
+    <div className="pbody">
       <div className="container">
         <div className="empty nomatch">
           <strong>No article with the number “{sku}”.</strong>
           <p>The article number may have changed or contain a typing error. Search the catalogue or send us the reference for identification.</p>
           <div className="nomatch__actions">
             <Link to={`/shop/?q=${encodeURIComponent(sku)}`} className="btn btn--outline"><Search size={15} /> Search the catalogue</Link>
-            <Link to={`/contact/?sku=${encodeURIComponent(sku)}`} className="btn btn--blue">Request identification <ArrowRight size={15} /></Link>
+            <Link to={`/contact/?sku=${encodeURIComponent(sku)}`} className="btn btn--primary">Request identification <ArrowRight size={15} /></Link>
           </div>
         </div>
       </div>
-    </section>
+    </div>
     </>
   )
 }
@@ -113,16 +108,11 @@ function Product({ data }) {
 
   return (
     <div className="pdp">
-      <section className="phero pdp__hero">
-        <div className="container phero__inner">
-          <Crumbs items={crumbs} />
-          <span className="pdp__type">{p.sealType}{p.series ? ` · ${p.series}` : ''}</span>
-          <h1 className="phero__title pdp__title">{p.title}</h1>
-          <CopySku sku={p.sku} />
-        </div>
-      </section>
+      <PageHero crumbs={crumbs} eyebrow={`${p.sealType}${p.series ? ` · ${p.series}` : ''}`} title={p.title}>
+        <CopySku sku={p.sku} />
+      </PageHero>
 
-      <section className="sheet pdp__sheet">
+      <div className="pbody pdp__sheet">
         <div className="container pdp__top">
           <figure className="pdp__media">
             {p.image && <img src={p.image} alt={`${p.sealType || 'Mechanical seal'}, representative illustration`} width="600" height="450" />}
@@ -151,7 +141,7 @@ function Product({ data }) {
             )}
 
             <div className="pdp__actions">
-              <Link to={quote} className="btn btn--blue"><MessageSquareQuote size={16} /> Request a quote</Link>
+              <Link to={quote} className="btn btn--primary btn--lg"><MessageSquareQuote size={16} /> Request a quote</Link>
               {page && <Link to={page.url} className="btn btn--outline">All {page.title}</Link>}
             </div>
             <p className="pdp__verify">
@@ -217,7 +207,7 @@ function Product({ data }) {
             )}
           </aside>
         </div>
-      </section>
+      </div>
     </div>
   )
 }
@@ -237,15 +227,15 @@ export default function ProductPage() {
   if (state.sku !== sku) {
     return (
       <div className="pdp" aria-busy="true">
-        <section className="phero pdp__hero"><div className="container phero__inner"><div className="skel pdp__skel-title" /></div></section>
-        <section className="sheet pdp__sheet"><div className="container pdp__top"><div className="skel pdp__skel-media" /><div className="skel pdp__skel-media" /></div></section>
+        <header className="phead"><div className="container"><div className="skel pdp__skel-title" /></div></header>
+        <div className="pbody"><div className="container pdp__top"><div className="skel pdp__skel-media" /><div className="skel pdp__skel-media" /></div></div>
       </div>
     )
   }
   if (state.status === 404) return <NotFoundSku sku={sku} />
   if (!state.data) {
     return (
-      <section className="sheet pnf"><div className="container"><div className="empty">Article data could not be loaded. Please reload the page.</div></div></section>
+      <div className="pbody"><div className="container"><div className="empty">Article data could not be loaded. Please reload the page.</div></div></div>
     )
   }
   return <Product data={state.data} />

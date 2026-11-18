@@ -19,7 +19,7 @@ function ListingSearch({ initial, onSearch, scope }) {
     <form className="search search--lg cms-search" role="search" onSubmit={(e) => { e.preventDefault(); onSearch(q.trim()) }}>
       <Search size={18} className="search__icon" />
       <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search by SKU, OEM number, series or shaft Ø…" aria-label={`Search ${scope}`} />
-      <button type="submit" className="btn btn--blue search__btn">Search</button>
+      <button type="submit" className="btn btn--primary search__btn">Search</button>
     </form>
   )
 }
@@ -133,7 +133,7 @@ function Catalog({ page, params, setParams }) {
     return (
       <div className="container catalog catalog--loading" aria-busy="true">
         <div className="filters2 skel" />
-        <div className="catalog__grid sku-grid">{Array.from({ length: 6 }, (_, i) => <div key={i} className="sku skel" />)}</div>
+        <div className="sku-list">{Array.from({ length: 6 }, (_, i) => <div key={i} className="sku skel" />)}</div>
       </div>
     )
   }
@@ -163,7 +163,7 @@ function Catalog({ page, params, setParams }) {
               <SlidersHorizontal size={15} /> Filters
             </button>
             <label className="sortby">
-              Sort:
+              <span className="sortby__label">Sort</span>
               <select value={state.sort} onChange={(e) => edit((n) => (e.target.value === 'relevance' ? n.delete('sort') : n.set('sort', e.target.value)))}>
                 {Object.entries(SORTS).map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}
               </select>
@@ -172,6 +172,7 @@ function Catalog({ page, params, setParams }) {
           </div>
         </div>
         <Chips state={state} clear={clear} clearAll={clearAll} />
+        <p className="catalog__note">Images are representative illustrations of the seal family, not photos of the individual article.</p>
         {view.exact && (
           <Link to={productUrl(view.exact.sku)} className="exact">
             <span>
@@ -184,14 +185,14 @@ function Catalog({ page, params, setParams }) {
         )}
 
         {slice.length ? (
-          <div className="sku-grid">{slice.map((p) => <SkuCard key={p.sku} p={p} />)}</div>
+          <div className="sku-list">{slice.map((p) => <SkuCard key={p.sku} p={p} />)}</div>
         ) : (
           <div className="empty nomatch">
             <strong>No article matches this combination.</strong>
             <p>Try removing a filter or widening the diameter range. If you cannot find the exact part, our engineers can identify it from an OEM number, drawing or dimensions.</p>
             <div className="nomatch__actions">
               <button className="btn btn--outline" onClick={clearAll}>Clear all filters</button>
-              <Link to="/contact/" className="btn btn--blue">Request identification <ArrowRight size={15} /></Link>
+              <Link to="/contact/" className="btn btn--primary">Request identification <ArrowRight size={15} /></Link>
             </div>
           </div>
         )}
@@ -225,7 +226,7 @@ export default function ListingTemplate({ page, content }) {
         {hasProducts && <p className="cmsh__meta">{page.productCount.toLocaleString('en')} articles in this category</p>}
       </CmsHero>
 
-      <section className="sheet cms__sheet">
+      <div className="pbody">
         <SubCategories page={page} />
         {hasProducts ? (
           <Catalog key={page.id} page={page} params={params} setParams={setParams} />
@@ -236,19 +237,19 @@ export default function ListingTemplate({ page, content }) {
               <p>Search the full catalogue above, or send us the OEM number, drawing or dimensions for identification.</p>
               <div className="nomatch__actions">
                 <Link to={SHOP} className="btn btn--outline">Browse the shop</Link>
-                <Link to="/contact/" className="btn btn--blue">Request identification <ArrowRight size={15} /></Link>
+                <Link to="/contact/" className="btn btn--primary">Request identification <ArrowRight size={15} /></Link>
               </div>
             </div>
           </div>
         )}
 
         {content && (
-          <div className="container cms__editorial">
+          <div className="container split cms__editorial">
             <RichText sections={content.sections} />
-            <CtaBox section={ctaOf(content)} />
+            <aside className="split__aside"><CtaBox section={ctaOf(content)} /></aside>
           </div>
         )}
-      </section>
+      </div>
     </div>
   )
 }

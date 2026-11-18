@@ -123,7 +123,7 @@ const api = async (handler, query) => (await handler(new Request(`http://qa/api?
 
 // 9. Category images carry a representative-image disclosure.
 {
-  const files = ['src/components/cms/CmsHero.jsx', 'src/components/cms/SkuCard.jsx', 'src/pages/ProductPage.jsx', 'src/components/cms/HomeTemplate.jsx', 'src/components/MegaMenu.jsx']
+  const files = ['src/components/PageHero.jsx', 'src/components/cms/ListingTemplate.jsx', 'src/pages/ProductPage.jsx', 'src/components/cms/HomeTemplate.jsx', 'src/components/MegaMenu.jsx']
   const missing = files.filter((f) => !/Representative/i.test(fs.readFileSync(path.join(ROOT, f), 'utf8')))
   const imgs = fs.readdirSync(path.join(ROOT, 'public/img'))
   check(9, 'Category images labelled as representative', missing.length === 0 && imgs.length === 1 && imgs[0] === 'category',

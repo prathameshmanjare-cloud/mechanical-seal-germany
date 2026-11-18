@@ -4,7 +4,6 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 import { startNoWidows } from './lib/noWidows'
-import { startIconDraw } from './lib/iconDraw'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -15,4 +14,3 @@ createRoot(document.getElementById('root')).render(
 )
 
 startNoWidows()
-startIconDraw()

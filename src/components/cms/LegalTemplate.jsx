@@ -8,7 +8,7 @@ export default function LegalTemplate({ page, content }) {
   return (
     <div className="cms cms--legal" data-page={page.id}>
       <CmsHero page={page} />
-      <section className="sheet cms__sheet">
+      <div className="pbody">
         <div className="container">
           <article className="legal">
             {/* Address is not part of the client's Legal Notice text; added from company data, pending legal review. */}
@@ -29,7 +29,7 @@ export default function LegalTemplate({ page, content }) {
             ))}
           </article>
         </div>
-      </section>
+      </div>
     </div>
   )
 }

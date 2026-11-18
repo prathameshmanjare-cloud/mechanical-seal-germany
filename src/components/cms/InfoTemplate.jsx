@@ -29,19 +29,19 @@ function Related({ page }) {
 export default function InfoTemplate({ page, content, aside }) {
   return (
     <div className="cms cms--info" data-page={page.id}>
-      <CmsHero page={page} lead={introOf(content)} image={page.image} />
-      <section className="sheet cms__sheet">
+      <CmsHero page={page} lead={introOf(content)} />
+      <div className="pbody">
         <div className="container cms__grid">
           <article className="cms__body">
-            {content ? <RichText sections={content.sections} /> : <div className="skel skel--text" aria-busy="true" />}
-            {content && <CtaBox section={ctaOf(content)} />}
+            {content ? <RichText sections={content.sections} includeCta={Boolean(aside)} /> : <div className="skel skel--text" aria-busy="true" />}
           </article>
           <aside className="cms__side">
             {aside}
             <Related page={page} />
+            {content && !aside && <CtaBox section={ctaOf(content)} />}
           </aside>
         </div>
-      </section>
+      </div>
     </div>
   )
 }
