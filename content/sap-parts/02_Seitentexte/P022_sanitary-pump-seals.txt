@@ -1,0 +1,73 @@
+SEITEN-ID: P022
+SEITENTITEL: Sanitary Pump Seals
+URL: /shop/hygienic-mechanical-seals/sanitary-pump-seals/
+SEITENTYP: listing
+BREADCRUMB: Shop > Hygienic Mechanical Seals > Sanitary Pump Seals
+
+SEO-TITEL
+Sanitary Pump Seals | SAP Parts
+
+META-BESCHREIBUNG
+Sanitary Pump Seals | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Sanitary Pump Seals
+
+Technical introduction
+
+Sanitary pump seals are selected for equipment used with food, beverage, cosmetic or pharmaceutical media. Design details and approval requirements vary by equipment.
+
+Selection and engineering checks
+
+A correct replacement needs more than a similar picture. Confirm the dimensions, construction and material version.
+
+• Pump model.
+
+• Shaft dimension.
+
+• Elastomer compound. The exact compound and cure system can change chemical compatibility.
+
+• Product medium. State the full medium composition, including particles and cleaning fluids.
+
+• Cleaning chemistry.
+
+• Certificates for exact variant.
+
+Common failure mechanism
+
+Generic food-grade wording does not replace documented material suitability for the intended process.
+
+Technical Selection
+
+A mechanical seal works as part of the complete machine. The liquid, contact pressure, shaft movement and heat removal all affect the selection. Choose a verified catalog product or send the technical details for review.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Identification and replacement support
+
+Cannot find the exact part? Send the OEM number, dimensions or a drawing. Our team can review the possible replacement before you order.
+
+Engineering detail — how we solve the problem
+
+Hygienic design and cleanability
+
+Sealing surfaces and secondary-seal grooves should be assessed for cleanability, chemical resistance and potential product hold-up. Confirm CIP/SIP conditions when relevant, including temperature, cleaning chemicals, time and pressure. Hygienic suitability and any food-contact compliance must be documented for the exact material and component, not inferred from the category name.
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Secondary seal material selection
+
+Check chemical compatibility against the complete fluid mixture, cleaning agents, exposure time and operating temperature. Consider swelling, compression set, extrusion gaps and dynamic movement where applicable. The polymer name by itself does not define the performance of the finished compound.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

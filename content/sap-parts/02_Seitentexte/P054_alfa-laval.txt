@@ -1,0 +1,71 @@
+SEITEN-ID: P054
+SEITENTITEL: Alfa Laval
+URL: /manufacturers/pump-equipment-manufacturers/alfa-laval/
+SEITENTYP: listing
+BREADCRUMB: Manufacturers > Pump & Equipment Manufacturers > Alfa Laval
+
+SEO-TITEL
+Alfa Laval | SAP Parts
+
+META-BESCHREIBUNG
+Alfa Laval | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Alfa Laval
+
+Technical introduction
+
+This directory helps identify independent SAP Parts replacement options for hygienic and process pump sealing arrangements. Select the equipment model or original reference first.
+
+Selection and engineering checks
+
+A correct replacement needs more than a similar picture. Confirm the dimensions, construction and material version.
+
+• Original manufacturer reference.
+
+• Exact model.
+
+• Shaft and seat dimensions.
+
+• Material variant. Specify the grade and pairing rather than a broad material family.
+
+• Available verified match.
+
+Common failure mechanism
+
+The manufacturer name is used only for identification. A displayed name does not prove a supply partnership, OEM approval or compatibility of every model.
+
+Technical Selection
+
+A mechanical seal works as part of the complete machine. The liquid, contact pressure, shaft movement and heat removal all affect the selection. Choose a verified catalog product or send the technical details for review.
+
+Sap Parts Engineering
+
+Find a matching replacement or send a drawing for technical checking.
+
+Identification and replacement support
+
+Cannot find the exact part? Send the OEM number, dimensions or a drawing. Our team can review the possible replacement before you order.
+
+Engineering detail — how we solve the problem
+
+Equipment compatibility and revision control
+
+Equipment models can have different seal chambers, shaft versions and revisions. A compatibility result should be based on approved drawings or measured parts, not brand name alone. Show independently supplied replacements without suggesting OEM endorsement or authorization.
+
+Replacement verification workflow
+
+An OEM number is an identification starting point, not automatic proof of interchangeability. Verify equipment variant, revision, shaft and housing geometry, seat, face materials, elastomers, operating conditions and available space. Only publish cross-references supported by verified product records.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

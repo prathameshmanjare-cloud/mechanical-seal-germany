@@ -1,0 +1,17 @@
+﻿attribute_id,label_en,data_type,unit,display_group,usage_notes
+shaft_diameter_mm,Shaft diameter,number,mm,all,"numeric, only parsed valid numbers"
+stationary_seat_od_mm,Stationary seat OD,number,mm,seat + seal,"numeric, optional"
+installation_length_mm,Installed length,number,mm,seal,"numeric, optional"
+seal_type,Seal design,enum,,all,exact values
+seal_series,Seal series,enum,,all,typeahead; too many values for checkbox
+seal_configuration,Seal configuration,enum,,seal,single/double/tandem
+spring_design,Spring design,enum,,spring + bellows,exact values
+rotating_face_material,Rotating face,enum,,seal + parts,normalized codes
+stationary_face_material,Stationary face,enum,,seal + parts,normalized codes
+secondary_seal_material,Secondary seal,enum,,seal + parts,normalized codes
+material_combination,Face / elastomer combination,enum,,all,faceted combination
+balanced_design,Hydraulic balance,enum,,seal,only when provided
+stationary_seat_type,Stationary seat type,enum,,stationary seats,only when provided
+application,Application,enum,,all,multi-faceted if delimited
+manufacturer_display,Reference manufacturer,enum,,all,"reference only, not certified interchange"
+equipment_manufacturer,Equipment manufacturer,enum,,all,only when available

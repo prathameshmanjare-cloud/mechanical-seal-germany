@@ -1,0 +1,75 @@
+SEITEN-ID: P027
+SEITENTITEL: Dry-Running Designs
+URL: /shop/special-mechanical-seals/dry-running-designs/
+SEITENTYP: listing
+BREADCRUMB: Shop > Special Mechanical Seals > Dry-Running Designs
+
+SEO-TITEL
+Dry-Running Designs | SAP Parts
+
+META-BESCHREIBUNG
+Dry-Running Designs | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Dry-Running Designs
+
+Technical introduction
+
+Some services provide little or no lubricating liquid at the faces. Such duties need dedicated material pairing and verified thermal management.
+
+Selection and engineering checks
+
+A correct replacement needs more than a similar picture. Confirm the dimensions, construction and material version.
+
+• Expected dry-running time.
+
+• Pressure. Use the actual pressure at the seal chamber and note transients.
+
+• Speed. Calculate relevant sliding speed and review starts and stops.
+
+• Duty cycles.
+
+• Permitted heat.
+
+• Cooling.
+
+• Validation testing.
+
+Common failure mechanism
+
+No standard wet-running seal should be assumed suitable for continuous dry running.
+
+Technical Selection
+
+A mechanical seal works as part of the complete machine. The liquid, contact pressure, shaft movement and heat removal all affect the selection. Choose a verified catalog product or send the technical details for review.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Identification and replacement support
+
+Cannot find the exact part? Send the OEM number, dimensions or a drawing. Our team can review the possible replacement before you order.
+
+Engineering detail — how we solve the problem
+
+Lubrication limits and thermal risk
+
+The term dry running covers different situations: temporary liquid loss, a gas-filled interface or an intentionally gas-lubricated design. Conventional liquid-lubricated seals may overheat rapidly without the intended fluid film. Define the duration, frequency and environmental conditions before selecting face materials or special geometry.
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

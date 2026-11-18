@@ -1,0 +1,49 @@
+SEITEN-ID: P029
+SEITENTITEL: Stationary Seal Seats
+URL: /shop/stationary-seal-seats/
+SEITENTYP: listing
+BREADCRUMB: Shop > Stationary Seal Seats
+
+SEO-TITEL
+Stationary Seal Seats | SAP Parts
+
+META-BESCHREIBUNG
+Stationary Seal Seats | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Stationary Seal Seats
+
+The stationary seal seat is the fixed mating component of a mechanical seal. Its face runs against the rotating ring while its outside geometry and secondary sealing arrangement locate and seal it inside the housing.
+
+Function inside the seal
+
+The stationary seat must provide a stable, flat mating face and remain correctly positioned against hydraulic and mechanical loads. The primary face pair controls leakage through a very thin running film; the secondary seal blocks a bypass path between seat and housing.
+
+Mounting geometry matters
+
+O-ring-mounted, elastomer-cup, L-profile and interference-fit seats are different mounting systems. Outside diameter, depth, shoulder, chamfer, anti-rotation provision and housing tolerances can be as important as the face material. Substituting a seat based only on the visible sealing-face diameter can damage the housing or lead to leakage.
+
+Material selection
+
+Alumina ceramics, silicon carbide and tungsten carbide are widely used counterface options. Relevant properties include corrosion resistance, thermal conductivity, fracture behaviour and abrasive wear resistance. A hard seat is not automatically the best solution: the complete face pairing and operating liquid determine suitability.
+
+Common causes of leakage
+
+A tilted or chipped seat, distorted elastomer cup, contaminated seating bore or incorrect interference can compromise face alignment. Thermal growth and pressure loading can change the installed condition. Examine the housing and mating ring before declaring a seat interchangeable.
+
+SAP Parts engineering approach
+
+We identify the profile and functional dimensions, verify the rotary-face pairing and housing conditions, then select a compatible catalog seat or evaluate a custom component. Where suitable, we can examine alternative materials and machining approaches to balance service life, repeatability and cost.
+
+What to send us
+
+Provide seat OD and ID, face diameter, overall height, mounting profile, material if known, housing drawing, elastomer type, mating rotary ring, pressure, medium and temperature.
+
+Engineering support
+
+Send us a part reference, drawing or operating data. SAP Parts will review compatibility, design conditions and material selection before proposing a replacement or engineered alternative.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

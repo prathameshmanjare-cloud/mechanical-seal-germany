@@ -1,0 +1,28 @@
+SAP PARTS WEBSHOP — ENTWICKLERPAKET (NUR TEXTE, KEIN HTML/JSON)
+Stand: 15. November 2026
+
+Dieses Paket enthält KEINE HTML- und KEINE JSON-Dateien.
+Die Website-Gestaltung, das CMS-Layout und die Programmierung bleiben bei den Entwicklern.
+
+INHALT
+01_Artikel_und_Filter/ — unveränderte CSV-Importtabellen für 38.881 Artikel, Kategorien, Filter und Artikelzuordnung; Seitenverzeichnis.csv verknüpft Seiten mit den Textdateien und Bildern.
+02_Seitentexte/ — 210 UTF-8-Textdateien mit redaktionellem Text und SEO-Angaben je Seite, in Englisch.
+03_Kategoriebilder/ — vorhandene repräsentative Kategorievisualisierungen (keine maßgetreuen SKU-Fotos).
+04_Anleitung/ — textbasierte Hinweise für Entwickler.
+05_Pruefbericht/ — CSV-Auswertungen und lesbarer Prüfbericht.
+06_Originalquellen/ — Original-Kategoriebaum als XLSX und ursprüngliche Word-Inhalte als ZIP.
+
+ABLAUF FÜR ENTWICKLER
+1. Kategorien aus categories.csv anhand page_id/page_url anlegen. Other bleibt unter /shop/other/ bestehen.
+2. Produkte aus products_import.csv per sap_article_number eindeutig upserten, nicht duplizieren.
+3. Artikel über product_category_links.csv zuordnen.
+4. Filterdefinitionen, Werte und Kategorie-Filter aus den CSV-Dateien importieren.
+5. Seitenverzeichnis.csv lesen; die referenzierten .txt-Dateien redaktionell ins CMS übernehmen. KEIN HTML/JSON wird geliefert.
+6. Bilder anhand der Bildzuordnung einbinden. Kategorievisualisierungen als repräsentative Bilder kennzeichnen.
+7. Technische und rechtliche Inhalte vor öffentlicher Freigabe durch die verantwortlichen Personen kontrollieren.
+
+ANMERKUNGEN
+Die bereits angenommenen Materialangaben wurden aus dem bestehenden Artikelstamm übernommen, sind aber nicht unabhängig verifiziert.
+Die Bilder sind Kategorienillustrationen und zeigen nicht zwingend die exakte Geometrie jeder SKU.
+Keine zugesagten Prüfungen, Normzertifikate, Lagerbestände oder Lieferzeiten aus den Daten ableiten.
+Die Textdateien ersetzen die bisherige HTML/JSON-Bereitstellung, nicht die notwendige Umsetzung im Shopsystem.

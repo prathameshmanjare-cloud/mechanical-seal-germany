@@ -1,0 +1,73 @@
+SEITEN-ID: P084
+SEITENTITEL: Progressive Cavity Pumps
+URL: /applications/positive-displacement-pumps/progressive-cavity-pumps/
+SEITENTYP: listing
+BREADCRUMB: Applications > Positive Displacement Pumps > Progressive Cavity Pumps
+
+SEO-TITEL
+Progressive Cavity Pumps | SAP Parts
+
+META-BESCHREIBUNG
+Progressive Cavity Pumps | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Progressive Cavity Pumps
+
+Technical introduction
+
+Progressive cavity pumps serve viscous or solids-containing products. Changes in suction condition and media lubrication can challenge the mechanical seal.
+
+Selection and engineering checks
+
+A correct replacement needs more than a similar picture. Confirm the dimensions, construction and material version.
+
+• Shaft coupling movement.
+
+• Process pressure. Use the actual pressure at the seal chamber and note transients.
+
+• Slurry solids.
+
+• Viscosity.
+
+• Axial travel.
+
+• Flushing.
+
+Common failure mechanism
+
+Dry suction conditions may remove the lubricating film even while the pump shaft continues to rotate.
+
+Technical Selection
+
+A mechanical seal works as part of the complete machine. The liquid, contact pressure, shaft movement and heat removal all affect the selection. Choose a verified catalog product or send the technical details for review.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Identification and replacement support
+
+Cannot find the exact part? Send the OEM number, dimensions or a drawing. Our team can review the possible replacement before you order.
+
+Engineering detail — how we solve the problem
+
+Sealing duty at the pump
+
+The pressure and temperature at the seal chamber may differ from values at the suction or discharge nozzles. Assess operating speed, start-stop sequence, solids, vapor pressure, shaft movement and available cooling or flushing. A product match requires both geometry and duty suitability.
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Hydraulic loading and pressure transients
+
+Use the pressure at the seal chamber, including start-up, shutdown, pressure reversal and pulsation—not simply the maximum rated pump pressure. Face balance ratio and support-system pressure affect frictional loading and leakage. Pressure protection or alternative seal chamber geometry requires engineering verification.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

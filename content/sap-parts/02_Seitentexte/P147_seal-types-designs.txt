@@ -1,0 +1,79 @@
+SEITEN-ID: P147
+SEITENTITEL: Seal Types & Designs
+URL: /technology/mechanical-seal-knowledge-base/seal-types-designs/
+SEITENTYP: information
+BREADCRUMB: Technology > Mechanical Seal Knowledge Base > Seal Types & Designs
+
+SEO-TITEL
+Seal Types & Designs | SAP Parts
+
+META-BESCHREIBUNG
+Seal Types & Designs | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Seal Types & Designs
+
+Technical introduction
+
+Mechanical seals can be grouped by spring or bellows construction, cartridge assembly and single or dual arrangement. Pusher, non-pusher, balanced and unbalanced are technical features.
+
+Technical Principle
+
+Common designs include spring-loaded pusher seals, rubber bellows seals, metal bellows seals and cartridge assemblies. A pusher seal allows a secondary element to slide axially. A bellows design obtains movement by flexing its bellows. Neither design is automatically better for every medium.
+
+Materials And Design
+
+Single seals are often selected where the process fluid can lubricate the faces safely. Double seals are considered when a clean support fluid, additional containment or control of abrasive media is needed. Buffer and barrier systems must be distinguished by their operating pressure and function.
+
+Engineering Conditions
+
+Hydraulically balanced seals reduce the area exposed to pressure that contributes to face closing load. This can help under higher pressure or poor lubrication. Cartridge assemblies can simplify installation because important components are pre-set, but the equipment connection dimensions still need to be checked.
+
+Reliability And Cost
+
+Select the design only after identifying shaft size, seal chamber dimensions, medium, pressure, temperature, shaft speed, fluid properties and required reliability.
+
+Selection and engineering checks
+
+• Spring mechanism. Check actual spring force at the installed working height.
+
+• Axial movement.
+
+• Seat geometry.
+
+• Balance ratio.
+
+• Single versus dual support system.
+
+• Shaft speed. Calculate relevant sliding speed and review starts and stops.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

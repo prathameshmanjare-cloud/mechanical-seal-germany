@@ -1,0 +1,57 @@
+SEITEN-ID: P131
+SEITENTITEL: Technology
+URL: /technology/
+SEITENTYP: information
+BREADCRUMB: Technology
+
+SEO-TITEL
+Technology | SAP Parts
+
+META-BESCHREIBUNG
+Technology | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Technology
+
+Technical introduction
+
+Mechanical seal reliability starts with tribology, materials and good engineering. Learn how these factors influence service life and cost.
+
+Our Main Areas
+
+Select a topic below to learn about its technical requirements and available SAP Parts support. - Tribology & Surface Engineering: Tribology explains why sealing faces work, wear or fail. It connects surface properties with the conditions inside a pump. - Material Engineering & Cost Optimization: Material engineering can improve sealing reliability and control manufacturing cost. The correct solution is based on the full application. - Mechanical Seal Knowledge Base: Clear technical explanations for selecting, installing and maintaining mechanical seals. - Engineering Experience: These examples describe common engineering challenges. They do not identify our customers or disclose confidential project data. - Emerging Sealing Technologies: New applications create new demands for mechanical sealing. We review these duties without claiming unverified product qualifications.
+
+How We Work
+
+We start with the application and the exact operating conditions. The correct dimensions, material pairing and documentation help reduce avoidable repairs and incorrect part selection.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

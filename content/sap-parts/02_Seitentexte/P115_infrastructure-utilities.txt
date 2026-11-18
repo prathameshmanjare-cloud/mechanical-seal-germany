@@ -1,0 +1,57 @@
+SEITEN-ID: P115
+SEITENTITEL: Infrastructure & Utilities
+URL: /industries/infrastructure-utilities/
+SEITENTYP: information
+BREADCRUMB: Industries > Infrastructure & Utilities
+
+SEO-TITEL
+Infrastructure & Utilities | SAP Parts
+
+META-BESCHREIBUNG
+Infrastructure & Utilities | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Infrastructure & Utilities
+
+Technical introduction
+
+Explore common sealing requirements in infrastructure & utilities. Each industry includes different equipment and process conditions.
+
+Our Main Areas
+
+Select a topic below to learn about its technical requirements and available SAP Parts support. - Water & Wastewater: Water and wastewater applications range from clean treated water to abrasive, fibrous slurry. A single material pairing will not fit every duty. - Power Generation: Power equipment may handle hot water, condensate, cooling liquids or process chemicals. Temperature and pressure transients deserve attention. - Building Services & HVAC: Building services pumps need reliable seals in heating, cooling and pressure-boosting systems. Media additives and long service intervals matter. - Industrial Refrigeration: Industrial refrigeration equipment combines temperature extremes, refrigerants and compressor oils. Sealing compatibility depends on the complete mixture. - Marine & Offshore: Marine and offshore applications face salt exposure, wet atmosphere and equipment-specific certification requirements.
+
+How We Work
+
+We start with the application and the exact operating conditions. The correct dimensions, material pairing and documentation help reduce avoidable repairs and incorrect part selection.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

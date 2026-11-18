@@ -1,0 +1,77 @@
+SEITEN-ID: P133
+SEITENTITEL: Friction & Wear
+URL: /technology/tribology-surface-engineering/friction-wear/
+SEITENTYP: information
+BREADCRUMB: Technology > Tribology & Surface Engineering > Friction & Wear
+
+SEO-TITEL
+Friction & Wear | SAP Parts
+
+META-BESCHREIBUNG
+Friction & Wear | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Friction & Wear
+
+Technical introduction
+
+Tribology is the study of friction, lubrication and wear between surfaces in relative motion. The two seal faces experience changing contact conditions during start-up, running and shutdown.
+
+Technical Overview
+
+Tribology is the study of friction, lubrication and wear between surfaces in relative motion. The two seal faces experience changing contact conditions during start-up, running and shutdown.
+
+Selection and engineering checks
+
+The following points help define the correct sealing solution and its limits.
+
+• Material pairing. Specify the grade and pairing rather than a broad material family.
+
+• Contact load.
+
+• Sliding velocity.
+
+• Fluid lubricity. Check lubrication, vapor pressure and compatibility with the support fluid.
+
+• Surface state.
+
+• Cooling.
+
+Common Risks
+
+A good material can still fail when the design or operating conditions are wrong. A low-friction material alone does not solve a seal with an unstable fluid film or poor geometry.
+
+Engineering approach
+
+SAP Parts reviews the operating duty, checks the available dimensions and material options, and identifies the information needed before a qualified solution can be proposed. The aim is reliable operation with a practical total cost.
+
+Sap Parts Engineering
+
+SAP Parts evaluates the complete contact system to reduce avoidable wear and operating cost.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Lubrication limits and thermal risk
+
+The term dry running covers different situations: temporary liquid loss, a gas-filled interface or an intentionally gas-lubricated design. Conventional liquid-lubricated seals may overheat rapidly without the intended fluid film. Define the duration, frequency and environmental conditions before selecting face materials or special geometry.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Phone, Mail } from 'lucide-react'
-import { company, products } from '../data'
+import { company } from '../data'
+import { menus } from '../lib/nav'
+import { pageById, sections } from '../lib/site'
+
 import { Logo } from './Header'
+
+const shop = menus.find((m) => m.to === '/shop/')
+const legal = pageById('P209')
+const year = new Date().getFullYear()
 
 export default function Footer() {
   return (
@@ -10,20 +17,20 @@ export default function Footer() {
         <div>
           <Logo light />
           <p className="footer__lead">
-            Design, development and manufacturing of mechanical seals in Germany. Operated by {company.operator} since {company.since}.
+            German sealing engineering since {company.since}. Integrated manufacturing, tribology and custom development.
           </p>
         </div>
         <div>
-          <h4>Products</h4>
-          {products.slice(0, 6).map((p) => (
-            <Link key={p.slug} to={`/products/${p.slug}`}>{p.name}</Link>
+          <h4>{shop.label}</h4>
+          {shop.items.map((i) => (
+            <Link key={i.to} to={i.to}>{i.label}</Link>
           ))}
         </div>
         <div>
-          <h4>Company</h4>
-          <Link to="/about">About us</Link>
-          <Link to="/products">All products</Link>
-          <Link to="/contact">Request a quote</Link>
+          <h4>Explore</h4>
+          {sections.filter((s) => s.url !== '/shop/').map((s) => (
+            <Link key={s.id} to={s.url}>{s.title}</Link>
+          ))}
         </div>
         <div>
           <h4>Contact</h4>
@@ -33,8 +40,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="container footer__bottom">
-        <span>© {new Date().getFullYear()} {company.name}</span>
-        <Link to="/impressum">Impressum · Datenschutz</Link>
+        <span>© {year} {company.operator}</span>
+        <Link to={legal.url}>{legal.title}</Link>
       </div>
     </footer>
   )

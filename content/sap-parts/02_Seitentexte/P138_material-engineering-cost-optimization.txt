@@ -1,0 +1,57 @@
+SEITEN-ID: P138
+SEITENTITEL: Material Engineering & Cost Optimization
+URL: /technology/material-engineering-cost-optimization/
+SEITENTYP: information
+BREADCRUMB: Technology > Material Engineering & Cost Optimization
+
+SEO-TITEL
+Material Engineering & Cost Optimization | SAP Parts
+
+META-BESCHREIBUNG
+Material Engineering & Cost Optimization | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Material Engineering & Cost Optimization
+
+Technical introduction
+
+Material engineering can improve sealing reliability and control manufacturing cost. The correct solution is based on the full application.
+
+Our Main Areas
+
+Select a topic below to learn about its technical requirements and available SAP Parts support. - Cost-Optimized Material Substitution: The most expensive material is not always the most economical choice. SAP Parts examines whether a simpler bulk alloy, different face combination or modified manufacturing route can meet the actual operating requirement. - Seal Face Material Pairings: Two sealing faces work as a tribological pair. Their performance depends on the combination of hardness, heat transfer, friction, corrosion and lubrication. - Tungsten Carbide & Alternatives: Tungsten carbide is valued for wear resistance and stiffness. Cemented WC grades differ by binder, and the right alternative depends on chemical exposure and sealing duty. - White Cast Iron & High-Chrome Alloys: High-chromium white cast irons contain hard carbides in an iron-based matrix and can provide abrasion resistance at competitive manufacturing cost. Grade, heat treatment and final finish matter. - Silicon Carbide & Carbon Materials: Silicon carbide offers hardness, heat transport and good chemical resistance in many grades. Carbon graphite contributes useful sliding behaviour, especially under limited lubrication. - Coating Selection & Manufacturing Cost: Coating design affects raw materials, manufacturing steps, rework, finishing and inspection. A low-cost coating process is useful only if it meets the duty.
+
+How We Work
+
+We start with the application and the exact operating conditions. The correct dimensions, material pairing and documentation help reduce avoidable repairs and incorrect part selection.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

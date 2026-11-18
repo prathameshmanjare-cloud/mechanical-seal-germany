@@ -1,0 +1,57 @@
+SEITEN-ID: P184
+SEITENTITEL: Manufacturing Capabilities
+URL: /about-us/manufacturing-capabilities/
+SEITENTYP: information
+BREADCRUMB: About Us > Manufacturing Capabilities
+
+SEO-TITEL
+Manufacturing Capabilities | SAP Parts
+
+META-BESCHREIBUNG
+Manufacturing Capabilities | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Manufacturing Capabilities
+
+Technical introduction
+
+SAP Parts combines several manufacturing capabilities to support sealing parts, materials and engineering projects.
+
+Our Main Areas
+
+Select a topic below to learn about its technical requirements and available SAP Parts support. - Centrifugal Casting: Our centrifugal casting capability supports the production of suitable cast components and material grades for industrial sealing applications. Centrifugal forces influence melt distribution during casting. - Precision Machining: Precision machining converts material blanks into controlled sealing components. Dimensions and contact surfaces must be suitable for the final assembly. - Sintering & Powder Metallurgy: Our sintering and powder-metallurgy capability offers material-processing options for selected sealing components and technical materials. - Rubber & Elastomer Production: Our rubber production capability supports elastomer components for sealing assemblies. Compound selection and process control are important for function and traceability. - Integrated Manufacturing: Our integrated manufacturing combines casting, machining, sintering and rubber production capabilities. This gives us options for technical changes and efficient component sourcing.
+
+How We Work
+
+We start with the application and the exact operating conditions. The correct dimensions, material pairing and documentation help reduce avoidable repairs and incorrect part selection.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Manufacturing tolerances and functional faces
+
+Process planning must link the turning, grinding and lapping stages to the finished seal geometry. Flatness, squareness, concentricity, roughness and dimensional control matter differently at different interfaces. Establish measurement methods and lot traceability for critical dimensions.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+Define the relevant specification, controlled drawing revision, selected materials, required checks and acceptance criteria. A manufacturing or quality capability is not a product certification.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

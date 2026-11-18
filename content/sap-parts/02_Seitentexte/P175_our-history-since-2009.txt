@@ -1,0 +1,75 @@
+SEITEN-ID: P175
+SEITENTITEL: Our History – Since 2009
+URL: /about-us/our-company/our-history-since-2009/
+SEITENTYP: information
+BREADCRUMB: About Us > Our Company > Our History – Since 2009
+
+SEO-TITEL
+Our History – Since 2009 | SAP Parts
+
+META-BESCHREIBUNG
+Our History – Since 2009 | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Our History – Since 2009
+
+Technical introduction
+
+Since 2009, SAP Parts has developed its industrial sealing business around technical problem-solving, materials and dependable supply.
+
+Technical Principle
+
+SAP Parts has worked in industrial sealing since 2009. Over time, our focus has included material engineering, tribology and dependable supply of sealing components to OEM customers.
+
+Materials And Design
+
+Our engineering activities in Leverkusen connect operating problems with material selection, seal geometry and manufacturing. This is especially important when a seal must work under abrasive load, changing pressure or difficult fluid conditions.
+
+Engineering Conditions
+
+The company combines technical development with production capabilities in centrifugal casting, machining, sintering and elastomer manufacturing. Today, we support approximately 200 OEM customers with technical and supply needs.
+
+Reliability And Cost
+
+The webshop is an additional channel for finding mechanical seals quickly. It does not replace the technical service behind each engineered solution.
+
+Selection and engineering checks
+
+• Founding year 2009.
+
+• Development of manufacturing depth.
+
+• OEM service.
+
+• Current logistics and engineering.
+
+Sap Parts Engineering
+
+Our long-term focus is practical sealing engineering for industrial production.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+A useful engineering enquiry
+
+Send the current seal or equipment reference, shaft and seat dimensions, operating pressure at the seal, temperature, speed, medium, solids, duty cycle and photographs or drawings. We review geometry, materials and duty before recommending a replacement, altered design or development project.
+
+Technical information we need
+
+Define the relevant specification, controlled drawing revision, selected materials, required checks and acceptance criteria. A manufacturing or quality capability is not a product certification.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

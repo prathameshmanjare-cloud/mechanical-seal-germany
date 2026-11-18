@@ -1,0 +1,57 @@
+SEITEN-ID: P145
+SEITENTITEL: Mechanical Seal Knowledge Base
+URL: /technology/mechanical-seal-knowledge-base/
+SEITENTYP: information
+BREADCRUMB: Technology > Mechanical Seal Knowledge Base
+
+SEO-TITEL
+Mechanical Seal Knowledge Base | SAP Parts
+
+META-BESCHREIBUNG
+Mechanical Seal Knowledge Base | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Mechanical Seal Knowledge Base
+
+Technical introduction
+
+Clear technical explanations for selecting, installing and maintaining mechanical seals.
+
+Our Main Areas
+
+Select a topic below to learn about its technical requirements and available SAP Parts support. - How Mechanical Seals Work: A mechanical seal controls leakage where a rotating shaft passes through a stationary housing. A rotating face works against a stationary face. Secondary seals close other leakage paths. - Seal Types & Designs: Mechanical seals can be grouped by spring or bellows construction, cartridge assembly and single or dual arrangement. Pusher, non-pusher, balanced and unbalanced are technical features. - Seal Face Materials Explained: Common faces are carbon graphite, silicon carbide, tungsten carbide and aluminium oxide. The material grade, binder and application determine suitability. - Elastomers & Chemical Compatibility: Elastomer O-rings and bellows prevent leakage away from the primary faces. Typical families include NBR, EPDM, FKM, HNBR and FFKM. Compound formulation matters. - Material Pairing Selection: A material pairing has to support lubrication, thermal behaviour and resistance to the process medium. Popular combinations serve different conditions rather than a universal ranking. - Spring Force & Face Loading: The spring provides preload, while hydraulic pressure also acts on the seal. The resulting face load influences leakage, heat and wear. - Hydraulic Balance: Hydraulic balance reduces the area on which sealed pressure creates closing force. It is a design method for controlling face loading at pressure. - Dry Running & Lubrication: Dry running means that a sufficient lubricating fluid film is absent. Many standard seals can fail quickly when face temperatures rise. - Failure Analysis: Leakage is a symptom, not a root cause. Inspection should consider damage to faces, O-rings, springs, drive parts and the surrounding pump system. - Installation & Common Mistakes: Correct installation is essential for mechanical seal life. Clean parts, correct shaft dimensions and the specified installed length matter as much as material selection. - Maintenance & Troubleshooting: Maintenance should identify changing leakage, heat, vibration, noise and fluid condition before a small problem becomes a pump failure. - Seal Lifetime & Total Cost of Ownership: The purchase price is only one part of a sealing system cost. Downtime, labour, spare parts, lost product and additional energy can be much more expensive.
+
+How We Work
+
+We start with the application and the exact operating conditions. The correct dimensions, material pairing and documentation help reduce avoidable repairs and incorrect part selection.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

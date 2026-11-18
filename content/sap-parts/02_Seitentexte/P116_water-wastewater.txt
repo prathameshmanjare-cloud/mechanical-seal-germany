@@ -1,0 +1,77 @@
+SEITEN-ID: P116
+SEITENTITEL: Water & Wastewater
+URL: /industries/infrastructure-utilities/water-wastewater/
+SEITENTYP: information
+BREADCRUMB: Industries > Infrastructure & Utilities > Water & Wastewater
+
+SEO-TITEL
+Water & Wastewater | SAP Parts
+
+META-BESCHREIBUNG
+Water & Wastewater | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Water & Wastewater
+
+Technical introduction
+
+Water and wastewater applications range from clean treated water to abrasive, fibrous slurry. A single material pairing will not fit every duty.
+
+Technical Overview
+
+Water and wastewater applications range from clean treated water to abrasive, fibrous slurry. A single material pairing will not fit every duty.
+
+Selection and engineering checks
+
+The following points help define the correct sealing solution and its limits.
+
+• Water chemistry.
+
+• Particles.
+
+• Pressure. Use the actual pressure at the seal chamber and note transients.
+
+• Dry run.
+
+• Elastomers. The exact compound and cure system can change chemical compatibility.
+
+• Pump configuration.
+
+Common Risks
+
+A good material can still fail when the design or operating conditions are wrong. Water quality changes can move a seal from fluid-film into abrasive contact.
+
+Engineering approach
+
+SAP Parts reviews the operating duty, checks the available dimensions and material options, and identifies the information needed before a qualified solution can be proposed. The aim is reliable operation with a practical total cost.
+
+Sap Parts Engineering
+
+SAP Parts supports material selection and custom seal engineering for the specific operating duty, with a focus on cost and reliability.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Abrasive handling and face protection
+
+Particle size, concentration and hardness affect the wear mechanism at the faces and secondary seals. Consider flush or barrier arrangements where suitable and verify whether process-side geometry encourages particle accumulation. Select a complete arrangement rather than relying only on a harder face material.
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Stationary interface and seating geometry
+
+Confirm seat outside diameter, axial thickness, installation depth, anti-rotation method, elastomer seat and housing tolerance. The counterface must remain square to the shaft and must not be distorted by uneven mounting force. A visually similar ring can have a different functional geometry.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

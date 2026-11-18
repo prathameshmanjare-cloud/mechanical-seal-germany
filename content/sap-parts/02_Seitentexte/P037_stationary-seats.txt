@@ -1,0 +1,63 @@
+SEITEN-ID: P037
+SEITENTITEL: Stationary Seats
+URL: /shop/mechanical-seal-components/stationary-seats/
+SEITENTYP: listing
+BREADCRUMB: Shop > Mechanical Seal Components > Stationary Seats
+
+SEO-TITEL
+Stationary Seats | SAP Parts
+
+META-BESCHREIBUNG
+Stationary Seats | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Stationary Seats
+
+Technical introduction
+
+Stationary seats are listed under the dedicated Stationary Seal Seats shop category. This entry is a navigation link, not a second product inventory.
+
+Selection and engineering checks
+
+A correct replacement needs more than a similar picture. Confirm the dimensions, construction and material version.
+
+• Direct customers to the stationary seat search with outside diameter, inside diameter, height, material and mounting form. Confirm all related dimensions, not only nominal shaft size.
+
+Common failure mechanism
+
+Do not duplicate SKUs or stock quantities across the two category paths.
+
+Technical Selection
+
+A mechanical seal works as part of the complete machine. The liquid, contact pressure, shaft movement and heat removal all affect the selection. Choose a verified catalog product or send the technical details for review.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Identification and replacement support
+
+Cannot find the exact part? Send the OEM number, dimensions or a drawing. Our team can review the possible replacement before you order.
+
+Engineering detail — how we solve the problem
+
+Stationary interface and seating geometry
+
+Confirm seat outside diameter, axial thickness, installation depth, anti-rotation method, elastomer seat and housing tolerance. The counterface must remain square to the shaft and must not be distorted by uneven mounting force. A visually similar ring can have a different functional geometry.
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

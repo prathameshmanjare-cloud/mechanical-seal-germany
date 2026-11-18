@@ -1,0 +1,71 @@
+SEITEN-ID: P044
+SEITENTITEL: Search by Seal Series
+URL: /oem-replacement/find-a-replacement/search-by-seal-series/
+SEITENTYP: listing
+BREADCRUMB: OEM Replacement > Find a Replacement > Search by Seal Series
+
+SEO-TITEL
+Search by Seal Series | SAP Parts
+
+META-BESCHREIBUNG
+Search by Seal Series | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Search by Seal Series
+
+Technical introduction
+
+Search by a known seal type, trade designation or design series. The result must make clear whether the name describes the same design or only a similar function.
+
+Selection and engineering checks
+
+A correct replacement needs more than a similar picture. Confirm the dimensions, construction and material version.
+
+• Full series designation.
+
+• Variant suffix.
+
+• Direction of rotation.
+
+• Installation length.
+
+• Counter seat geometry.
+
+Common failure mechanism
+
+Similar-looking series may have different seat forms and setting dimensions.
+
+Technical Selection
+
+A mechanical seal works as part of the complete machine. The liquid, contact pressure, shaft movement and heat removal all affect the selection. Choose a verified catalog product or send the technical details for review.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Identification and replacement support
+
+Cannot find the exact part? Send the OEM number, dimensions or a drawing. Our team can review the possible replacement before you order.
+
+Engineering detail — how we solve the problem
+
+Replacement verification workflow
+
+An OEM number is an identification starting point, not automatic proof of interchangeability. Verify equipment variant, revision, shaft and housing geometry, seat, face materials, elastomers, operating conditions and available space. Only publish cross-references supported by verified product records.
+
+Stationary interface and seating geometry
+
+Confirm seat outside diameter, axial thickness, installation depth, anti-rotation method, elastomer seat and housing tolerance. The counterface must remain square to the shaft and must not be distorted by uneven mounting force. A visually similar ring can have a different functional geometry.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

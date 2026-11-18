@@ -1,0 +1,79 @@
+SEITEN-ID: P156
+SEITENTITEL: Maintenance & Troubleshooting
+URL: /technology/mechanical-seal-knowledge-base/maintenance-troubleshooting/
+SEITENTYP: information
+BREADCRUMB: Technology > Mechanical Seal Knowledge Base > Maintenance & Troubleshooting
+
+SEO-TITEL
+Maintenance & Troubleshooting | SAP Parts
+
+META-BESCHREIBUNG
+Maintenance & Troubleshooting | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Maintenance & Troubleshooting
+
+Technical introduction
+
+Maintenance should identify changing leakage, heat, vibration, noise and fluid condition before a small problem becomes a pump failure.
+
+Technical Principle
+
+Regular observation can reveal seal problems before a complete failure. Watch for changes in leakage, noise, temperature, vibration, reservoir pressure and barrier-fluid level. Compare the findings with the normal operating condition of the equipment.
+
+Materials And Design
+
+When leakage increases, check whether the change is linked to pressure, temperature, speed or a recent maintenance action. A dripping seal can be caused by damaged faces, secondary sealing damage, incorrect face loading or housing distortion.
+
+Engineering Conditions
+
+For double seals, monitor the support system as well as the seal cartridge. A wrong barrier pressure or a loss of cooling can damage two sealing interfaces. The support fluid must stay compatible with the process, face materials and operating temperature.
+
+Reliability And Cost
+
+Record maintenance findings by product code and revision. This helps identify repeated issues and supports better material and design decisions during the next repair.
+
+Selection and engineering checks
+
+• Leakage observations.
+
+• Fluid changes. Check lubrication, vapor pressure and compatibility with the support fluid.
+
+• Seal pot level.
+
+• Bearing condition.
+
+• Process changes.
+
+• Shutdown history.
+
+Sap Parts Engineering
+
+Use operating data and failure history to improve replacement decisions.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

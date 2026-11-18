@@ -1,0 +1,18 @@
+SAP Parts — Datenqualitaetsbericht (aus bisherigem Entwicklerpaket)
+
+version: "V1"
+articles: 38881
+source_word_pages: 209
+category_pages: 210
+pages_from_original_word: 209
+generated_other_page: 1
+primary_category_assignments: {"P005": 5211, "P010": 4140, "P210": 16278, "P028": 212, "P016": 437, "P019": 8, "P023": 89, "P006": 2374, "P008": 856, "P013": 20, "P007": 3538, "P004": 917, "P029": 1498, "P035": 756, "P014": 385, "P015": 447, "P011": 419, "P039": 1296}
+other_articles: 16278
+unmatched_category_fallbacks: 0
+invalid_nonempty_shaft_diameters: 0
+unique_sku_count_expected: 38881
+image_files_unique: 8
+legacy_image_groups: 20
+editorial_policy: "Word editorial extracted; new product copy generated from data and seal architecture; representative images are conceptual"
+source_files: ["SAP Parts - Category Tree V7.1.xlsx", "SAP_Parts_Mechanical_Seal_Shop_FINAL_Import.csv", "SAP_Parts_Webshop_V8_1_Word_Inhalte_ohne_Bilder(1).zip"]
+warnings: ["Technical data is carried forward as supplied/assumed; not independently verified", "Some technical filters have sparse source coverage", "Representative product imagery must not be treated as literal SKU photography", "Original legal content requires legal approval", "Some non-Shop editorial pages have no article mappings by design"]

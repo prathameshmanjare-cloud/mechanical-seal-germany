@@ -1,0 +1,81 @@
+SEITEN-ID: P155
+SEITENTITEL: Installation & Common Mistakes
+URL: /technology/mechanical-seal-knowledge-base/installation-common-mistakes/
+SEITENTYP: information
+BREADCRUMB: Technology > Mechanical Seal Knowledge Base > Installation & Common Mistakes
+
+SEO-TITEL
+Installation & Common Mistakes | SAP Parts
+
+META-BESCHREIBUNG
+Installation & Common Mistakes | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Installation & Common Mistakes
+
+Technical introduction
+
+Correct installation is essential for mechanical seal life. Clean parts, correct shaft dimensions and the specified installed length matter as much as material selection.
+
+Technical Principle
+
+Mechanical seal installation requires clean components, accurate positioning and careful handling of precision faces. Do not touch or damage the lapped sealing surfaces. Remove particles, check shaft condition and verify the installation dimensions before assembly.
+
+Materials And Design
+
+Common errors include incorrect setting length, wrong rotation direction for a directional spring, damaged O-rings, unsuitable assembly lubricant and excessive force on brittle stationary seats. A cartridge seal reduces some setting tasks but still requires correct gland mounting and the approved setting procedure.
+
+Engineering Conditions
+
+Check shaft runout, axial movement, seal chamber geometry and the condition of the sleeve. These equipment conditions can produce leakage even when the new seal is dimensionally correct. The pump should be primed and vented as specified before operation.
+
+Reliability And Cost
+
+Follow the instructions for the actual seal model. For example, certain rubber bellows rely on gripping the shaft and can be affected by lubricants that leave a persistent film. A generic assembly method should never replace the product-specific instructions.
+
+Selection and engineering checks
+
+• Shaft runout.
+
+• Scratches.
+
+• Chamber cleanliness.
+
+• Seat press-in.
+
+• O-ring lubricant.
+
+• Axial setting.
+
+• Rotation.
+
+Sap Parts Engineering
+
+Precise drawings and clear assembly steps reduce avoidable service failures.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

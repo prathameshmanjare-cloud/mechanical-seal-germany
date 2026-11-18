@@ -1,0 +1,57 @@
+SEITEN-ID: P203
+SEITENTITEL: Request Support
+URL: /contact/request-support/
+SEITENTYP: information
+BREADCRUMB: Contact > Request Support
+
+SEO-TITEL
+Request Support | SAP Parts
+
+META-BESCHREIBUNG
+Request Support | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Request Support
+
+Technical introduction
+
+Contact SAP Parts for product identification, quotations and engineering.
+
+Our Main Areas
+
+Select a topic below to learn about its technical requirements and available SAP Parts support. - Request a Quote: Send us the product information and quantity. We will review the request and respond with a quotation or the questions needed to confirm the correct seal. - Technical Consultation: Our engineers can discuss a seal problem, unusual medium or material selection. Start with equipment and operating data. - Submit a Drawing: A drawing can help identify a replacement or start a new design project. Send the latest revision and key application data. - Identify an Unknown Seal: If a part number is missing, we can work from dimensions, photos and equipment information to find candidate parts for review. - Custom Seal Development: Custom development starts with the operating duty and a technical target. A defined process helps compare designs and materials before release.
+
+How We Work
+
+We start with the application and the exact operating conditions. The correct dimensions, material pairing and documentation help reduce avoidable repairs and incorrect part selection.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+A useful engineering enquiry
+
+Send the current seal or equipment reference, shaft and seat dimensions, operating pressure at the seal, temperature, speed, medium, solids, duty cycle and photographs or drawings. We review geometry, materials and duty before recommending a replacement, altered design or development project.
+
+Replacement verification workflow
+
+An OEM number is an identification starting point, not automatic proof of interchangeability. Verify equipment variant, revision, shaft and housing geometry, seat, face materials, elastomers, operating conditions and available space. Only publish cross-references supported by verified product records.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+Attach a dimensioned drawing or clear photographs and note critical measurements. State the application and any urgent failure symptoms, so the correct engineering path can be assessed.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

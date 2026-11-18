@@ -1,0 +1,79 @@
+SEITEN-ID: P146
+SEITENTITEL: How Mechanical Seals Work
+URL: /technology/mechanical-seal-knowledge-base/how-mechanical-seals-work/
+SEITENTYP: information
+BREADCRUMB: Technology > Mechanical Seal Knowledge Base > How Mechanical Seals Work
+
+SEO-TITEL
+How Mechanical Seals Work | SAP Parts
+
+META-BESCHREIBUNG
+How Mechanical Seals Work | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+How Mechanical Seals Work
+
+Technical introduction
+
+A mechanical seal controls leakage where a rotating shaft passes through a stationary housing. A rotating face works against a stationary face. Secondary seals close other leakage paths.
+
+Technical Principle
+
+A mechanical seal controls leakage where a rotating shaft passes through a stationary housing. It normally contains a rotating face, a stationary face, secondary seals and a loading element. The two precision-finished faces are the main sealing interface.
+
+Materials And Design
+
+The faces work with a very thin fluid film. The film helps carry load, limits friction and removes some heat. Too little film can cause wear and high temperature. Too much separation can increase leakage. This is why surface flatness, fluid properties and face loading have to work together.
+
+Engineering Conditions
+
+Spring force helps keep the faces together at standstill and supports their movement as the surfaces wear. Pressure in the seal chamber also produces forces on the faces. The combined closing force must suit the operating pressure and the face geometry. A mechanical seal is therefore a small tribological system, not simply two rings pressed tightly together.
+
+Reliability And Cost
+
+A seal can be visually dry and still have a very small controlled leakage path. The acceptable leakage depends on the seal arrangement, medium and duty. The complete sealing system matters: pump alignment, cooling, shaft movement and installation quality can be as important as the face material.
+
+Selection and engineering checks
+
+• Primary faces.
+
+• O-rings or bellows.
+
+• Spring force. Check actual spring force at the installed working height.
+
+• Hydraulic force.
+
+• Microscopic fluid film. Check lubrication, vapor pressure and compatibility with the support fluid.
+
+• Shaft drive.
+
+Sap Parts Engineering
+
+Use this introduction to understand what data is needed when selecting a replacement.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

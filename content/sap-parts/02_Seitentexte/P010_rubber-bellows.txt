@@ -1,0 +1,73 @@
+SEITEN-ID: P010
+SEITENTITEL: Rubber Bellows
+URL: /shop/bellows-mechanical-seals/rubber-bellows/
+SEITENTYP: listing
+BREADCRUMB: Shop > Bellows Mechanical Seals > Rubber Bellows
+
+SEO-TITEL
+Rubber Bellows | SAP Parts
+
+META-BESCHREIBUNG
+Rubber Bellows | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Rubber Bellows
+
+Technical introduction
+
+An elastomer bellows seals against the shaft while allowing axial movement of the rotating ring. It can avoid a sliding secondary O-ring in certain designs.
+
+Selection and engineering checks
+
+A correct replacement needs more than a similar picture. Confirm the dimensions, construction and material version.
+
+• Bellows material. Specify the grade and pairing rather than a broad material family.
+
+• Shaft surface.
+
+• Axial installation height.
+
+• Medium. State the full medium composition, including particles and cleaning fluids.
+
+• Temperature. Check continuous and start-up temperatures at the sealing interface.
+
+• Shaft diameter. Confirm all related dimensions, not only nominal shaft size.
+
+Common failure mechanism
+
+Incorrect installation lubricant or surface contamination can prevent the bellows from gripping the shaft in designs that depend on this grip. Follow the product instructions.
+
+Technical Selection
+
+A mechanical seal works as part of the complete machine. The liquid, contact pressure, shaft movement and heat removal all affect the selection. Choose a verified catalog product or send the technical details for review.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Identification and replacement support
+
+Cannot find the exact part? Send the OEM number, dimensions or a drawing. Our team can review the possible replacement before you order.
+
+Engineering detail — how we solve the problem
+
+Secondary sealing and axial flexibility
+
+A bellows may supply spring action, provide secondary sealing or perform both functions, depending on the construction. Flexibility, fatigue resistance, medium compatibility and temperature cycling must be assessed together. Do not assume a rubber, PTFE and welded-metal bellows have the same pressure and temperature capability.
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Secondary seal material selection
+
+Check chemical compatibility against the complete fluid mixture, cleaning agents, exposure time and operating temperature. Consider swelling, compression set, extrusion gaps and dynamic movement where applicable. The polymer name by itself does not define the performance of the finished compound.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

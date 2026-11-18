@@ -1,15 +1,12 @@
 import { useEffect } from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Navigate, Routes, Route, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Home from './pages/Home'
-import Products from './pages/Products'
-import ProductDetail from './pages/ProductDetail'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Impressum from './pages/Impressum'
-import Applications from './pages/Applications'
-import Technology from './pages/Technology'
+import CmsPage from './pages/CmsPage'
+import NotFound from './pages/NotFound'
+import ProductPage from './pages/ProductPage'
+import { pages } from './lib/site'
+import { LEGACY_FALLBACK, LEGACY_REDIRECTS } from './lib/redirects'
 
 function ScrollTop() {
   const { pathname } = useLocation()
@@ -26,15 +23,15 @@ export default function App() {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/products/:slug" element={<ProductDetail />} />
-          <Route path="/applications" element={<Applications />} />
-          <Route path="/technology" element={<Technology />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/impressum" element={<Impressum />} />
-          <Route path="*" element={<Home />} />
+          <Route path="/product/:sku" element={<ProductPage />} />
+          {pages.map((p) => (
+            <Route key={p.id} path={p.url} element={<CmsPage key={p.id} id={p.id} />} />
+          ))}
+          {Object.entries(LEGACY_REDIRECTS).map(([from, to]) => (
+            <Route key={from} path={from} element={<Navigate to={to} replace />} />
+          ))}
+          <Route path={LEGACY_FALLBACK.from} element={<Navigate to={LEGACY_FALLBACK.to} replace />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

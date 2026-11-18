@@ -1,0 +1,79 @@
+SEITEN-ID: P148
+SEITENTITEL: Seal Face Materials Explained
+URL: /technology/mechanical-seal-knowledge-base/seal-face-materials-explained/
+SEITENTYP: information
+BREADCRUMB: Technology > Mechanical Seal Knowledge Base > Seal Face Materials Explained
+
+SEO-TITEL
+Seal Face Materials Explained | SAP Parts
+
+META-BESCHREIBUNG
+Seal Face Materials Explained | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Seal Face Materials Explained
+
+Technical introduction
+
+Common faces are carbon graphite, silicon carbide, tungsten carbide and aluminium oxide. The material grade, binder and application determine suitability.
+
+Technical Principle
+
+Carbon graphite is widely used because it can provide favourable sliding properties in many lubricated and boundary-lubricated contacts. The carbon grade and impregnation matter. Carbon may wear quickly in liquids with hard abrasive solids.
+
+Materials And Design
+
+Silicon carbide (SiC) is hard, wear-resistant and conducts heat well. Sintered SiC and reaction-bonded SiC do not have identical chemical and mechanical properties. Certain grades or free-silicon phases can be unsuitable for specific chemicals.
+
+Engineering Conditions
+
+Tungsten carbide (WC) offers good wear resistance and mechanical stiffness. Cemented carbide contains a metallic binder such as nickel or cobalt; this binder is important for chemical compatibility. Alumina ceramic can be a cost-effective hard face for selected clean-water duties, but its thermal-shock behaviour needs attention.
+
+Reliability And Cost
+
+Stainless steel and selected cast irons can also be useful in defined applications. They should not be ranked only by price or nominal hardness. Surface finish, deformation, thermal behaviour and the full material pairing decide whether a grade is suitable.
+
+Selection and engineering checks
+
+• Hardness.
+
+• Thermal conductivity.
+
+• Chemical resistance.
+
+• Thermal shock.
+
+• Finish.
+
+• Procurement cost.
+
+Sap Parts Engineering
+
+Our team can compare alternatives for reliability and cost.
+
+Application boundary
+
+The exact solution depends on process data. A material or arrangement mentioned on this page is not a universal recommendation. We confirm dimensions, media compatibility and qualification requirements for the specific product.
+
+Engineering detail — how we solve the problem
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Engineering a material decision
+
+A material change should begin with a failure mechanism and measurable acceptance criteria. Evaluate the face pair, corrosion behaviour, thermal properties, geometry, production route and total installed cost. A lower purchase price is useful only when fit, reliability and required qualification are maintained.
+
+Verification and traceability
+
+Define acceptance criteria that are meaningful for each component: material identity, critical dimensions, face geometry, elastomer specification and functional checks where applicable. Inspection records should identify the relevant production batch and drawing revision. Product-specific certificates require actual supporting evidence.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

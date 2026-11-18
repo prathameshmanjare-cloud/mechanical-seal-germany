@@ -1,0 +1,57 @@
+SEITEN-ID: P071
+SEITENTITEL: Industrial Pumps
+URL: /applications/industrial-pumps/
+SEITENTYP: listing
+BREADCRUMB: Applications > Industrial Pumps
+
+SEO-TITEL
+Industrial Pumps | SAP Parts
+
+META-BESCHREIBUNG
+Industrial Pumps | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Industrial Pumps
+
+Technical introduction
+
+Select a seal for your industrial pump using the pump duty, seal dimensions and process liquid.
+
+Choose A Category
+
+Select the seal family or technical category that matches your requirement. - Centrifugal Pumps: Centrifugal pumps use mechanical seals around a rotating shaft to control process leakage. - Multistage Pumps: Multistage pumps can operate at high pressures and may have compact seal chambers. - Chemical Process Pumps: Chemical pumps require materials that resist both the main process fluid and smaller chemical components. - Booster & Water Pumps: Booster and water pumps typically need compact, reliable seals for repeated starts, variable water chemistry and expected maintenance intervals. - High-Pressure Pumps: High-pressure pump seals require controlled face loading, suitable mechanical strength and stable lubrication under the actual seal chamber conditions.
+
+Technical Selection
+
+A mechanical seal works as part of the complete machine. The liquid, contact pressure, shaft movement and heat removal all affect the selection. Choose a verified catalog product or send the technical details for review.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Identification and replacement support
+
+Cannot find the exact part? Send the OEM number, dimensions or a drawing. Our team can review the possible replacement before you order.
+
+Engineering detail — how we solve the problem
+
+Sealing duty at the pump
+
+The pressure and temperature at the seal chamber may differ from values at the suction or discharge nozzles. Assess operating speed, start-stop sequence, solids, vapor pressure, shaft movement and available cooling or flushing. A product match requires both geometry and duty suitability.
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Hydraulic loading and pressure transients
+
+Use the pressure at the seal chamber, including start-up, shutdown, pressure reversal and pulsation—not simply the maximum rated pump pressure. Face balance ratio and support-system pressure affect frictional loading and leakage. Pressure protection or alternative seal chamber geometry requires engineering verification.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.

@@ -1,0 +1,57 @@
+SEITEN-ID: P014
+SEITENTITEL: Cartridge Mechanical Seals
+URL: /shop/cartridge-mechanical-seals/
+SEITENTYP: listing
+BREADCRUMB: Shop > Cartridge Mechanical Seals
+
+SEO-TITEL
+Cartridge Mechanical Seals | SAP Parts
+
+META-BESCHREIBUNG
+Cartridge Mechanical Seals | Precision sealing, tribology and application-specific engineering by SAP Parts.
+
+SEITENTEXT
+
+Cartridge Mechanical Seals
+
+Technical introduction
+
+Cartridge seals are supplied as pre-assembled sealing units. They reduce the number of installation steps, but correct equipment fit is still essential.
+
+Choose A Category
+
+Select the seal family or technical category that matches your requirement. - Single Cartridge: A single cartridge seal is pre-assembled with key elements such as a sleeve and gland. - Double Cartridge: A double cartridge contains two sealing interfaces and uses a suitable support system. - Tandem Cartridge: A tandem arrangement has two seals in series. - Split Cartridge: Split cartridge designs can be installed around a shaft when removing the drive or coupling would be difficult.
+
+Technical Selection
+
+A mechanical seal works as part of the complete machine. The liquid, contact pressure, shaft movement and heat removal all affect the selection. Choose a verified catalog product or send the technical details for review.
+
+SAP Parts engineering support
+
+We can help review drawings, dimensions, operating conditions and the material configuration before quotation.
+
+Identification and replacement support
+
+Cannot find the exact part? Send the OEM number, dimensions or a drawing. Our team can review the possible replacement before you order.
+
+Engineering detail — how we solve the problem
+
+Cartridge assembly and setting
+
+A preassembled cartridge can reduce field-setting errors when installed as specified, but it does not eliminate interface checks. Verify shaft sleeve, gland connection, set screw positions, flush and barrier connections, installation tabs, rotation and dimensional clearances before removing setting devices.
+
+Hydraulic loading and pressure transients
+
+Use the pressure at the seal chamber, including start-up, shutdown, pressure reversal and pulsation—not simply the maximum rated pump pressure. Face balance ratio and support-system pressure affect frictional loading and leakage. Pressure protection or alternative seal chamber geometry requires engineering verification.
+
+Material pairing and surface integrity
+
+Specify the rotating and stationary faces as a pair. Hardness alone does not determine suitability: thermal conductivity, friction behaviour, corrosion resistance, abrasives, surface flatness and lubrication regime also matter. Evaluate the actual product grade and manufacturing route before substitution.
+
+Technical information we need
+
+For an application-specific recommendation, please send: existing drawing or seal reference; shaft diameter and mating seat dimensions; pressure and temperature at the seal; fluid composition, contaminants and solids; speed, operating cycle and shaft movement; present material configuration and observed failure pattern.
+
+Engineering enquiry
+
+Send us the seal reference, equipment data, drawing or dimensions. SAP Parts reviews the fit, operating duty and material pairing before proposing a verified replacement or an engineered alternative.
