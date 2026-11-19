@@ -18,7 +18,7 @@ function ListingSearch({ initial, onSearch, scope }) {
   return (
     <form className="search search--lg cms-search" role="search" onSubmit={(e) => { e.preventDefault(); onSearch(q.trim()) }}>
       <Search size={18} className="search__icon" />
-      <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search by SKU, OEM number, series or shaft Ø…" aria-label={`Search ${scope}`} />
+      <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search by part number, OEM code, SAP Parts SKU, equipment or dimensions" aria-label={`Search ${scope}`} />
       <button type="submit" className="btn btn--primary search__btn">Search</button>
     </form>
   )
@@ -150,6 +150,7 @@ function Catalog({ page, params, setParams }) {
         </div>
         <Facets ids={page.filters} facets={view.facets} sel={state.sel} onToggle={toggle} onRange={range} />
         {filtered ? <button className="filters2__reset" onClick={clearAll}>Clear all filters</button> : null}
+        <Link to="/contact/" className="filters2__help">Request technical help <ArrowRight size={14} /></Link>
       </aside>
 
       <div className="catalog__main">

@@ -35,7 +35,7 @@ function HomeSearch() {
   return (
     <form className="search search--lg cms-search home__search" role="search" onSubmit={go}>
       <Search size={18} className="search__icon" aria-hidden="true" />
-      <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="SAP Parts SKU, OEM number, series or shaft Ø…" aria-label="Search the catalogue" />
+      <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search by part number, OEM code, SAP Parts SKU, equipment or dimensions" aria-label="Search the catalogue" />
       <button type="submit" className="btn btn--primary search__btn">Search <ArrowRight size={16} aria-hidden="true" /></button>
     </form>
   )
