@@ -6,6 +6,7 @@ import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Search, SlidersHori
 import CmsHero from './CmsHero'
 import Facets from './Facets'
 import SkuCard from './SkuCard'
+import EmptyCatalogue from './EmptyCatalogue'
 import RichText, { CtaBox } from './RichText'
 import { ctaOf, introOf } from '../../lib/content'
 import { pageById, productUrl } from '../../lib/site'
@@ -233,14 +234,7 @@ export default function ListingTemplate({ page, content }) {
           <Catalog key={page.id} page={page} params={params} setParams={setParams} />
         ) : (
           <div className="container">
-            <div className="empty nomatch">
-              <strong>No catalogue articles are assigned to this page yet.</strong>
-              <p>Search the full catalogue above, or send us the OEM number, drawing or dimensions for identification.</p>
-              <div className="nomatch__actions">
-                <Link to={SHOP} className="btn btn--outline">Browse the shop</Link>
-                <Link to="/contact/" className="btn btn--primary">Request identification <ArrowRight size={15} /></Link>
-              </div>
-            </div>
+            <EmptyCatalogue />
           </div>
         )}
 
