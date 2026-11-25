@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { formatNumber } from '../../lib/listing'
-import { productUrl } from '../../lib/site'
+import { cleanArt, productUrl } from '../../lib/site'
 
 // One article as a spec row. Only supplied values are shown; nothing is defaulted.
 export default function SkuCard({ p }) {
@@ -13,9 +13,9 @@ export default function SkuCard({ p }) {
     ['Secondary seal', p.secondarySeal],
   ]
   return (
-    <article className="sku">
+    <article className="sku" data-reveal>
       <Link to={url} className="sku__media" tabIndex={-1} aria-hidden="true">
-        {p.image && <img src={p.image} alt="" loading="lazy" width="96" height="72" />}
+        {p.image && <img src={cleanArt(p.image)} alt="" loading="lazy" width="96" height="72" />}
       </Link>
       <div className="sku__main">
         <span className="sku__type">{p.sealType}{p.series ? ` · ${p.series}` : ''}</span>

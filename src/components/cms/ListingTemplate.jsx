@@ -2,28 +2,18 @@
 // search first, then context, filters, results with sort and paging, then editorial copy.
 import { useEffect, useState } from 'react'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
-import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Search, SlidersHorizontal, X } from 'lucide-react'
+import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, SlidersHorizontal, X } from 'lucide-react'
 import CmsHero from './CmsHero'
+import SmartSearch from '../SmartSearch'
 import Facets from './Facets'
 import SkuCard from './SkuCard'
 import EmptyCatalogue from './EmptyCatalogue'
 import RichText, { CtaBox } from './RichText'
 import { ctaOf, introOf } from '../../lib/content'
-import { pageById, productUrl } from '../../lib/site'
+import { cleanArt, pageById, productUrl } from '../../lib/site'
 import { SORTS, filterDef, formatNumber, readState, searchUrl } from '../../lib/listing'
 
 const SHOP = '/shop/'
-
-function ListingSearch({ initial, onSearch, scope }) {
-  const [q, setQ] = useState(initial)
-  return (
-    <form className="search search--lg cms-search" role="search" onSubmit={(e) => { e.preventDefault(); onSearch(q.trim()) }}>
-      <Search size={18} className="search__icon" />
-      <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search by part number, OEM code, SAP Parts SKU, equipment or dimensions" aria-label={`Search ${scope}`} />
-      <button type="submit" className="btn btn--primary search__btn">Search</button>
-    </form>
-  )
-}
 
 function Pager({ page, pages, go }) {
   if (pages <= 1) return null
@@ -70,11 +60,11 @@ function SubCategories({ page }) {
       <h2>Browse {page.title}</h2>
       <div className="subcats__grid">
         {kids.map((c) => (
-          <Link key={c.id} to={c.url} className="subcat">
-            {c.image && <img src={c.image} alt="" loading="lazy" width="96" height="72" />}
+          <Link key={c.id} to={c.url} className="subcat" data-reveal data-spotlight>
+            {c.image && <img src={cleanArt(c.image)} alt="" loading="lazy" width="96" height="72" />}
             <span>
               <strong>{c.title}</strong>
-              {c.type === 'listing' && <small>{c.productCount ? `${c.productCount.toLocaleString('en')} articles` : 'Identification on request'}</small>}
+              {c.productCount > 0 && <small>{c.productCount.toLocaleString('en')} articles</small>}
             </span>
             <ArrowRight size={16} />
           </Link>
@@ -174,7 +164,7 @@ function Catalog({ page, params, setParams }) {
           </div>
         </div>
         <Chips state={state} clear={clear} clearAll={clearAll} />
-        <p className="catalog__note">Images are representative illustrations of the seal family, not photos of the individual article.</p>
+        <p className="catalog__note">Images are representative.</p>
         {view.exact && (
           <Link to={productUrl(view.exact.sku)} className="exact">
             <span>
@@ -224,7 +214,7 @@ export default function ListingTemplate({ page, content }) {
   return (
     <div className="cms cms--listing" data-page={page.id}>
       <CmsHero page={page} lead={introOf(content)} image={page.image}>
-        <ListingSearch key={params.get('q') || ''} initial={params.get('q') || ''} onSearch={onSearch} scope={hasProducts ? page.title : 'all articles'} />
+        <SmartSearch key={params.get('q') || ''} initial={params.get('q') || ''} onSubmit={onSearch} scope={hasProducts && page.url !== SHOP ? page.id : null} label={`Search ${hasProducts ? page.title : 'all articles'}`} hotkey className="cms-search" />
         {hasProducts && <p className="cmsh__meta">{page.productCount.toLocaleString('en')} articles in this category</p>}
       </CmsHero>
 

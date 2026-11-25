@@ -12,7 +12,7 @@ function Related({ page }) {
   const parent = page.parent && pageById(page.parent)
   if (!items.length && !parent) return null
   return (
-    <nav className="relnav" aria-label="Related pages">
+    <nav className="relnav" aria-label="Related pages" data-reveal>
       <h2>{page.children.length ? 'In this section' : 'Related topics'}</h2>
       <ul>
         {items.map((p) => (

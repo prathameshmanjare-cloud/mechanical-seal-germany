@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom'
 import { ArrowRight, Check, Copy, Info, MessageSquareQuote, Search } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import { useHead } from '../lib/head'
-import { pageById, productUrl, trail } from '../lib/site'
+import { cleanArt, pageById, productUrl, trail } from '../lib/site'
 import { formatNumber } from '../lib/listing'
 
 const mm = (v) => (v == null ? null : `${formatNumber(v)} mm`)
@@ -115,8 +115,8 @@ function Product({ data }) {
       <div className="pbody pdp__sheet">
         <div className="container pdp__top">
           <figure className="pdp__media">
-            {p.image && <img src={p.image} alt={`${p.sealType || 'Mechanical seal'}, representative illustration`} width="600" height="450" />}
-            <figcaption><Info size={14} /> Representative illustration of the seal family, not a photograph or drawing of this article.</figcaption>
+            {p.image && <img src={cleanArt(p.image)} alt={`${p.sealType || 'Mechanical seal'}, representative illustration`} width="600" height="450" />}
+            <figcaption><Info size={14} /> Images are representative.</figcaption>
           </figure>
 
           <div className="pdp__buy">
@@ -145,7 +145,7 @@ function Product({ data }) {
               {page && <Link to={page.url} className="btn btn--outline">All {page.title}</Link>}
             </div>
             <p className="pdp__verify">
-              Dimensions and materials come from the SAP Parts article master. Please confirm them against your drawing or existing seal before ordering; our engineers check the fit on request.
+              Dimensions and materials come from the SAP Parts article master. Please confirm them against your drawing or existing seal before ordering.
             </p>
           </div>
         </div>

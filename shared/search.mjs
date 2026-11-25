@@ -35,12 +35,20 @@ export function readState(params, filterIds, defs) {
 
 // ---------- Search ----------
 
-const compact = (s) => s.toLowerCase().replace(/[\s\-_./,()]+/g, '')
+export const compact = (s) => String(s ?? '').toLowerCase().replace(/[\s\-_./,()]+/g, '')
 const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 
+// Words of a query. Size notation is reduced to the number ("Ø25", "25mm" -> "25"); bare units are dropped.
+export const tokenize = (q) =>
+  q.toLowerCase().split(/\s+/)
+    .map((t) => t.replace(/^(?:ø|⌀)(?=\d)/, '').replace(/^(\d+(?:[.,]\d+)?)mm$/, '$1'))
+    .filter((t) => t && !/^(?:mm|ø|⌀)$/.test(t))
+
 // Every token must match. Purely numeric tokens match whole numbers only, so "20" never matches "200".
+// Text tokens match anywhere in the article's searchable text: article number, OEM / manufacturer
+// part numbers, series, title, brands, equipment, design, materials and application.
 export function makeMatcher(q) {
-  const tokens = q.toLowerCase().split(/\s+/).filter(Boolean)
+  const tokens = tokenize(q)
   if (!tokens.length) return null
   const tests = tokens.map((t) => {
     if (/^\d+([.,]\d+)?$/.test(t)) {
@@ -50,7 +58,7 @@ export function makeMatcher(q) {
       return (p) => p.shaftD === n || re.test(p.search) || re.test(p._title)
     }
     const c = compact(t)
-    return (p) => p.search.includes(t) || (c && p._compact.includes(c))
+    return (p) => p._all.includes(t) || (c && p._compact.includes(c))
   })
   return (p) => tests.every((test) => test(p))
 }
@@ -58,11 +66,58 @@ export function makeMatcher(q) {
 // Adds derived search keys to rows once.
 export function prepare(rows) {
   for (const r of rows) {
-    if (r._compact != null) continue
+    if (r._all != null) continue
     r._title = r.title.toLowerCase()
-    r._compact = compact(`${r.sku} ${r.search} ${r.title}`)
+    r._all = [r.search, r._title, r.refManufacturer, r.equipmentManufacturer, r.equipmentModel, r.oemPn, r.mpn, r.sealType, r.series, r.materialCombination, r.application, r.configuration]
+      .filter(Boolean).join(' | ').toLowerCase()
+    r._compact = compact(`${r.sku} ${r.search} ${r.title} ${r.oemPn ?? ''} ${r.mpn ?? ''}`)
+    r._csku = compact(r.sku)
+    r._crefs = [r.mpn, r.oemPn].filter(Boolean).map(compact)
   }
   return rows
+}
+
+// Relevance of one prepared row for a query: identifiers first (article, OEM and manufacturer
+// numbers), then series and brand, then words in the title. Higher is better.
+export function scoreRow(p, q, tokens = tokenize(q), cq = compact(q)) {
+  let s = 0
+  const ql = q.trim().toLowerCase()
+  if (cq) {
+    if (p._csku === cq) s += 1000
+    else if (p._csku.startsWith(cq)) s += 420
+    else if (p._csku.includes(cq)) s += 160
+    for (const r of p._crefs) {
+      if (r === cq) s += 900
+      else if (r.startsWith(cq)) s += 450
+      else if (r.includes(cq)) s += 140
+    }
+  }
+  const series = p.series?.toLowerCase()
+  if (series) {
+    if (series === ql) s += 320
+    else if (series.startsWith(ql)) s += 160
+  }
+  for (const b of [p.refManufacturer, p.equipmentManufacturer]) {
+    const bl = b?.toLowerCase()
+    if (bl && (bl === ql || bl.startsWith(ql))) s += 110
+  }
+  for (const t of tokens) {
+    if (/^\d+([.,]\d+)?$/.test(t) && p.shaftD === parseFloat(t.replace(',', '.'))) s += 60
+    const i = p._title.indexOf(t)
+    if (i === 0 || (i > 0 && !/[a-z0-9]/.test(p._title[i - 1]))) s += 24
+    else if (i > 0) s += 6
+  }
+  return s
+}
+
+// Sorts matches by relevance (stable for ties: shaft diameter, then article number).
+export function rankRows(rows, q) {
+  const tokens = tokenize(q)
+  const cq = compact(q)
+  return rows
+    .map((p) => [scoreRow(p, q, tokens, cq), p])
+    .sort((a, b) => b[0] - a[0] || (a[1].shaftD ?? 1e9) - (b[1].shaftD ?? 1e9) || a[1].sku.localeCompare(b[1].sku))
+    .map(([, p]) => p)
 }
 
 // ---------- Facets ----------
@@ -115,11 +170,11 @@ export function compute(rows, state, filterIds, defs) {
     }
   }
 
-  return { results: sortRows(results, state.sort), facets }
+  return { results: sortRows(results, state.sort, state.q), facets }
 }
 
-function sortRows(rows, sort) {
-  if (sort === 'relevance') return rows
+function sortRows(rows, sort, q) {
+  if (sort === 'relevance') return q?.trim() ? rankRows(rows, q) : rows
   const out = [...rows]
   if (sort === 'sku') return out.sort((a, b) => a.sku.localeCompare(b.sku))
   const dir = sort === 'diameter-desc' ? -1 : 1

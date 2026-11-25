@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { Menu, X, ArrowRight, ChevronDown, Search } from 'lucide-react'
 import MegaMenu, { preloadMegaImages } from './MegaMenu'
+import SmartSearch from './SmartSearch'
 import { menus } from '../lib/nav'
 
 const SHOP = '/shop/'
@@ -13,28 +14,25 @@ function useCatalogSearch() {
   const nav = useNavigate()
   const { pathname } = useLocation()
   return (q = '') => {
+    // A search box on the current page (home hero, listings) is focused in place.
+    const here = !q && document.querySelector('.cms-search input')
+    if (here) { here.focus(); return }
     if (q || pathname !== SHOP) nav(q ? `${SHOP}?q=${encodeURIComponent(q)}` : SHOP)
     setTimeout(() => document.querySelector('.cms-search input')?.focus(), pathname === SHOP ? 0 : 350)
   }
 }
 
-function MobileSearch({ onSearch }) {
-  const [q, setQ] = useState('')
-  return (
-    <form className="search search--sm" role="search" onSubmit={(e) => { e.preventDefault(); onSearch(q.trim()) }}>
-      <Search size={16} className="search__icon" />
-      <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search SKU, OEM number or shaft Ø…" aria-label="Search the catalogue" />
-    </form>
-  )
-}
-
 export function Logo({ light = false }) {
   return (
     <Link to="/" className={`logo ${light ? 'logo--light' : ''}`} aria-label="SAP Parts, home">
-      <svg className="logo__mark" viewBox="0 0 64 44" aria-hidden="true">
-        <path className="logo__b1" d="M2 42 L18 2 H32 L16 42 Z" />
-        <path className="logo__b2" d="M22 42 L38 2 H52 L36 42 Z" />
-        <path className="logo__b3" d="M42 42 L50 22 H62 L54 42 Z" />
+      {/* Mark: three SAP-blue bars on a SAP-yellow square (logo colours #01458E / #F9C301). */}
+      <svg className="logo__mark" viewBox="0 0 44 44" aria-hidden="true">
+        <rect className="logo__box" width="44" height="44" rx="5" />
+        <g className="logo__bars" transform="translate(6 11.3) scale(0.533)">
+          <path d="M2 42 L18 2 H32 L16 42 Z" />
+          <path d="M22 42 L38 2 H52 L36 42 Z" />
+          <path d="M42 42 L50 22 H62 L54 42 Z" />
+        </g>
       </svg>
       <span className="logo__text">
         <strong>SAP Parts</strong>
@@ -177,7 +175,7 @@ export default function Header() {
       {menus.some((m) => m.mega && m.label === menu) && createPortal(<div className="mega-backdrop" aria-hidden="true" />, document.body)}
       {open && (
         <div className="mobile-nav">
-          <MobileSearch onSearch={catalogSearch} />
+          <SmartSearch size="sm" button={false} onSubmit={catalogSearch} placeholder="Search SKU, OEM number, brand or shaft Ø…" />
           {menus.map((m) => !m.mega ? (
             <NavLink key={m.id} to={m.to} className="mobile-nav__link">{m.label}</NavLink>
           ) : (

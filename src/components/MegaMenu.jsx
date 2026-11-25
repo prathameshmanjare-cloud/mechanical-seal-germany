@@ -3,11 +3,11 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  ArrowRight, Atom, Award, BookOpen, Boxes, Building2, CircleDot, Cog, Disc3, Droplets, Factory, Fan, FlaskConical,
-  Gauge, Headphones, Hexagon, Info, Layers, MessageSquareQuote, Ruler, Search, Settings2, ShieldCheck, Sparkles,
+  ArrowRight, Atom, ChevronRight, Award, BookOpen, Box, Boxes, Building2, CircleDot, Cog, Disc3, Droplets, Factory, Fan, FlaskConical,
+  Gauge, Hexagon, Info, Layers, MessageSquareQuote, Ruler, Search, Settings2, ShieldCheck, Sparkles,
   Truck, Users, Wind, Wrench, Zap,
 } from 'lucide-react'
-import { pageById, sections, totals } from '../lib/site'
+import { pageById, sections } from '../lib/site'
 
 // Icon by keyword in the page title; first match wins.
 const ICONS = [
@@ -27,11 +27,13 @@ function TitleIcon({ title, ...props }) {
 }
 
 const fmt = (n) => n.toLocaleString('en')
-const countLabel = (p) => (p.type === 'listing' ? (p.productCount ? `${fmt(p.productCount)} articles` : 'Identification on request') : 'Technical guide')
+// Menu art: copies of the category images with the studio backdrop flattened to pure white
+// (scripts/flatfield-images.py), so with multiply blending the seals sit straight on the card.
+const art = (src) => src && src.replace('/img/category/', '/img/category/clean/')
+// Only real figures are shown; pages without articles carry no filler label.
+const countLabel = (p) => (p.productCount ? `${fmt(p.productCount)} articles` : null)
 
-const SHOP_STRIP = [[Boxes, `${fmt(totals.products)} catalogue articles`], [Search, 'Search by SKU, series or shaft Ø'], [MessageSquareQuote, 'Quotation on request']]
-const STRIP = [[Search, 'Identification by OEM number, drawing or dimensions'], [Headphones, 'Engineering review before quotation']]
-
+const viewAllLabel = (g) => (g.type === 'listing' ? `View All ${g.title.replace(/ Mechanical/, '')}` : `Open ${g.title}`)
 
 /* Warm the browser cache with menu images so panels open fully painted. */
 let warmed = false
@@ -40,8 +42,8 @@ export function preloadMegaImages() {
   warmed = true
   const urls = new Set()
   for (const s of sections) {
-    if (s.image) urls.add(s.image)
-    for (const id of s.children) if (pageById(id).image) urls.add(pageById(id).image)
+    if (s.image) urls.add(art(s.image))
+    for (const id of s.children) if (pageById(id).image) urls.add(art(pageById(id).image))
   }
   urls.forEach((src) => {
     const img = new Image()
@@ -56,44 +58,47 @@ export default function MegaMenu({ id, onFind, onClose }) {
   const [cur, setCur] = useState(groups[0]?.id)
   const group = groups.find((g) => g.id === cur) ?? groups[0]
   const kids = group.children.map(pageById)
-  const strip = section.url === '/shop/' ? SHOP_STRIP : STRIP
+  const isShop = section.url === '/shop/'
+  const dense = kids.length > 6
 
   return (
     <div className="mega" role="menu" onClick={(e) => e.target.closest('a') && onClose?.()}>
       <aside className="mega__side">
-        <div className="mega__side-title"><TitleIcon title={section.title} size={22} strokeWidth={1.6} /> {section.title}</div>
+        <div className="mega__side-title">
+          {isShop ? <Box size={24} strokeWidth={1.6} /> : <TitleIcon title={section.title} size={24} strokeWidth={1.6} />}
+          <span>{isShop ? 'Shop by Category' : section.title}</span>
+          <i aria-hidden="true" />
+        </div>
         <ul>
-          {groups.map((g) => {
-            return (
-              <li key={g.id}>
-                <Link
-                  to={g.url}
-                  className={`mega__cat ${cur === g.id ? 'is-active' : ''}`}
-                  onMouseEnter={() => setCur(g.id)}
-                  onFocus={() => setCur(g.id)}
-                >
-                  <TitleIcon title={g.title} size={19} strokeWidth={1.6} />
-                  <span>{g.title}</span>
-                  <ArrowRight size={16} className="mega__cat-go" />
-                </Link>
-              </li>
-            )
-          })}
+          {groups.map((g) => (
+            <li key={g.id}>
+              <Link
+                to={g.url}
+                className={`mega__cat ${cur === g.id ? 'is-active' : ''}`}
+                onMouseEnter={() => setCur(g.id)}
+                onFocus={() => setCur(g.id)}
+              >
+                <TitleIcon title={g.title} size={22} strokeWidth={1.5} />
+                <span>{g.title}</span>
+                {cur === g.id ? <ArrowRight size={19} className="mega__cat-go" /> : <ChevronRight size={18} className="mega__cat-go" />}
+              </Link>
+            </li>
+          ))}
         </ul>
       </aside>
 
       <div className="mega__main">
         <div className="mega__head">
           <h3>{group.title}</h3>
-          <Link to={section.url} className="mega__all">All of {section.title} <ArrowRight size={16} /></Link>
+          <Link to={group.url} className="mega__all">{viewAllLabel(group)} <ArrowRight size={17} /></Link>
         </div>
-        <div className="mega__tree" key={group.id}>
+
+        <div className={`mega__tree ${dense ? 'is-dense' : ''}`} key={group.id}>
           <Link to={group.url} className="mega__lead">
-            {group.image && <span className="mega__lead-img"><img src={group.image} alt="" /><i className="mega__rep">Representative illustration</i></span>}
+            <span className="mega__lead-img">{group.image && <img src={art(group.image)} alt="" />}</span>
             <span className="mega__lead-txt">
-              <small>{countLabel(group)}</small>
-              <strong>{group.title}</strong>
-              <em className="mega__tag">{group.productCount ? 'View articles' : group.type === 'listing' ? 'Open page' : 'Read guide'} <ArrowRight size={14} /></em>
+              <strong>{countLabel(group) ?? 'Overview'}</strong>
+              <span className="mega__lead-go"><ArrowRight size={18} /></span>
             </span>
           </Link>
           {kids.length > 0 ? (
@@ -101,11 +106,12 @@ export default function MegaMenu({ id, onFind, onClose }) {
               {kids.map((k, i) => (
                 <li key={k.id} style={{ '--i': i }}>
                   <Link to={k.url}>
-                    <span>
+                    <span className="mega__link-txt">
                       <strong>{k.title}</strong>
-                      <small>{countLabel(k)}</small>
+                      {countLabel(k) && <small>{countLabel(k)}</small>}
                     </span>
-                    <ArrowRight size={15} />
+                    {!dense && k.image && <img src={art(k.image)} alt="" loading="lazy" />}
+                    <span className="mega__link-go"><ArrowRight size={16} /></span>
                   </Link>
                 </li>
               ))}
@@ -114,22 +120,20 @@ export default function MegaMenu({ id, onFind, onClose }) {
             <p className="mega__none">Open {group.title} for the full technical overview.</p>
           )}
         </div>
-        <ul className="mega__strip">
-          {strip.map(([I, t]) => <li key={t}><I size={16} strokeWidth={1.8} aria-hidden="true" /> {t}</li>)}
-        </ul>
+
+        <p className="mega__rep">Images are representative.</p>
       </div>
 
       <aside className="mega__cta">
         <h3>Can&rsquo;t find the part?</h3>
-        <p>Send the OEM number, dimensions or a drawing. Our engineers check fit, duty and materials before quoting.</p>
+        <p>Send the OEM number, dimensions or a drawing.</p>
         {section.image && (
           <figure className="mega__fig">
-            <img key={section.image} src={section.image} alt="" />
-            <figcaption>Representative illustration</figcaption>
+            <img key={section.image} src={art(section.image)} alt="" />
           </figure>
         )}
-        <button type="button" className="btn btn--primary mega__find" onClick={onFind}>
-          <Search size={17} /> Search the catalogue <ArrowRight size={16} />
+        <button type="button" className="mega__find" onClick={onFind}>
+          <Search size={19} /> <span>Search the catalogue</span> <ArrowRight size={18} />
         </button>
       </aside>
     </div>

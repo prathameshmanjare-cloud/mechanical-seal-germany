@@ -43,3 +43,7 @@ export function related(page) {
 
 // Canonical article page.
 export const productUrl = (sku) => `/product/${encodeURIComponent(sku)}/`
+
+// Category photos with the grey studio backdrop flattened to white (public/img/category/clean/),
+// so with multiply blending the seal sits on any light surface without a visible box.
+export const cleanArt = (src) => (src ? src.replace('/img/category/', '/img/category/clean/') : src)
